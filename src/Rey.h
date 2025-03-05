@@ -1,10 +1,11 @@
 #pragma once
-#include "Pieza.h"
-class Rey :  public Pieza
+#include "pieza.h"
+class rey :  public Pieza
 {
 public:
-    Rey(color col)
+    rey(color col)
         :Pieza(tipo_pieza::REY, col)
     {}
-
+    void mueve(int x, int y) override;
 };
+

@@ -25,7 +25,10 @@ std::ostream& operator<<(std::ostream& os, const Pieza& pieza) {
     }
 
     // Formatear la salida
-    os << tipoStr <<  colorStr;
+    os << tipoStr << colorStr;
     return os;
 }
 
+void Pieza::mueve(int x, int y) {
+    std::cout << "Moviendo pieza a (" << x << ", " << y << ")" << std::endl;
+}

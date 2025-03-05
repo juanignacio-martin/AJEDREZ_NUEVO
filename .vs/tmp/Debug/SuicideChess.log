@@ -1,8 +1,2 @@
-﻿  Pieza.cpp
-  principal.cpp
-  tablero.cpp
-  SuicideChess.cpp
-  Generando código...
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\tablero.cpp(85,1): warning C4715: 'tablero::operator[]': no todas las rutas de acceso de control devuelven un valor
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\tablero.cpp(92,1): warning C4715: 'tablero::operator[]': no todas las rutas de acceso de control devuelven un valor
+﻿  vacio.cpp
   SuicideChess.vcxproj -> C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\bin\SuicideChess.exe

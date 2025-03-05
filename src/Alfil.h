@@ -1,11 +1,8 @@
 #pragma once
-#include "Pieza.h"
+#include "pieza.h"
 
-class Alfil:public Pieza
-{
+class alfil : public Pieza {
 public:
-    Alfil(color col)
-        :Pieza(tipo_pieza::ALFIL, col)
-    {}
-    
+    alfil(color col) : Pieza(tipo_pieza::ALFIL, col) {}
+    void mueve(int x, int y) override;
 };
