@@ -1,0 +1,8 @@
+﻿  Pieza.cpp
+  principal.cpp
+  tablero.cpp
+  SuicideChess.cpp
+  Generando código...
+C:\Users\Luis_vildé\Documents\GitHub\SuicideChess_20\src\tablero.cpp(92,1): warning C4715: 'tablero::operator[]': no todas las rutas de acceso de control devuelven un valor
+C:\Users\Luis_vildé\Documents\GitHub\SuicideChess_20\src\tablero.cpp(85,1): warning C4715: 'tablero::operator[]': no todas las rutas de acceso de control devuelven un valor
+  SuicideChess.vcxproj -> C:\Users\Luis_vildé\Documents\GitHub\SuicideChess_20\bin\SuicideChess.exe

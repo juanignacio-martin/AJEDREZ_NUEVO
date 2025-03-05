@@ -1,0 +1,9 @@
+﻿  Pieza.cpp
+  principal.cpp
+  tablero.cpp
+  SuicideChess.cpp
+  Generando código...
+D:\Universidad\3.Tercero\Segundo Semestre\Informatica Industrial\Trabajo\kkk\SuicideChess_20\src\tablero.cpp(85): warning C4715: 'tablero::operator[]': no todas las rutas de acceso de control devuelven un valor
+D:\Universidad\3.Tercero\Segundo Semestre\Informatica Industrial\Trabajo\kkk\SuicideChess_20\src\tablero.cpp(92): warning C4715: 'tablero::operator[]': no todas las rutas de acceso de control devuelven un valor
+tablero.obj : error LNK2019: símbolo externo "public: virtual __cdecl Caballo::~Caballo(void)" (??1Caballo@@UEAA@XZ) sin resolver al que se hace referencia en la función "public: virtual void * __cdecl Caballo::`scalar deleting destructor'(unsigned int)" (??_GCaballo@@UEAAPEAXI@Z)
+D:\Universidad\3.Tercero\Segundo Semestre\Informatica Industrial\Trabajo\kkk\SuicideChess_20\x64\Debug\SuicideChess.exe : fatal error LNK1120: 1 externos sin resolver
