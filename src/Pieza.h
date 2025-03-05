@@ -22,3 +22,8 @@ protected:
     tipo_pieza tipo;
     color col;
 };
+
+
+
+
+//cambi00
