@@ -12,5 +12,6 @@ public:
     {}
 /*    void mueve(int x, int y)override {
         std::cout << "muevo el peon" << x<<y<<std::endl;
+        Hola
     }*/
 };
