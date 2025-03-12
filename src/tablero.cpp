@@ -13,19 +13,27 @@ tablero::tablero(int N, int M) :
 	else { _N = 0, _M = 0;  cout << "error en la dimension de la matriz" << endl; }
 }
 
-void tablero::reserva_inicializacion()
-{
-	// Reserva
+void tablero::reserva_inicializacion() {
+	if (_N <= 0 || _M <= 0) {
+		std::cout << "Error: dimensiones inválidas del tablero" << std::endl;
+		return;
+	}
+
+	// Reservar memoria para la matriz de punteros a punteros
 	tab = new Pieza * *[_N];
+	std::cout << "Memoria para tab reservada correctamente." << std::endl;
+
 	for (int i = 0; i < _N; i++) {
-		tab[i] = new Pieza * [_M];
+		tab[i] = new Pieza * [_M]; // Reservar cada fila
+		std::cout << "Fila " << i << " reservada correctamente." << std::endl;
+
 		for (int j = 0; j < _M; j++) {
-			tab[i][j] = nullptr;  // Inicialización a puntero nulo
+			tab[i][j] = nullptr; // Inicializar con nullptr
 		}
 	}
 
+	std::cout << "Tablero inicializado correctamente." << std::endl;
 
-	// Inicialización
 	tab[0][0] = tab[0][7]= new torre(color::NEGRO);
 	tab[0][1] = tab[0][6] = new caballo(color::NEGRO);
 	tab[0][2] = tab[0][5] = new alfil(color::NEGRO);
