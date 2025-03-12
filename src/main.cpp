@@ -6,16 +6,20 @@ using namespace std;
 
 
 int main() {
+    tablero m(8, 8);
 
-	tablero m(8, 8);
+    /* salida en consola */
+    m.print(std::cout);
+    std::cout << "*****" << std::endl;
 
-	/* salida en consola */
-	m.print(cout);
-	cout << "*****" << endl;
+    // Mover el peón desde (1,1) a (2,1)
+    m.mueve_pieza(1, 1, 3, 1);
 
+    m.mueve_pieza(6, 2, 4, 2);
 
-	m[1][1]->mueve(2, 1); 
+    m.mueve_pieza(3, 1, 4, 2);
 
-	m.print(cout);
+    m.print(std::cout); // Verificar que el peón realmente se movió
 
+    return 0;
 }

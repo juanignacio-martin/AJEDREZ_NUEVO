@@ -94,3 +94,47 @@ const Pieza* const* tablero::operator[](int i) const {
 	}
 	throw std::out_of_range("Índice fuera de rango");
 }
+
+void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino) {
+	// Verificar que las coordenadas son válidas
+	if (x_origen < 0 || x_origen >= _N || y_origen < 0 || y_origen >= _M ||
+		x_destino < 0 || x_destino >= _N || y_destino < 0 || y_destino >= _M) {
+		std::cout << "Movimiento fuera de los límites del tablero." << std::endl;
+		return;
+	}
+
+	// Verificar que hay una pieza en la posición de origen
+	if (tab[x_origen][y_origen] == nullptr) {
+		std::cout << "No hay ninguna pieza en esta casilla." << std::endl;
+		return;
+	}
+
+	// Verificar que el movimiento es válido según la pieza
+	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab)) {
+		std::cout << "Movimiento inválido." << std::endl;
+		return;
+	}
+
+	// Si hay una pieza en destino, verificar si es del enemigo
+	if (tab[x_destino][y_destino] != nullptr) {
+		if (tab[x_destino][y_destino]->getColor() == tab[x_origen][y_origen]->getColor()) {
+			std::cout << "No puedes capturar tu propia pieza." << std::endl;
+			return;
+		}
+		else {
+			// Captura de pieza enemiga
+			std::cout << "Capturando " << tipoPiezaToString(tab[x_destino][y_destino]->getTipo()) << " enemigo.\n";
+
+			delete tab[x_destino][y_destino];  // Eliminar pieza capturada
+		}
+	}
+
+	// Mover la pieza
+	std::cout << "Moviendo " << tipoPiezaToString(tab[x_origen][y_origen]->getTipo())
+		<< " de (" << x_origen << ", " << y_origen << ") a ("
+		<< x_destino << ", " << y_destino << ")" << std::endl;
+
+
+	tab[x_destino][y_destino] = tab[x_origen][y_origen]; // Colocar la pieza en el nuevo lugar
+	tab[x_origen][y_origen] = nullptr; // Dejar vacía la casilla de origen
+}

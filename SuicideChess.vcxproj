@@ -155,7 +155,6 @@
     <ClInclude Include="src\rey.h" />
     <ClInclude Include="src\tablero.h" />
     <ClInclude Include="src\torre.h" />
-    <ClInclude Include="src\vacio.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\alfil.cpp" />
@@ -167,7 +166,6 @@
     <ClCompile Include="src\rey.cpp" />
     <ClCompile Include="src\tablero.cpp" />
     <ClCompile Include="src\torre.cpp" />
-    <ClCompile Include="src\vacio.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

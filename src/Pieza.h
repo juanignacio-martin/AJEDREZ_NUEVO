@@ -1,11 +1,14 @@
 #pragma once
-#include"ETSIDI.h"
+#include "ETSIDI.h"
 #include <vector>
 #include <iostream>
+using namespace std;
 
-enum class color { BLANCO, NEGRO };//Define Color
+enum class color { BLANCO, NEGRO };  // Define Color
 enum class tipo_pieza { TORRE, CABALLO, ALFIL, DAMA, REY, PEON, VACIO };
 
+
+std::string tipoPiezaToString(tipo_pieza tipo);
 
 class Pieza {
 public:
@@ -14,9 +17,16 @@ public:
 
     virtual ~Pieza() {}  // Destructor virtual obligatorio para clases base
 
-    virtual void mueve(int x, int y) = 0; // Método puro para hacerla abstracta
+    // Método virtual puro para validar movimiento
+    virtual bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const = 0;
 
-    friend std::ostream& operator<<(std::ostream& os, const Pieza& pieza);
+    //  Getters 
+    color getColor() const { return col; }
+    tipo_pieza getTipo() const { return tipo; }
+
+    bool esVacio() const { return tipo == tipo_pieza::VACIO; }
+
+    friend ostream& operator<<(std::ostream& os, const Pieza& pieza);
 
 protected:
     tipo_pieza tipo;

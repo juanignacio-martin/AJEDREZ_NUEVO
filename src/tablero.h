@@ -7,7 +7,7 @@
 #include "Dama.h"
 #include "Alfil.h"
 #include "Caballo.h"
-#include "Vacio.h"
+
 
 class tablero {
 
@@ -22,6 +22,10 @@ public:
 
 	//I/O
 	std::ostream& print(std::ostream&);
+
+
+	void mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino);
+
 
 	//SET
 	void cell(int i, int j, Pieza* val) {
