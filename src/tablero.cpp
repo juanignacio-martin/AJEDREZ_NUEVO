@@ -2,16 +2,17 @@
 
 using namespace std;
 
-tablero::tablero(int N, int M) :
-	_N(N),
-	_M(M)
-{
+tablero::tablero(int N , int M )
+	: _N(N), _M(M), jugadorBlanco(color::BLANCO), jugadorNegro(color::NEGRO) {
+	jugadorActual = &jugadorBlanco; // Empieza el jugador blanco
+
 	if (N > 0 && M > 0) {
 		reserva_inicializacion();
 
 	}
 	else { _N = 0, _M = 0;  cout << "error en la dimension de la matriz" << endl; }
 }
+
 
 void tablero::reserva_inicializacion() {
 	if (_N <= 0 || _M <= 0) {
@@ -77,7 +78,7 @@ ostream& tablero::print(std::ostream& o) {
 	for (int i = 0; i < _N; i++) {
 		for (int j = 0; j < _M; j++) {
 			if (tab[i][j] != nullptr) {
-				o << *tab[i][j] << " ";  // Desreferencia el puntero para imprimir la pieza
+				o << *tab[i][j] << " ";  
 			}
 			else {
 				o << ". ";  // Representación de casilla vacía
@@ -91,58 +92,94 @@ ostream& tablero::print(std::ostream& o) {
 
 Pieza** tablero::operator[](int i) {
 	if (i >= 0 && i < _N) {
-		return tab[i];  // Devuelve `Pieza**`
+		return tab[i];  // Devuelve Pieza*
 	}
 	throw std::out_of_range("Índice fuera de rango");
 }
 
 const Pieza* const* tablero::operator[](int i) const {
 	if (i >= 0 && i < _N) {
-		return tab[i];  // Devuelve `const Pieza* const*`
+		return tab[i];  // Devuelve const Pieza* const*
 	}
 	throw std::out_of_range("Índice fuera de rango");
 }
 
 void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino) {
-	// Verificar que las coordenadas son válidas
-	if (x_origen < 0 || x_origen >= _N || y_origen < 0 || y_origen >= _M ||
-		x_destino < 0 || x_destino >= _N || y_destino < 0 || y_destino >= _M) {
-		std::cout << "Movimiento fuera de los límites del tablero." << std::endl;
-		return;
-	}
+	// Verificar si la pieza pertenece al jugador actual
+	if (!esTurnoCorrecto(x_origen, y_origen)) return;
 
-	// Verificar que hay una pieza en la posición de origen
-	if (tab[x_origen][y_origen] == nullptr) {
-		std::cout << "No hay ninguna pieza en esta casilla." << std::endl;
-		return;
-	}
-
-	// Verificar que el movimiento es válido según la pieza
+	// Verificar si el movimiento es válido
 	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab)) {
 		std::cout << "Movimiento inválido." << std::endl;
 		return;
 	}
 
-	// Si hay una pieza en destino, verificar si es del enemigo
+	// Si hay una pieza en el destino (sea propia o enemiga), se elimina
 	if (tab[x_destino][y_destino] != nullptr) {
-		if (tab[x_destino][y_destino]->getColor() == tab[x_origen][y_origen]->getColor()) {
-			std::cout << "No puedes capturar tu propia pieza." << std::endl;
-			return;
-		}
-		else {
-			// Captura de pieza enemiga
-			std::cout << "Capturando " << tipoPiezaToString(tab[x_destino][y_destino]->getTipo()) << " enemigo.\n";
-
-			delete tab[x_destino][y_destino];  // Eliminar pieza capturada
-		}
+		std::cout << "Capturando " << tipoPiezaToString(tab[x_destino][y_destino]->getTipo())
+			<< " (" << (tab[x_destino][y_destino]->getColor() == color::BLANCO ? "Blanco" : "Negro") << ").\n";
+		delete tab[x_destino][y_destino];  // Eliminar la pieza capturada
 	}
 
 	// Mover la pieza
-	std::cout << "Moviendo " << tipoPiezaToString(tab[x_origen][y_origen]->getTipo())
-		<< " de (" << x_origen << ", " << y_origen << ") a ("
-		<< x_destino << ", " << y_destino << ")" << std::endl;
+	tab[x_destino][y_destino] = tab[x_origen][y_origen];
+	tab[x_origen][y_origen] = nullptr;
+	std::cout << "Moviendo pieza..." << std::endl;
 
-
-	tab[x_destino][y_destino] = tab[x_origen][y_origen]; // Colocar la pieza en el nuevo lugar
-	tab[x_origen][y_origen] = nullptr; // Dejar vacía la casilla de origen
+	// Cambiar turno
+	cambiarTurno();
 }
+
+
+
+
+void tablero::cambiarTurno() {
+	jugadorActual->terminarTurno();
+	jugadorActual = (jugadorActual->getColor() == color::BLANCO) ? &jugadorNegro : &jugadorBlanco;
+	jugadorActual->iniciarTurno();
+}
+
+bool tablero::esTurnoCorrecto(int x, int y) {
+	if (tab[x][y] == nullptr || tab[x][y]->getColor() != jugadorActual->getColor()) {
+		std::cout << "No es tu turno o seleccionaste la pieza equivocada." << std::endl;
+		return false;
+	}
+	return true;
+}
+
+bool tablero::estaEnJaque(color jugadorColor) {
+	int reyX = -1, reyY = -1;
+
+	// Buscar la poscion del rey del jugador 
+	for (int i = 0; i < _N; i++) {
+		for (int j = 0; j < _M; j++) {
+			if (tab[i][j] != nullptr && tab[i][j]->getTipo() == tipo_pieza::REY && tab[i][j]->getColor() == jugadorColor) {
+				reyX = i;
+				reyY = j;
+				break;
+			}
+		}
+	}
+
+	if (reyX == -1 || reyY == -1) {
+		std::cout << "No¡se encontro el rey en el tablero." << std::endl;
+		return false;
+	}
+
+	// Verificr si alguna pieza rival puede atacar al rey
+	for (int i = 0; i < _N; i++) {
+		for (int j = 0; j < _M; j++) {
+			if (tab[i][j] != nullptr && tab[i][j]->getColor() != jugadorColor) {
+				if (tab[i][j]->movimiento_valido(i, j, reyX, reyY, tab)) {
+					std::cout << "Jaque! El rey de " << (jugadorColor == color::BLANCO ? "Blanco" : "Negro")
+						<< " esta bajo ataque de un " << tipoPiezaToString(tab[i][j]->getTipo())
+						<< " en (" << i << ", " << j << ")." << std::endl;
+					return true;
+				}
+			}
+		}
+	}
+
+	return false; // No hay jaque
+}
+
