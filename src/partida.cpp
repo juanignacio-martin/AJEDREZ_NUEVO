@@ -8,6 +8,7 @@ using namespace std;
 
 partida::partida()
     : jugadorBlanco (color::BLANCO), jugadorNegro (color::NEGRO), tableroSelec(nullptr)
+
 {
 
     string eleccion;
@@ -18,11 +19,11 @@ partida::partida()
         tableroSelec = new tablero(8,4);
     }
     else if (eleccion == "Silver" || eleccion == "silver") {
-        tableroSelec = new tablero(8,4);
+        tableroSelec = new tablero(5,4);
     }
     else {
         cout << "Opción inválida, se seleccionará TableroDemi por defecto." << endl;
-        tableroSelec = new tablero(5,4);
+        tableroSelec = new tablero(8,4);
     }
 }
 
