@@ -48,7 +48,8 @@ public:
 
 
 private:
-	void reserva_inicializacion();
+	void reserva_inicializacionDemi();
+	void reserva_inicializacionSilver();
 	void liberacion();
 
 };

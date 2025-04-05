@@ -20,6 +20,7 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
         tablero[x_destino][y_destino]->getColor() != this->getColor()) {
         return true;
     }
+    //Comer al paso
 
     return false; // Si no cumple ninguna condición, es un movimiento inválido.
 }
