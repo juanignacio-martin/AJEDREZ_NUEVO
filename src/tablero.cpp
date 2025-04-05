@@ -50,12 +50,12 @@ void tablero::reserva_inicializacionDemi() {
 
 	//Blancas
 	for (int j = 0; j < _M; ++j) {
-		tab[3][j] = new peon(color::BLANCO);; // Peones blancos
+		tab[6][j] = new peon(color::BLANCO);; // Peones blancos
 	}
-	tab[4][3] = new torre(color::BLANCO); // Torres blancas
-	tab[4][1] =  new caballo(color::BLANCO); // Caballos blancos
-	tab[4][2]  = new alfil(color::BLANCO); // Alfiles blancos
-	tab[4][0] = new rey(color::BLANCO);              // Dama blanca
+	tab[7][3] = new torre(color::BLANCO); // Torres blancas
+	tab[7][1] =  new caballo(color::BLANCO); // Caballos blancos
+	tab[7][2]  = new alfil(color::BLANCO); // Alfiles blancos
+	tab[7][0] = new rey(color::BLANCO);              // Dama blanca
 	//tab[4][1] = new dama(color::BLANCO);              // Rey blanco
 
 
