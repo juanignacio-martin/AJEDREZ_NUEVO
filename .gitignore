@@ -1,1 +1,26 @@
+# Archivos de Visual Studio
+.vs/
+*.suo
+*.user
+*.VC.db
+
+# Archivos de compilación
+*.obj
+*.exe
+*.dll
+*.pdb
+*.idb
+*.log
+
+# Carpetas intermedias
+Debug/
+Release/
+out/
+build/
+
+# Archivos temporales
+*.tmp
+*.cache
+*.bak
+*.old
 
