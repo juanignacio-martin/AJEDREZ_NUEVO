@@ -15,9 +15,7 @@ class tablero {
 	int _N, _M;
 	Pieza*** tab = nullptr;
 
-	jugador jugadorBlanco;
-	jugador jugadorNegro;
-	jugador* jugadorActual; // Puntero al jugador que tiene el turno
+
 
 public:
 	tablero(int N = -1, int M = -1);
@@ -42,12 +40,11 @@ public:
 
 	Pieza** operator[](int i);
 	const Pieza* const* operator[](int i) const;
-	void cambiarTurno();
-	bool esTurnoCorrecto(int x, int y);
 	bool estaEnJaque(color jugadorColor);
 
 
 private:
+	void reserva_inicializacionClasico();
 	void reserva_inicializacionDemi();
 	void reserva_inicializacionSilver();
 	void liberacion();
