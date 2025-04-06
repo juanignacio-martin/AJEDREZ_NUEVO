@@ -1,30 +1,28 @@
 #include <iostream>
-#include "tablero.h"
-
-
-using namespace std;
-
+#include "Partida.h"
 
 int main() {
-    tablero m(8, 8);
+    std::string variante;
+    std::cout << "Elige variante (clasico, silverman, demi): ";
+    std::cin >> variante;
 
-    /* salida en consola */
-    m.print(std::cout);
-    std::cout << "*****" << std::endl;
+    partida p(variante);
+    p.mostrarTablero();
 
+    int x1, y1, x2, y2;
 
-    m.mueve_pieza(6, 2, 4, 2);
-    // Mover el peón desde (1,1) a (2,1)
-    m.mueve_pieza(1, 1, 3, 1);
+    while (true) {
+        std::cout << "\nTurno de " << (p.getJugadorActual()->getColor() == color::BLANCO ? "blancas" : "negras") << std::endl;
 
+        std::cout << "Introduce coordenadas de origen (fila columna): ";
+        std::cin >> x1 >> y1;
 
-    m.print(std::cout); // Verificar que el peón realmente se movió
+        std::cout << "Introduce coordenadas de destino (fila columna): ";
+        std::cin >> x2 >> y2;
 
-    m.mueve_pieza(4, 2, 3, 1);
+        p.jugarTurno(x1, y1, x2, y2);
+        p.mostrarTablero();
+    }
 
-    m.print(std::cout); // Verificar que el peón realmente se movió
-    m.mueve_pieza(0, 1, 1, 3);
-
-    m.print(std::cout); // Verificar que el peón realmente se movió
     return 0;
 }

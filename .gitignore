@@ -6,3 +6,5 @@
 Debug/
 Release/
 
+# Carpeta bin
+bin/

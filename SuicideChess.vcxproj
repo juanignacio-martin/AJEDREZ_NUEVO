@@ -151,6 +151,7 @@
     <ClInclude Include="src\caballo.h" />
     <ClInclude Include="src\dama.h" />
     <ClInclude Include="src\jugador.h" />
+    <ClInclude Include="src\partida.h" />
     <ClInclude Include="src\peon.h" />
     <ClInclude Include="src\pieza.h" />
     <ClInclude Include="src\rey.h" />
@@ -163,6 +164,7 @@
     <ClCompile Include="src\dama.cpp" />
     <ClCompile Include="src\jugador.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\partida.cpp" />
     <ClCompile Include="src\peon.cpp" />
     <ClCompile Include="src\pieza.cpp" />
     <ClCompile Include="src\rey.cpp" />
