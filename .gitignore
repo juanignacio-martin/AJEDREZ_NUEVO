@@ -1,1 +1,10 @@
+.vs/
+*.suo
+*.exe
+*.obj
+*.user
+Debug/
+Release/
 
+# Carpeta bin
+bin/
