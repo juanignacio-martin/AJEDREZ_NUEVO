@@ -1,5 +1,6 @@
 #pragma once
 #include "pieza.h"
+#include "tablero.h"
 class peon : public Pieza
 {
 public:
@@ -12,6 +13,6 @@ public:
 
     bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const override;
     
-    void promocionar(Pieza*** tablero, int x, int y);
+    void promocionar(Pieza*** pieza_tablero, int x, int y);
 };
 
