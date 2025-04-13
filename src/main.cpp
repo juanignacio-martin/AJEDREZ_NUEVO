@@ -1,17 +1,3 @@
-#include <iostream>
-<<<<<<< HEAD
-#include "tablero.h"
-#include "partida.h"
-
-using namespace std;
-
-//Crear partida y dentro jugador y tablero
-
-int main() {
-    partida partida;
-    partida.mostrarTablero();
-
-=======
 #include "Partida.h"
 
 int main() {
@@ -37,6 +23,5 @@ int main() {
         p.mostrarTablero();
     }
 
->>>>>>> main
     return 0;
 }
