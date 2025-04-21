@@ -30,71 +30,18 @@ void partida::inicializarTablero() {
 }
 
 void partida::colocarSilverman() {
-    // negras
-    (*t)[0][0] = new torre(color::NEGRO);
-    (*t)[0][1] = new rey(color::NEGRO);     // ? rey va en 1
-    (*t)[0][2] = new dama(color::NEGRO);    // ? dama va en 2
-    (*t)[0][3] = new torre(color::NEGRO);
-
-    for (int j = 0; j < 5; ++j)
-        (*t)[1][j] = new peon(color::NEGRO);
-
-    // blancas
-    for (int j = 0; j < 5; ++j)
-        (*t)[3][j] = new peon(color::BLANCO);
-
-    (*t)[4][0] = new torre(color::BLANCO);
-    (*t)[4][1] = new rey(color::BLANCO);     // ? rey va en 1
-    (*t)[4][2] = new dama(color::BLANCO);    // ? dama va en 2
-    (*t)[4][3] = new torre(color::BLANCO);
+    t->reserva_inicializacionSilver();
 }
 
 
 void partida::colocarDemi() {
-    // negras
-    (*t)[0][3] = new torre(color::NEGRO);
-    (*t)[0][2] = new caballo(color::NEGRO);
-    (*t)[0][1] = new alfil(color::NEGRO);
-    (*t)[0][0] = new rey(color::NEGRO);
-    for (int j = 0; j < 8; ++j)
-        (*t)[1][j] = new peon(color::NEGRO);
 
-    // blancas
-    for (int j = 0; j < 8; ++j)
-        (*t)[6][j] = new peon(color::BLANCO);
-    (*t)[7][3] = new torre(color::BLANCO);
-    (*t)[7][2] = new caballo(color::BLANCO);
-    (*t)[7][1] = new alfil(color::BLANCO);
-    (*t)[7][0] = new rey(color::BLANCO);
+    t->reserva_inicializacionDemi();
 
 }
 
 void partida::colocarClasico() {
-    // negras
-    (*t)[0][0] = new torre(color::NEGRO);
-    (*t)[0][1] = new caballo(color::NEGRO);
-    (*t)[0][2] = new alfil(color::NEGRO);
-    (*t)[0][3] = new dama(color::NEGRO);
-    (*t)[0][4] = new rey(color::NEGRO);
-    (*t)[0][5] = new alfil(color::NEGRO);
-    (*t)[0][6] = new caballo(color::NEGRO);
-    (*t)[0][7] = new torre(color::NEGRO);
-
-    for (int j = 0; j < 8; ++j)
-        (*t)[1][j] = new peon(color::NEGRO);
-
-    // blancas
-    for (int j = 0; j < 8; ++j)
-        (*t)[6][j] = new peon(color::BLANCO);
-
-    (*t)[7][0] = new torre(color::BLANCO);
-    (*t)[7][1] = new caballo(color::BLANCO);
-    (*t)[7][2] = new alfil(color::BLANCO);
-    (*t)[7][3] = new dama(color::BLANCO);
-    (*t)[7][4] = new rey(color::BLANCO);
-    (*t)[7][5] = new alfil(color::BLANCO);
-    (*t)[7][6] = new caballo(color::BLANCO);
-    (*t)[7][7] = new torre(color::BLANCO);
+    t->reserva_inicializacionClasico();
 }
 
 

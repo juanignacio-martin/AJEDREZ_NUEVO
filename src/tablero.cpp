@@ -22,18 +22,17 @@ tablero::tablero(int N, int M) : _N(N), _M(M) {
 }
 
 void tablero::reserva_inicializacionClasico() {
-	if (_N != 8 || _M != 8) {
-		std::cout << "Error: el tablero clasico debe ser de 8x8." << std::endl;
-		return;
-	}
 
 	tab = new Pieza * *[_N];
+
+	std::cout << "Memoria para tab reservada correctamente." << std::endl;
 	for (int i = 0; i < _N; i++) {
 		tab[i] = new Pieza * [_M];
 		for (int j = 0; j < _M; j++) {
 			tab[i][j] = nullptr;
 		}
 	}
+	std::cout << "Tablero inicializado correctamente.\n\n" << std::endl;
 
 	// Piezas negras
 	tab[0][0] = new torre(color::NEGRO);
@@ -65,10 +64,6 @@ void tablero::reserva_inicializacionClasico() {
 
 
 void tablero::reserva_inicializacionDemi() {
-	if (_N <= 0 || _M <= 0) {
-		std::cout << "Error: dimensiones inválidas del tablero" << std::endl;
-		return;
-	}
 
 	// Reservar memoria para la matriz de punteros a punteros
 	tab = new Pieza * *[_N];
@@ -76,14 +71,14 @@ void tablero::reserva_inicializacionDemi() {
 
 	for (int i = 0; i < _N; i++) {
 		tab[i] = new Pieza * [_M]; // Reservar cada fila
-		std::cout << "Fila " << i << " reservada correctamente." << std::endl;
+		
 
 		for (int j = 0; j < _M; j++) {
 			tab[i][j] = nullptr; // Inicializar con nullptr
 		}
 	}
 
-	std::cout << "Tablero inicializado correctamente." << std::endl;
+	std::cout << "Tablero inicializado correctamente.\n\n" << std::endl;
 
 	tab[0][3]= new torre(color::NEGRO);
 	tab[0][1]= new caballo(color::NEGRO);
@@ -97,21 +92,18 @@ void tablero::reserva_inicializacionDemi() {
 
 	//Blancas
 	for (int j = 0; j < _M; ++j) {
-		tab[3][j] = new peon(color::BLANCO);; // Peones blancos
+		tab[6][j] = new peon(color::BLANCO);; // Peones blancos
 	}
-	tab[4][3] = new torre(color::BLANCO); // Torres blancas
-	tab[4][1] =  new caballo(color::BLANCO); // Caballos blancos
-	tab[4][2]  = new alfil(color::BLANCO); // Alfiles blancos
-	tab[4][0] = new rey(color::BLANCO);              // Dama blanca
+	tab[7][3] = new torre(color::BLANCO); // Torres blancas
+	tab[7][1] =  new caballo(color::BLANCO); // Caballos blancos
+	tab[7][2]  = new alfil(color::BLANCO); // Alfiles blancos
+	tab[7][0] = new rey(color::BLANCO);              // Dama blanca
 	//tab[4][1] = new dama(color::BLANCO);              // Rey blanco
 
 
 }
 void tablero::reserva_inicializacionSilver() {
-	if (_N <= 0 || _M <= 0) {
-		std::cout << "Error: dimensiones inválidas del tablero" << std::endl;
-		return;
-	}
+
 
 	// Reservar memoria para la matriz de punteros a punteros
 	tab = new Pieza * *[_N];
@@ -119,14 +111,14 @@ void tablero::reserva_inicializacionSilver() {
 
 	for (int i = 0; i < _N; i++) {
 		tab[i] = new Pieza * [_M]; // Reservar cada fila
-		std::cout << "Fila " << i << " reservada correctamente." << std::endl;
+		
 
 		for (int j = 0; j < _M; j++) {
 			tab[i][j] = nullptr; // Inicializar con nullptr
 		}
 	}
 
-	std::cout << "Tablero inicializado correctamente." << std::endl;
+	std::cout << "Tablero inicializado correctamente.\n\n" << std::endl;
 
 	tab[0][3]= tab[0][0] = new torre(color::NEGRO);
 	//tab[0][1]  = new caballo(color::NEGRO);

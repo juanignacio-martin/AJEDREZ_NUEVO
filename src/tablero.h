@@ -35,15 +35,12 @@ public:
 		tab[i][j] = val;   // Asigna la nueva pieza
 	}
 
-	//GET
-//	int cell(int i, int j)	const { return tab[i][j]; }
+
 
 	Pieza** operator[](int i);
 	const Pieza* const* operator[](int i) const;
 	bool estaEnJaque(color jugadorColor);
 
-
-private:
 	void reserva_inicializacionClasico();
 	void reserva_inicializacionDemi();
 	void reserva_inicializacionSilver();
