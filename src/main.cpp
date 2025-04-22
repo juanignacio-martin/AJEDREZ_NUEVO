@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Partida.h"
 
 int main() {

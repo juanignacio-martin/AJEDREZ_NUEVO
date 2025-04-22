@@ -20,7 +20,7 @@ public:
     // Método virtual puro para validar movimiento
     virtual bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const = 0;
 
-    //  Getters 
+  //  Getters 
     color getColor() const { return col; }
     tipo_pieza getTipo() const { return tipo; }
 

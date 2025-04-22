@@ -42,8 +42,6 @@ public:
 	const Pieza* const* operator[](int i) const;
 	bool estaEnJaque(color jugadorColor);
 
-
-private:
 	void reserva_inicializacionClasico();
 	void reserva_inicializacionDemi();
 	void reserva_inicializacionSilver();
