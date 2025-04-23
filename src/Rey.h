@@ -1,10 +1,11 @@
 #pragma once
-#include "Pieza.h"
-class Rey :  public Pieza
+#include "pieza.h"
+class rey :  public Pieza
 {
 public:
-    Rey(color col)
+    rey(color col)
         :Pieza(tipo_pieza::REY, col)
     {}
-
+    bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const;
 };
+

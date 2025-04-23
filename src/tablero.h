@@ -7,13 +7,15 @@
 #include "Dama.h"
 #include "Alfil.h"
 #include "Caballo.h"
-#include "Vacio.h"
+#include "Jugador.h"
 
 class tablero {
 
 
 	int _N, _M;
-	Pieza** tab = nullptr;
+	Pieza*** tab = nullptr;
+
+
 
 public:
 	tablero(int N = -1, int M = -1);
@@ -23,16 +25,27 @@ public:
 	//I/O
 	std::ostream& print(std::ostream&);
 
+
+	void mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino);
+
+
 	//SET
-	void cell(int i, int j, Pieza val) { tab[i][j] = val; }
+	void cell(int i, int j, Pieza* val) {
+		delete tab[i][j];  // Evita fugas de memoria eliminando la pieza anterior
+		tab[i][j] = val;   // Asigna la nueva pieza
+	}
+
 	//GET
 //	int cell(int i, int j)	const { return tab[i][j]; }
-	Pieza* operator[](int i);
-	const Pieza* operator[](int i)const;
-	
-private:
-	void reserva_inicializacion();								
-	void liberacion();			
+
+	Pieza** operator[](int i);
+	const Pieza* const* operator[](int i) const;
+	bool estaEnJaque(color jugadorColor);
+
+	void reserva_inicializacionClasico();
+	void reserva_inicializacionDemi();
+	void reserva_inicializacionSilver();
+	void liberacion();
 
 };
 

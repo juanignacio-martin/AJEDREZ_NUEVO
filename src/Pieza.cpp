@@ -3,7 +3,8 @@
 #include "freeglut.h"
 #include <iostream>
 
-std::ostream& operator<<(std::ostream& os, const Pieza& pieza) {
+
+    ostream& operator<<(std::ostream& os, const Pieza& pieza) {
     std::string tipoStr;
     std::string colorStr;
 
@@ -25,7 +26,21 @@ std::ostream& operator<<(std::ostream& os, const Pieza& pieza) {
     }
 
     // Formatear la salida
-    os << tipoStr <<  colorStr;
+    os << tipoStr << colorStr;
     return os;
 }
+
+
+    std::string tipoPiezaToString(tipo_pieza tipo) {
+        switch (tipo) {
+        case tipo_pieza::TORRE: return "Torre";
+        case tipo_pieza::CABALLO: return "Caballo";
+        case tipo_pieza::ALFIL: return "Alfil";
+        case tipo_pieza::DAMA: return "Dama";
+        case tipo_pieza::REY: return "Rey";
+        case tipo_pieza::PEON: return "Peón";
+        case tipo_pieza::VACIO: return "Vacío";
+        default: return "Desconocido";
+        }
+    }
 

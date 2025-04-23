@@ -1,16 +1,12 @@
-#include "ETSIDI.h"
-#include "Pieza.h"
-#include <Vector>
-#include <iostream>
-
-class Caballo :public Pieza
+#pragma once
+#include "pieza.h"
+class caballo :public Pieza
 {
 public:
-Caballo(color col)
+    caballo(color col)
         :Pieza(tipo_pieza::CABALLO, col)
     {}
-~Caballo() {};//destructor
-	//void dibuja();
-	//int getColor() { return color; }
-	//void movimientovalido(int origen, int destino, bool& b);
+    bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const;
+
 };
+
