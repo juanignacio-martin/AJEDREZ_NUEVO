@@ -124,6 +124,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;opengl32.lib;glu32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -149,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="src\alfil.h" />
     <ClInclude Include="src\caballo.h" />
+    <ClInclude Include="src\ControladorJuego.h" />
     <ClInclude Include="src\dama.h" />
     <ClInclude Include="src\jugador.h" />
     <ClInclude Include="src\partida.h" />
@@ -157,10 +160,12 @@
     <ClInclude Include="src\rey.h" />
     <ClInclude Include="src\tablero.h" />
     <ClInclude Include="src\torre.h" />
+    <ClInclude Include="src\VistaTablero.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\alfil.cpp" />
     <ClCompile Include="src\caballo.cpp" />
+    <ClCompile Include="src\ControladorJuego.cpp" />
     <ClCompile Include="src\dama.cpp" />
     <ClCompile Include="src\jugador.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -170,6 +175,7 @@
     <ClCompile Include="src\rey.cpp" />
     <ClCompile Include="src\tablero.cpp" />
     <ClCompile Include="src\torre.cpp" />
+    <ClCompile Include="src\VistaTablero.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
