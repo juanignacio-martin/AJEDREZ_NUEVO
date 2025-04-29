@@ -37,7 +37,6 @@ void partida::colocarSilverman() {
 void partida::colocarDemi() {
 
     t->reserva_inicializacionDemi();
-
 }
 
 void partida::colocarClasico() {
@@ -73,3 +72,4 @@ jugador* partida::getJugadorActual() const {
 bool partida::estaEnJaque() const {
     return t->estaEnJaque(jugadorActual->getColor());
 }
+

@@ -1,4 +1,4 @@
-#pragma once
+
 #include "tablero.h"
 #include "jugador.h"
 
@@ -27,3 +27,4 @@ private:
     void colocarDemi();
     void colocarClasico();
 };
+

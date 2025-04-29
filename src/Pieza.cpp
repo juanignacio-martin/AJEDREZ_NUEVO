@@ -3,6 +3,7 @@
 #include "freeglut.h"
 #include <iostream>
 
+
     ostream& operator<<(std::ostream& os, const Pieza& pieza) {
     std::string tipoStr;
     std::string colorStr;
