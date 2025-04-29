@@ -10,6 +10,7 @@
 #include "Jugador.h"
 
 class tablero {
+public:
 
 
 	int _N, _M;
@@ -45,6 +46,11 @@ public:
 	void reserva_inicializacionDemi();
 	void reserva_inicializacionSilver();
 	void liberacion();
+
+	Pieza*** getTablero() const { return tab; }
+
+	int getFilas() const { return _N; }
+	int getColumnas() const { return _M; }
 
 };
 

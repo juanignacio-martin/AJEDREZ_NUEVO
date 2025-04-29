@@ -1,4 +1,4 @@
-#include "Partida.h"
+#include "partida.h"
 #include <iostream>
 
 partida::partida(const std::string& tipo)

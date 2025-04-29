@@ -1,27 +1,48 @@
-#include "Partida.h"
+#pragma once
+#include <freeglut.h>
+#include "ControladorJuego.h"
 
-int main() {
+ControladorJuego* controlador = nullptr;
+
+void displayCallback() {
+    controlador->dibujar();
+}
+
+void mouseCallback(int button, int state, int x, int y) {
+    controlador->manejarClick(button, state, x, y);
+}
+
+void keyboardCallback(unsigned char key, int x, int y) {
+    controlador->manejarTecla(key, x, y);
+}
+
+int main(int argc, char** argv) {
     std::string variante;
     std::cout << "Elige variante (clasico, silverman, demi): ";
     std::cin >> variante;
 
-    partida p(variante);
-    p.mostrarTablero();
 
-    int x1, y1, x2, y2;
 
-    while (true) {
-        std::cout << "\nTurno de " << (p.getJugadorActual()->getColor() == color::BLANCO ? "blancas" : "negras") << std::endl;
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+    glutInitWindowSize(800, 800);
+    glutCreateWindow("Ajedrez POO");
 
-        std::cout << "Introduce coordenadas de origen (fila columna): ";
-        std::cin >> x1 >> y1;
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluOrtho2D(0, 800, 800, 0); // coordenadas invertidas para que (0,0) esté arriba izquierda
 
-        std::cout << "Introduce coordenadas de destino (fila columna): ";
-        std::cin >> x2 >> y2;
+    partida* p = new partida(variante);
+    controlador = new ControladorJuego(p);
 
-        p.jugarTurno(x1, y1, x2, y2);
-        p.mostrarTablero();
-    }
+    glutDisplayFunc(displayCallback);
+    glutMouseFunc(mouseCallback);
+    glutKeyboardFunc(keyboardCallback);
+
+    glutMainLoop();
+
+    delete controlador;
+    delete p;
 
     return 0;
 }
