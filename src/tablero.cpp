@@ -203,28 +203,35 @@ const Pieza* const* tablero::operator[](int i) const {
 	throw std::out_of_range("Índice fuera de rango");
 }
 
-void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino) {
+bool tablero::mueve_pieza(int x1, int y1, int x2, int y2, color jugadorColor) {
 
-	// Verificar si el movimiento es válido
-	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab)) {
+	if (!tab[x1][y1]) return false;
+
+	// ? Validar que la pieza sea del jugador
+	if (tab[x1][y1]->getColor() != jugadorColor) {
+		std::cout << "Esa pieza no te pertenece." << std::endl;
+		return false;
+	}
+
+
+
+	if (!tab[x1][y1]->movimiento_valido(x1, y1, x2, y2, tab)) {
 		std::cout << "Movimiento inválido." << std::endl;
-		return;
+		return false;
 	}
 
-	// Si hay una pieza en el destino (sea propia o enemiga), se elimina
-	if (tab[x_destino][y_destino] != nullptr) {
-		std::cout << "Capturando " << tipoPiezaToString(tab[x_destino][y_destino]->getTipo())
-			<< " (" << (tab[x_destino][y_destino]->getColor() == color::BLANCO ? "Blanco" : "Negro") << ").\n";
-		delete tab[x_destino][y_destino];  // Eliminar la pieza capturada
+	if (tab[x2][y2]) {
+		std::cout << "Capturando " << tipoPiezaToString(tab[x2][y2]->getTipo()) << std::endl;
+		delete tab[x2][y2];
 	}
 
-	// Mover la pieza
-	tab[x_destino][y_destino] = tab[x_origen][y_origen];
-	tab[x_origen][y_origen] = nullptr;
+	tab[x2][y2] = tab[x1][y1];
+	tab[x1][y1] = nullptr;
 	std::cout << "Moviendo pieza..." << std::endl;
 
-	// Cambiar turno
+	return true;
 }
+
 
 
 

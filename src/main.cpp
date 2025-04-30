@@ -21,19 +21,18 @@ int main(int argc, char** argv) {
     std::cout << "Elige variante (clasico, silverman, demi): ";
     std::cin >> variante;
 
-
+    partida* p = new partida(variante);
+    controlador = new ControladorJuego(p);
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-    glutInitWindowSize(800, 800);
+    glutInitWindowSize(p->getColumnas() * controlador->getVista().getCeldaSize(), p->getFilas() * controlador->getVista().getCeldaSize());
     glutCreateWindow("Ajedrez POO");
-
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluOrtho2D(0, 800, 800, 0); // coordenadas invertidas para que (0,0) esté arriba izquierda
 
-    partida* p = new partida(variante);
-    controlador = new ControladorJuego(p);
+
+    gluOrtho2D(0, p->getColumnas() * controlador->getVista().getCeldaSize(), p->getFilas() * controlador->getVista().getCeldaSize(), 0); 
 
     glutDisplayFunc(displayCallback);
     glutMouseFunc(mouseCallback);
