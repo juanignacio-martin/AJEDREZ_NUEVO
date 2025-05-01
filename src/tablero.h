@@ -10,6 +10,7 @@
 #include "Jugador.h"
 
 class tablero {
+public:
 
 
 	int _N, _M;
@@ -26,7 +27,7 @@ public:
 	std::ostream& print(std::ostream&);
 
 
-	void mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino);
+	bool mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor);
 
 
 	//SET
@@ -35,8 +36,7 @@ public:
 		tab[i][j] = val;   // Asigna la nueva pieza
 	}
 
-	//GET
-//	int cell(int i, int j)	const { return tab[i][j]; }
+
 
 	Pieza** operator[](int i);
 	const Pieza* const* operator[](int i) const;
@@ -46,6 +46,11 @@ public:
 	void reserva_inicializacionDemi();
 	void reserva_inicializacionSilver();
 	void liberacion();
+
+	Pieza*** getTablero() const { return tab; }
+
+	int getFilas() const { return _N; }
+	int getColumnas() const { return _M; }
 
 };
 

@@ -1,4 +1,4 @@
-
+#pragma once
 #include "tablero.h"
 #include "jugador.h"
 
@@ -19,6 +19,12 @@ public:
     void mostrarTablero() const;
     jugador* getJugadorActual() const;
     bool estaEnJaque() const;
+    Pieza*** getTablero() const {
+        return t->getTablero(); // en `tablero` haces return tab;
+    }
+    int getFilas() const { return t->getFilas(); }
+    int getColumnas() const { return t->getColumnas(); }
+
 
 private:
     void inicializarTablero();     // crea el tablero según la variante
