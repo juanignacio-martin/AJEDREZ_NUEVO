@@ -95,8 +95,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-06T10:04:08.471Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -128,8 +127,7 @@
               "RelativeToolTip": "src\\peon.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-21T15:29:20.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T15:29:20.056Z"
             },
             {
               "$type": "Document",
@@ -141,8 +139,7 @@
               "RelativeToolTip": "src\\tablero.h",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T10:07:46.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:07:46.5Z"
             },
             {
               "$type": "Document",
@@ -166,8 +163,7 @@
               "RelativeToolTip": "src\\tablero.cpp",
               "ViewState": "AQIAAMEAAAAAAAAAAAAAANEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:57:17.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T09:57:17.003Z"
             },
             {
               "$type": "Document",
@@ -179,8 +175,7 @@
               "RelativeToolTip": "src\\torre.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:57:12.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T09:57:12.379Z"
             },
             {
               "$type": "Document",
@@ -192,8 +187,7 @@
               "RelativeToolTip": "src\\partida.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:56:01.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T09:56:01.269Z"
             },
             {
               "$type": "Document",
@@ -205,8 +199,7 @@
               "RelativeToolTip": "src\\main.cpp",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAACJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:56:50.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T09:56:50.433Z"
             },
             {
               "$type": "Document",
@@ -254,8 +247,7 @@
               "RelativeToolTip": "src\\Alfil.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T09:56:35.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T09:56:35.682Z"
             },
             {
               "$type": "Document",
@@ -280,8 +272,7 @@
               "RelativeToolTip": "src\\VistaTablero.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T17:08:39.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T17:08:39.203Z"
             },
             {
               "$type": "Document",
@@ -293,8 +284,7 @@
               "RelativeToolTip": "src\\jugador.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T09:56:24.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T09:56:24.424Z"
             },
             {
               "$type": "Document",
@@ -306,8 +296,7 @@
               "RelativeToolTip": "src\\ControladorJuego.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T17:11:17.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T17:11:17.911Z"
             },
             {
               "$type": "Document",
@@ -319,8 +308,7 @@
               "RelativeToolTip": "src\\VistaTablero.cpp",
               "ViewState": "AQIAAAYAAAAAAAAAAAAuwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T17:09:09.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T17:09:09.6Z"
             }
           ]
         }
