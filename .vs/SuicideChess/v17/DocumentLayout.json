@@ -1,78 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\",
+  "WorkspaceRootPath": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\SeleccionVariante.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\SeleccionVariante.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\SeleccionVariante.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:SeleccionVariante.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\partida.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\partida.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\jugador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\jugador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\VistaTablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\VistaTablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorJuego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\jugador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\jugador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\VistaTablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\lib\\freeglut.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lib\\freeglut.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,244 +34,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "jugador.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\jugador.cpp",
-              "RelativeDocumentMoniker": "src\\jugador.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\jugador.cpp",
-              "RelativeToolTip": "src\\jugador.cpp",
+              "DocumentIndex": 5,
+              "Title": "partida.h",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.h",
+              "RelativeDocumentMoniker": "src\\partida.h",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.h",
+              "RelativeToolTip": "src\\partida.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T10:04:08.471Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-01T10:33:06.303Z",
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "pieza.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\Pieza.cpp",
-              "RelativeDocumentMoniker": "src\\Pieza.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\Pieza.cpp",
-              "RelativeToolTip": "src\\Pieza.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-27T14:51:01.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "peon.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\peon.cpp",
-              "RelativeDocumentMoniker": "src\\peon.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\peon.cpp",
-              "RelativeToolTip": "src\\peon.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-21T15:29:20.056Z",
-              "EditorCaption": ""
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "tablero.h",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\tablero.h",
-              "RelativeDocumentMoniker": "src\\tablero.h",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\tablero.h",
-              "RelativeToolTip": "src\\tablero.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T10:07:46.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "partida.h",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\partida.h",
-              "RelativeDocumentMoniker": "src\\partida.h",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\partida.h",
-              "RelativeToolTip": "src\\partida.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T10:04:41.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "tablero.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\tablero.cpp",
-              "RelativeDocumentMoniker": "src\\tablero.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\tablero.cpp",
-              "RelativeToolTip": "src\\tablero.cpp",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAAANEAAAAqAAAA",
+              "Title": "ControladorJuego.cpp",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp",
+              "RelativeDocumentMoniker": "src\\ControladorJuego.cpp",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp",
+              "RelativeToolTip": "src\\ControladorJuego.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:57:17.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "torre.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\torre.cpp",
-              "RelativeDocumentMoniker": "src\\torre.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\torre.cpp",
-              "RelativeToolTip": "src\\torre.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:57:12.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "partida.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\partida.cpp",
-              "RelativeDocumentMoniker": "src\\partida.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\partida.cpp",
-              "RelativeToolTip": "src\\partida.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:56:01.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\main.cpp",
-              "RelativeDocumentMoniker": "src\\main.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\main.cpp",
-              "RelativeToolTip": "src\\main.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAACJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:56:50.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "peon.h",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\Peon.h",
-              "RelativeDocumentMoniker": "src\\Peon.h",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\Peon.h",
-              "RelativeToolTip": "src\\Peon.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-27T14:55:10.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "freeglut.h",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\lib\\freeglut.h",
-              "RelativeDocumentMoniker": "lib\\freeglut.h",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\lib\\freeglut.h",
-              "RelativeToolTip": "lib\\freeglut.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T16:07:02.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "alfil.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\alfil.cpp",
-              "RelativeDocumentMoniker": "src\\alfil.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\alfil.cpp",
-              "RelativeToolTip": "src\\alfil.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:56:38.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "alfil.h",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\Alfil.h",
-              "RelativeDocumentMoniker": "src\\Alfil.h",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\Alfil.h",
-              "RelativeToolTip": "src\\Alfil.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T09:56:35.682Z",
+              "WhenOpened": "2025-05-01T16:50:44.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ControladorJuego.h",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\ControladorJuego.h",
-              "RelativeDocumentMoniker": "src\\ControladorJuego.h",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\ControladorJuego.h",
-              "RelativeToolTip": "src\\ControladorJuego.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T17:10:57.982Z",
+              "Title": "SeleccionVariante.cpp",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\SeleccionVariante.cpp",
+              "RelativeDocumentMoniker": "src\\SeleccionVariante.cpp",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\SeleccionVariante.cpp",
+              "RelativeToolTip": "src\\SeleccionVariante.cpp",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAADMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-01T16:14:41.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VistaTablero.h",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\VistaTablero.h",
-              "RelativeDocumentMoniker": "src\\VistaTablero.h",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\VistaTablero.h",
-              "RelativeToolTip": "src\\VistaTablero.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T17:08:39.203Z",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\main.cpp",
+              "RelativeToolTip": "src\\main.cpp",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-01T11:23:26.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "jugador.h",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\jugador.h",
-              "RelativeDocumentMoniker": "src\\jugador.h",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\jugador.h",
-              "RelativeToolTip": "src\\jugador.h",
+              "DocumentIndex": 1,
+              "Title": "SeleccionVariante.h",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\SeleccionVariante.h",
+              "RelativeDocumentMoniker": "SeleccionVariante.h",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\SeleccionVariante.h",
+              "RelativeToolTip": "SeleccionVariante.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T09:56:24.424Z",
+              "WhenOpened": "2025-05-01T10:24:41.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ControladorJuego.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp",
-              "RelativeDocumentMoniker": "src\\ControladorJuego.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp",
-              "RelativeToolTip": "src\\ControladorJuego.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T17:11:17.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "VistaTablero.cpp",
-              "DocumentMoniker": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp",
-              "RelativeDocumentMoniker": "src\\VistaTablero.cpp",
-              "ToolTip": "C:\\Users\\Victo\\Desktop\\GitAjedrez\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp",
-              "RelativeToolTip": "src\\VistaTablero.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwCgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T17:09:09.6Z",
+              "DocumentIndex": 4,
+              "Title": "ControladorJuego.h",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.h",
+              "RelativeDocumentMoniker": "src\\ControladorJuego.h",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.h",
+              "RelativeToolTip": "src\\ControladorJuego.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-01T16:50:30.945Z",
               "EditorCaption": ""
             }
           ]

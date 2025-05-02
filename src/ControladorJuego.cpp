@@ -12,6 +12,8 @@ void ControladorJuego::dibujar() {
 void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
     if (estado != GLUT_DOWN) return;
 
+
+
     int fila = y / vista.getCeldaSize();
     int columna = x / vista.getCeldaSize();
 
