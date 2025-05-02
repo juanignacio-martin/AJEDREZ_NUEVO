@@ -1,5 +1,19 @@
-﻿  partida.cpp
+﻿  ControladorJuego.cpp
+  VistaTablero.cpp
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,41): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(20,47): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(20,32): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(21,53): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(21,32): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(22,47): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(22,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,65): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,45): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+  main.cpp
+  partida.cpp
   peon.cpp
   tablero.cpp
   Generando código...
+  LINK : no se encontró C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\bin\SuicideChess.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
   SuicideChess.vcxproj -> C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\bin\SuicideChess.exe
