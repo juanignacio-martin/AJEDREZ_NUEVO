@@ -1,4 +1,6 @@
 #include "Partida.h"
+#include "Jugador.h"
+
 
 int main() {
     std::string variante;
@@ -11,6 +13,10 @@ int main() {
     int x1, y1, x2, y2;
 
     while (true) {
+
+        jugador* jugadorActual = p.getJugadorActual();
+        color colorJugador = jugadorActual->getColor();
+
         std::cout << "\nTurno de " << (p.getJugadorActual()->getColor() == color::BLANCO ? "blancas" : "negras") << std::endl;
 
         std::cout << "Introduce coordenadas de origen (fila columna): ";
@@ -19,7 +25,7 @@ int main() {
         std::cout << "Introduce coordenadas de destino (fila columna): ";
         std::cin >> x2 >> y2;
 
-        p.jugarTurno(x1, y1, x2, y2);
+        p.jugarTurno(x1, y1, x2, y2, colorJugador);
         p.mostrarTablero();
     }
 

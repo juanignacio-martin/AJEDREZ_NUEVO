@@ -68,8 +68,7 @@ void tablero::reserva_inicializacionClasico() {
 
 void tablero::reserva_inicializacionDemi() {
 
-	peon::setModoJuego(1);
-
+	peon::setModoJuego(0);
 	if (_N <= 0 || _M <= 0) {
 		std::cout << "Error: dimensiones inválidas del tablero" << std::endl;
 		return;
@@ -113,8 +112,9 @@ void tablero::reserva_inicializacionDemi() {
 
 }
 void tablero::reserva_inicializacionSilver() {
-
+	
 	peon::setModoJuego(1);
+
 	if (_N <= 0 || _M <= 0) {
 		std::cout << "Error: dimensiones inválidas del tablero" << std::endl;
 		return;
@@ -203,14 +203,19 @@ const Pieza* const* tablero::operator[](int i) const {
 	throw std::out_of_range("Índice fuera de rango");
 }
 
-void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino) {
+void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor) {
 
 	// Verificar si el movimiento es válido
-	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab)) {
+	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab, jugadorColor)) {
 		std::cout << "Movimiento inválido." << std::endl;
 		return;
 	}
 
+	// Si pieza distinto color que el jugador
+	if (tab[x_origen][y_origen]->getColor() != jugadorColor) {
+		std::cout << "La pieza no pertenece al jugador.\n";
+		return;
+	}
 	// Si hay una pieza en el destino (sea propia o enemiga), se elimina
 	if (tab[x_destino][y_destino] != nullptr) {
 		std::cout << "Capturando " << tipoPiezaToString(tab[x_destino][y_destino]->getTipo())
@@ -251,8 +256,8 @@ bool tablero::estaEnJaque(color jugadorColor) {
 	// Verificr si alguna pieza rival puede atacar al rey
 	for (int i = 0; i < _N; i++) {
 		for (int j = 0; j < _M; j++) {
-			if (tab[i][j] && tab[i][j]->getColor() != jugadorColor) {
-				if (tab[i][j]->movimiento_valido(i, j, reyX, reyY, tab)) {
+			if (tab[i][j] != nullptr && tab[i][j]->getColor() != jugadorColor) {
+				if (tab[i][j]->movimiento_valido(i, j, reyX, reyY, tab, jugadorColor)) {
 					std::cout << "Jaque! El rey de " << (jugadorColor == color::BLANCO ? "Blanco" : "Negro")
 						<< " esta bajo ataque de un " << tipoPiezaToString(tab[i][j]->getTipo())
 						<< " en (" << i << ", " << j << ")." << std::endl;

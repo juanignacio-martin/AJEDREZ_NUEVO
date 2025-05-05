@@ -3,48 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\partida.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\jugador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\jugador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\jugador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\jugador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\partida.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\pieza.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\pieza.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\dama.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\dama.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\dama.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\dama.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -53,6 +77,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,171 +90,263 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "jugador.h",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\jugador.h",
+              "RelativeDocumentMoniker": "src\\jugador.h",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\jugador.h",
+              "RelativeToolTip": "src\\jugador.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-05T16:02:16.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\main.cpp*",
+              "RelativeToolTip": "src\\main.cpp*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T18:23:28.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "partida.h",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.h",
+              "RelativeDocumentMoniker": "src\\partida.h",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.h",
+              "RelativeToolTip": "src\\partida.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T18:23:00.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "partida.cpp",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.cpp",
+              "RelativeDocumentMoniker": "src\\partida.cpp",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.cpp",
+              "RelativeToolTip": "src\\partida.cpp",
+              "ViewState": "AQIAACsAAAAAAAAAAAAuwEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T18:22:10.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "rey.h",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Rey.h",
+              "RelativeDocumentMoniker": "src\\Rey.h",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Rey.h",
+              "RelativeToolTip": "src\\Rey.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T18:15:16.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "torre.h",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Torre.h",
+              "RelativeDocumentMoniker": "src\\Torre.h",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Torre.h",
+              "RelativeToolTip": "src\\Torre.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T17:51:03.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "alfil.h",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Alfil.h",
+              "RelativeDocumentMoniker": "src\\Alfil.h",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Alfil.h",
+              "RelativeToolTip": "src\\Alfil.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T17:51:01.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "caballo.h",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Caballo.h",
+              "RelativeDocumentMoniker": "src\\Caballo.h",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Caballo.h",
+              "RelativeToolTip": "src\\Caballo.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T17:51:01.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dama.h",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Dama.h",
+              "RelativeDocumentMoniker": "src\\Dama.h",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Dama.h",
+              "RelativeToolTip": "src\\Dama.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T17:50:59.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "alfil.cpp",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\alfil.cpp",
+              "RelativeDocumentMoniker": "src\\alfil.cpp",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\alfil.cpp",
+              "RelativeToolTip": "src\\alfil.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T17:48:22.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "rey.cpp",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\rey.cpp",
+              "RelativeDocumentMoniker": "src\\rey.cpp",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\rey.cpp",
+              "RelativeToolTip": "src\\rey.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T17:46:07.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dama.cpp",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\dama.cpp",
+              "RelativeDocumentMoniker": "src\\dama.cpp",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\dama.cpp",
+              "RelativeToolTip": "src\\dama.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T17:45:55.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "caballo.cpp",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\caballo.cpp",
+              "RelativeDocumentMoniker": "src\\caballo.cpp",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\caballo.cpp",
+              "RelativeToolTip": "src\\caballo.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T17:45:47.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "pieza.h",
+              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Pieza.h",
+              "RelativeDocumentMoniker": "src\\Pieza.h",
+              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Pieza.h",
+              "RelativeToolTip": "src\\Pieza.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-02T17:33:02.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "peon.h",
               "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Peon.h",
               "RelativeDocumentMoniker": "src\\Peon.h",
               "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Peon.h",
               "RelativeToolTip": "src\\Peon.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-27T14:55:10.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "pieza.cpp",
               "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Pieza.cpp",
               "RelativeDocumentMoniker": "src\\Pieza.cpp",
               "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Pieza.cpp",
               "RelativeToolTip": "src\\Pieza.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAgwB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-27T14:51:01.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "peon.cpp",
               "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\peon.cpp",
               "RelativeDocumentMoniker": "src\\peon.cpp",
               "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\peon.cpp",
               "RelativeToolTip": "src\\peon.cpp",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAnwEEAAAAAAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAQwD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-21T15:29:20.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "tablero.h",
               "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\tablero.h",
               "RelativeDocumentMoniker": "src\\tablero.h",
               "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\tablero.h",
               "RelativeToolTip": "src\\tablero.h",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-06T10:07:46.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "partida.h",
-              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.h",
-              "RelativeDocumentMoniker": "src\\partida.h",
-              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.h",
-              "RelativeToolTip": "src\\partida.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAowB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T10:04:41.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "jugador.cpp",
-              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\jugador.cpp",
-              "RelativeDocumentMoniker": "src\\jugador.cpp",
-              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\jugador.cpp",
-              "RelativeToolTip": "src\\jugador.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T10:04:08.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "tablero.cpp",
               "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\tablero.cpp",
               "RelativeDocumentMoniker": "src\\tablero.cpp",
               "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\tablero.cpp",
               "RelativeToolTip": "src\\tablero.cpp",
-              "ViewState": "AQIAAOoAAAAAAAAAAAAAAP4AAAAAAAAA",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAQwLwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-06T09:57:17.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "torre.cpp",
               "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\torre.cpp",
               "RelativeDocumentMoniker": "src\\torre.cpp",
               "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\torre.cpp",
               "RelativeToolTip": "src\\torre.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-06T09:57:12.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\main.cpp",
-              "RelativeDocumentMoniker": "src\\main.cpp",
-              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\main.cpp",
-              "RelativeToolTip": "src\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:56:50.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "alfil.cpp",
-              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\alfil.cpp",
-              "RelativeDocumentMoniker": "src\\alfil.cpp",
-              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\alfil.cpp",
-              "RelativeToolTip": "src\\alfil.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:56:38.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "alfil.h",
-              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Alfil.h",
-              "RelativeDocumentMoniker": "src\\Alfil.h",
-              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\Alfil.h",
-              "RelativeToolTip": "src\\Alfil.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T09:56:35.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "jugador.h",
-              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\jugador.h",
-              "RelativeDocumentMoniker": "src\\jugador.h",
-              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\jugador.h",
-              "RelativeToolTip": "src\\jugador.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T09:56:24.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "partida.cpp",
-              "DocumentMoniker": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.cpp",
-              "RelativeDocumentMoniker": "src\\partida.cpp",
-              "ToolTip": "C:\\Users\\Luis_vild\u00E9\\Documents\\GitHub\\AJEDREZ_NUEVO\\src\\partida.cpp",
-              "RelativeToolTip": "src\\partida.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T09:56:01.269Z",
               "EditorCaption": ""
             }
           ]
