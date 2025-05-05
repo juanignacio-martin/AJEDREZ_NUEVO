@@ -4,6 +4,11 @@
 class peon : public Pieza
 {
     static int modo_juego; // 0 = Clásico/Demi, 1 = Silverman
+    static int ultima_fila_doble;
+    static int ultima_columna_doble;
+
+    static void registrarMovimientoDoble(int fila, int columna);
+
 public:
     peon(color col)
         :Pieza(tipo_pieza::PEON, col)

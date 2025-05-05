@@ -1,4 +1,3 @@
-
 #include "tablero.h"
 #include "jugador.h"
 
