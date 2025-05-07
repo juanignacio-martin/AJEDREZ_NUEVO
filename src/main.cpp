@@ -42,6 +42,6 @@ int main(int argc, char** argv) {
 
     delete controlador;
     delete p;
-
+    //test Rama Horatiu
     return 0;
 }
