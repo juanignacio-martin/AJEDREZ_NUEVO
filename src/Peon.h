@@ -21,5 +21,5 @@ public:
 
     void promocionar(Pieza*** pieza_tablero, int x, int y);
 
-    static void setModoJuego(int modo); // Setter para cambiar el modo de juego
+    static void setModoJuego(int modo); // Cambia el modo de juego
 };

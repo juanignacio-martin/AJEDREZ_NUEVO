@@ -23,6 +23,7 @@ tablero::tablero(int N, int M) : _N(N), _M(M) {
 
 void tablero::reserva_inicializacionClasico() {
 
+	;
 	peon::setModoJuego(0);
 	if (_N != 8 || _M != 8) {
 		std::cout << "Error: el tablero clasico debe ser de 8x8." << std::endl;
@@ -36,7 +37,7 @@ void tablero::reserva_inicializacionClasico() {
 			tab[i][j] = nullptr;
 		}
 	}
-
+	
 	// Piezas negras
 	tab[0][0] = new torre(color::NEGRO);
 	tab[0][1] = new caballo(color::NEGRO);
@@ -112,7 +113,7 @@ void tablero::reserva_inicializacionDemi() {
 
 }
 void tablero::reserva_inicializacionSilver() {
-	
+
 	peon::setModoJuego(1);
 
 	if (_N <= 0 || _M <= 0) {

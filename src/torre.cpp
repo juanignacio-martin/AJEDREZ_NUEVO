@@ -21,3 +21,4 @@ bool torre::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_d
 
     return true;
 }
+
