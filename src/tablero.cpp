@@ -269,3 +269,4 @@ bool tablero::estaEnJaque(color jugadorColor) {
 	}
 
 	return false; // No hay jaque
+}

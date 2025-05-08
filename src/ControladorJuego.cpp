@@ -1,6 +1,7 @@
 #include "ControladorJuego.h"
 #include <freeglut.h>
 #include <iostream>
+#include "Partida.h"
 
 ControladorJuego::ControladorJuego(partida* p)
     : juego(p) {}
@@ -11,6 +12,8 @@ void ControladorJuego::dibujar() {
 
 void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
     if (estado != GLUT_DOWN) return;
+
+
 
     int fila = y / vista.getCeldaSize();
     int columna = x / vista.getCeldaSize();
