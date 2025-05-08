@@ -1,2 +1,25 @@
-﻿  partida.cpp
+﻿  ControladorJuego.cpp
+  VistaTablero.cpp
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,41): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(20,47): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(20,32): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(21,53): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(21,32): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(22,47): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(22,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,65): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,45): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+  alfil.cpp
+  caballo.cpp
+  dama.cpp
+  jugador.cpp
+  main.cpp
+  partida.cpp
+  peon.cpp
+  pieza.cpp
+  rey.cpp
+  tablero.cpp
+  torre.cpp
+  Generando código...
   SuicideChess.vcxproj -> C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\bin\SuicideChess.exe

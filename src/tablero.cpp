@@ -205,31 +205,44 @@ const Pieza* const* tablero::operator[](int i) const {
 }
 
 void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor) {
-
-	// Verificar si el movimiento es válido
+	// Verificar si el movimiento es válido según la lógica de la pieza
 	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab, jugadorColor)) {
 		std::cout << "Movimiento inválido." << std::endl;
 		return;
 	}
 
-	// Si pieza distinto color que el jugador
+	// Verificar que la pieza sea del jugador
 	if (tab[x_origen][y_origen]->getColor() != jugadorColor) {
 		std::cout << "La pieza no pertenece al jugador.\n";
 		return;
 	}
-	// Si hay una pieza en el destino (sea propia o enemiga), se elimina
-	if (tab[x_destino][y_destino] != nullptr) {
-		std::cout << "Capturando " << tipoPiezaToString(tab[x_destino][y_destino]->getTipo())
-			<< " (" << (tab[x_destino][y_destino]->getColor() == color::BLANCO ? "Blanco" : "Negro") << ").\n";
-		delete tab[x_destino][y_destino];  // Eliminar la pieza capturada
+
+	// Guardar punteros antes de mover (simulación)
+	Pieza* piezaOrigen = tab[x_origen][y_origen];
+	Pieza* piezaDestino = tab[x_destino][y_destino];
+
+	// Simular el movimiento
+	tab[x_destino][y_destino] = piezaOrigen;
+	tab[x_origen][y_origen] = nullptr;
+
+	// Verificar si el movimiento deja al rey en jaque
+	if (estaEnJaque(jugadorColor)) {
+		// Deshacer movimiento
+		tab[x_origen][y_origen] = piezaOrigen;
+		tab[x_destino][y_destino] = piezaDestino;
+		std::cout << "Movimiento inválido: el rey sigue en jaque." << std::endl;
+		return;
 	}
 
-	// Mover la pieza
-	tab[x_destino][y_destino] = tab[x_origen][y_origen];
-	tab[x_origen][y_origen] = nullptr;
-	std::cout << "Moviendo pieza..." << std::endl;
+	// Si había una pieza enemiga, eliminarla (ya es legal hacerlo)
+	if (piezaDestino != nullptr) {
+		std::cout << "Capturando " << tipoPiezaToString(piezaDestino->getTipo())
+			<< " (" << (piezaDestino->getColor() == color::BLANCO ? "Blanco" : "Negro") << ").\n";
+		delete piezaDestino;
+	}
 
-	// Cambiar turno
+	// Confirmar movimiento
+	std::cout << "Moviendo pieza..." << std::endl;
 }
 
 
@@ -254,11 +267,13 @@ bool tablero::estaEnJaque(color jugadorColor) {
 		return false;
 	}
 
+	color colorContrario = (jugadorColor == color::BLANCO) ? color::NEGRO : color::BLANCO;
+
 	// Verificr si alguna pieza rival puede atacar al rey
 	for (int i = 0; i < _N; i++) {
 		for (int j = 0; j < _M; j++) {
 			if (tab[i][j] != nullptr && tab[i][j]->getColor() != jugadorColor) {
-				if (tab[i][j]->movimiento_valido(i, j, reyX, reyY, tab, jugadorColor)) {
+				if (tab[i][j]->movimiento_valido(i, j, reyX, reyY, tab,colorContrario)) {
 					std::cout << "Jaque! El rey de " << (jugadorColor == color::BLANCO ? "Blanco" : "Negro")
 						<< " esta bajo ataque de un " << tipoPiezaToString(tab[i][j]->getTipo())
 						<< " en (" << i << ", " << j << ")." << std::endl;
