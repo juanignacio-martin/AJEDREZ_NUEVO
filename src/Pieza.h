@@ -17,7 +17,11 @@ public:
 
     virtual ~Pieza() {}  // Destructor virtual obligatorio para clases base
 
+<<<<<<< HEAD
     // Método virtual puro para validar movimiento
+=======
+    // MÃ©todo virtual puro para validar movimiento
+>>>>>>> main
     virtual bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero, color jugadorColor) const = 0;
 
   //  Getters 

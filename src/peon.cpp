@@ -4,7 +4,7 @@
 #include "alfil.h"
 #include "caballo.h"
 
-int peon::modo_juego = 0; // Inicialmente en modo clásico/demichess
+int peon::modo_juego = 0; // Inicialmente en modo clÃ¡sico/demichess
 
 int peon::ultima_fila_doble = -1;
 int peon::ultima_columna_doble = -1;
@@ -37,7 +37,11 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
     if (y_origen == y_destino && x_destino == x_origen + direccion && tablero[x_destino][y_destino] == nullptr) {
         // Comprobar si ha llegado al final y promocionar
         if ((this->getColor() == color::BLANCO && x_destino == 0) || (this->getColor() == color::NEGRO && x_origen == promo)) {
+<<<<<<< HEAD
             // Llamar a la función de promoción directamente
+=======
+            // Llamar a la funciÃ³n de promociÃ³n directamente
+>>>>>>> main
             peon* p = dynamic_cast<peon*>(tablero[x_origen][y_origen]);
             if (p) {
                 p->promocionar(tablero, x_origen, y_origen);
@@ -59,7 +63,11 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
         tablero[x_destino][y_destino]->getColor() != this->getColor()) {
         // Comprobar si ha llegado al final y promocionar
         if ((this->getColor() == color::BLANCO && x_destino == 0) || (this->getColor() == color::NEGRO && x_origen == promo)) {
+<<<<<<< HEAD
             // Llamar a la función de promoción directamente
+=======
+            // Llamar a la funciÃ³n de promociÃ³n directamente
+>>>>>>> main
             peon* p = dynamic_cast<peon*>(tablero[x_origen][y_origen]);
             if (p) {
                 p->promocionar(tablero, x_origen, y_origen);
@@ -72,13 +80,21 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
 
     if (abs(y_destino - y_origen) == 1 && x_destino == x_origen + direccion &&
         tablero[x_destino][y_destino] == nullptr &&
+<<<<<<< HEAD
         x_origen == ultima_fila_doble && // El peón contrario debe haber pasado justo junto
+=======
+        x_origen == ultima_fila_doble && // El peÃ³n contrario debe haber pasado justo junto
+>>>>>>> main
         y_destino == ultima_columna_doble &&
         tablero[x_origen][y_destino] != nullptr &&
         tablero[x_origen][y_destino]->getTipo() == tipo_pieza::PEON &&
         tablero[x_origen][y_destino]->getColor() != this->getColor()) {
 
+<<<<<<< HEAD
         // Eliminar el peón enemigo
+=======
+        // Eliminar el peÃ³n enemigo
+>>>>>>> main
         delete tablero[x_origen][y_destino];
         tablero[x_origen][y_destino] = nullptr;
 
@@ -87,18 +103,22 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
         return true;
     }
 
+<<<<<<< HEAD
     return false; // Si no cumple ninguna condición, es un movimiento inválido.
+=======
+    return false; // Si no cumple ninguna condiciÃ³n, es un movimiento invÃ¡lido.
+>>>>>>> main
 }
 
 void peon::promocionar(Pieza*** pieza_tablero, int x, int y) {
     int opcion;
-    std::cout << "¡Tu peón ha llegado al final!\n";
-    std::cout << "¿A qué pieza quieres promocionar?\n";
+    std::cout << "Â¡Tu peÃ³n ha llegado al final!\n";
+    std::cout << "Â¿A quÃ© pieza quieres promocionar?\n";
     std::cout << "1. Dama\n";
     std::cout << "2. Torre\n";
     std::cout << "3. Alfil\n";
     std::cout << "4. Caballo\n";
-    std::cout << "Elige una opción (1-4): ";
+    std::cout << "Elige una opciÃ³n (1-4): ";
     std::cin >> opcion;
 
     color c = (x == 0 || x == 1) ? color::BLANCO : color::NEGRO;
@@ -118,8 +138,16 @@ void peon::promocionar(Pieza*** pieza_tablero, int x, int y) {
         pieza_tablero[x][y] = new caballo(c);
         break;
     default:
+<<<<<<< HEAD
         std::cout << "Opción inválida. Promocionando a Dama por defecto.\n";
         pieza_tablero[x][y] = new dama(c);
         break;
     }
 }
+=======
+        std::cout << "OpciÃ³n invÃ¡lida. Promocionando a Dama por defecto.\n";
+        pieza_tablero[x][y] = new dama(c);
+        break;
+    }
+}
+>>>>>>> main

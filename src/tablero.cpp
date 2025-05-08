@@ -71,7 +71,7 @@ void tablero::reserva_inicializacionDemi() {
 
 	peon::setModoJuego(0);
 	if (_N <= 0 || _M <= 0) {
-		std::cout << "Error: dimensiones inválidas del tablero" << std::endl;
+		std::cout << "Error: dimensiones invÃ¡lidas del tablero" << std::endl;
 		return;
 	}
 
@@ -117,7 +117,7 @@ void tablero::reserva_inicializacionSilver() {
 	peon::setModoJuego(1);
 
 	if (_N <= 0 || _M <= 0) {
-		std::cout << "Error: dimensiones inválidas del tablero" << std::endl;
+		std::cout << "Error: dimensiones invÃ¡lidas del tablero" << std::endl;
 		return;
 	}
 
@@ -181,7 +181,7 @@ ostream& tablero::print(std::ostream& o) {
 				o << *tab[i][j] << " ";
 			}
 			else {
-				o << ". ";  // Representación de casilla vacía
+				o << ". ";  // RepresentaciÃ³n de casilla vacÃ­a
 			}
 		}
 		o << std::endl;
@@ -194,21 +194,27 @@ Pieza** tablero::operator[](int i) {
 	if (i >= 0 && i < _N) {
 		return tab[i];  // Devuelve Pieza*
 	}
-	throw std::out_of_range("Índice fuera de rango");
+	throw std::out_of_range("Ãndice fuera de rango");
 }
 
 const Pieza* const* tablero::operator[](int i) const {
 	if (i >= 0 && i < _N) {
 		return tab[i];  // Devuelve const Pieza* const*
 	}
-	throw std::out_of_range("Índice fuera de rango");
+	throw std::out_of_range("Ãndice fuera de rango");
 }
 
 void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor) {
 
+<<<<<<< HEAD
 	// Verificar si el movimiento es válido
 	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab, jugadorColor)) {
 		std::cout << "Movimiento inválido." << std::endl;
+=======
+	// Verificar si el movimiento es vÃ¡lido
+	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab, jugadorColor)) {
+		std::cout << "Movimiento invÃ¡lido." << std::endl;
+>>>>>>> main
 		return;
 	}
 
@@ -250,7 +256,7 @@ bool tablero::estaEnJaque(color jugadorColor) {
 	}
 
 	if (reyX == -1 || reyY == -1) {
-		std::cout << "No¡se encontro el rey en el tablero." << std::endl;
+		std::cout << "NoÂ¡se encontro el rey en el tablero." << std::endl;
 		return false;
 	}
 
