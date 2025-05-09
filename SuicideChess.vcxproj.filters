@@ -101,8 +101,14 @@
     <ClCompile Include="src\ControladorJuego.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
-    <ClCompile Include="src\ControladorMenu.cpp" />
-    <ClCompile Include="src\ControladorPromocion.cpp" />
-    <ClCompile Include="src\ControladorApp.cpp" />
+    <ClCompile Include="src\ControladorApp.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControladorMenu.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControladorPromocion.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
