@@ -45,7 +45,7 @@ void partida::colocarClasico() {
 
 
 
-void partida::jugarTurno(int x1, int y1, int x2, int y2, color colorJugador) {
+void partida::jugarTurno(int x1, int y1, int x2, int y2) {
 
 
     color colorJugador = jugadorActual->getColor();
