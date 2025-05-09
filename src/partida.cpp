@@ -44,14 +44,12 @@ void partida::colocarClasico() {
 }
 
 
-<<<<<<< HEAD
+
 void partida::jugarTurno(int x1, int y1, int x2, int y2, color colorJugador) {
-=======
-void partida::jugarTurno(int x1, int y1, int x2, int y2) {
+
 
     color colorJugador = jugadorActual->getColor();
 
->>>>>>> main
     std::cout << "Turno de " << (jugadorActual->getColor() == color::BLANCO ? "blancas" : "negras") << std::endl;
 
     if (t->estaEnJaque(jugadorActual->getColor())) {

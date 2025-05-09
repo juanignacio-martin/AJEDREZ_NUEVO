@@ -205,20 +205,10 @@ const Pieza* const* tablero::operator[](int i) const {
 }
 
 void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor) {
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 	// Verificar si el movimiento es v�lido
 	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab, jugadorColor)) {
 		std::cout << "Movimiento inv�lido." << std::endl;
-=======
-	// Verificar si el movimiento es válido
-=======
-	// Verificar si el movimiento es válido según la lógica de la pieza
->>>>>>> main
-	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab, jugadorColor)) {
-		std::cout << "Movimiento inválido." << std::endl;
->>>>>>> main
 		return;
 	}
 

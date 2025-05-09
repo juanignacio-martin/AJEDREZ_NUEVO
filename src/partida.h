@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
 #pragma once
->>>>>>> main
+
 #include "tablero.h"
 #include "jugador.h"
 
@@ -18,11 +16,10 @@ public:
     partida(const std::string& tipo = "clasico");
     ~partida();
 
-<<<<<<< HEAD
+
     void jugarTurno(int x1, int y1, int x2, int y2, color colorJugador);
-=======
-     void jugarTurno(int x1, int y1, int x2, int y2);
->>>>>>> main
+
+
     void mostrarTablero() const;
     jugador* getJugadorActual() const;
     bool estaEnJaque() const;
