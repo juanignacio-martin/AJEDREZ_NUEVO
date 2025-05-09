@@ -19,7 +19,8 @@ public:
 
     bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero, color jugadorColor) const override;
 
-    void promocionar(Pieza*** pieza_tablero, int x, int y);
+    void promocionar(Pieza*** tablero, int fila, int columna, tipo_pieza nueva);
+
 
     static void setModoJuego(int modo); // Cambia el modo de juego
 };

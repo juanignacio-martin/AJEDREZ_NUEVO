@@ -40,7 +40,7 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
             // Llamar a la función de promoción directamente
             peon* p = dynamic_cast<peon*>(tablero[x_origen][y_origen]);
             if (p) {
-                p->promocionar(tablero, x_origen, y_origen);
+             //   p->promocionar(tablero, x_origen, y_origen);
             }
         }
         return true;
@@ -62,7 +62,7 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
             // Llamar a la función de promoción directamente
             peon* p = dynamic_cast<peon*>(tablero[x_origen][y_origen]);
             if (p) {
-                p->promocionar(tablero, x_origen, y_origen);
+              //  p->promocionar(tablero, x_origen, y_origen);
             }
         }
         return true;
@@ -90,36 +90,27 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
     return false; // Si no cumple ninguna condición, es un movimiento inválido.
 }
 
-void peon::promocionar(Pieza*** pieza_tablero, int x, int y) {
-    int opcion;
-    std::cout << "¡Tu peón ha llegado al final!\n";
-    std::cout << "¿A qué pieza quieres promocionar?\n";
-    std::cout << "1. Dama\n";
-    std::cout << "2. Torre\n";
-    std::cout << "3. Alfil\n";
-    std::cout << "4. Caballo\n";
-    std::cout << "Elige una opción (1-4): ";
-    std::cin >> opcion;
 
-    color c = (x == 0 || x == 1) ? color::BLANCO : color::NEGRO;
-    delete pieza_tablero[x][y];
+void peon::promocionar(Pieza*** tablero, int fila, int columna, tipo_pieza nueva) {
+    color c = tablero[fila][columna]->getColor();
+    delete tablero[fila][columna];
 
-    switch (opcion) {
-    case 1:
-        pieza_tablero[x][y] = new dama(c);
+    switch (nueva) {
+    case tipo_pieza::DAMA:
+        tablero[fila][columna] = new dama(c);
         break;
-    case 2:
-        pieza_tablero[x][y] = new torre(c);
+    case tipo_pieza::TORRE:
+        tablero[fila][columna] = new torre(c);
         break;
-    case 3:
-        pieza_tablero[x][y] = new alfil(c);
+    case tipo_pieza::ALFIL:
+        tablero[fila][columna] = new alfil(c);
         break;
-    case 4:
-        pieza_tablero[x][y] = new caballo(c);
+    case tipo_pieza::CABALLO:
+        tablero[fila][columna] = new caballo(c);
         break;
     default:
-        std::cout << "Opción inválida. Promocionando a Dama por defecto.\n";
-        pieza_tablero[x][y] = new dama(c);
+        tablero[fila][columna] = new dama(c);
         break;
     }
 }
+
