@@ -54,11 +54,12 @@ void partida::jugarTurno(int x1, int y1, int x2, int y2) {
 >>>>>>> main
     std::cout << "Turno de " << (jugadorActual->getColor() == color::BLANCO ? "blancas" : "negras") << std::endl;
 
-    t->mueve_pieza(x1, y1, x2, y2, colorJugador);
-
     if (t->estaEnJaque(jugadorActual->getColor())) {
+
         std::cout << "Tu rey esta en jaque." << std::endl;
     }
+
+    t->mueve_pieza(x1, y1, x2, y2, colorJugador);
 
     cambiarTurno();
     turno++;
