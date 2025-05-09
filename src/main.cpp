@@ -1,68 +1,39 @@
-<<<<<<< HEAD
-#include "Partida.h"
-#include "Jugador.h"
-
-=======
 #pragma once
 #include <freeglut.h>
-#include "ControladorJuego.h"
->>>>>>> main
+#include "ControladorApp.h"
 
-ControladorJuego* controlador = nullptr;
+ControladorApp* app = nullptr;
 
 void displayCallback() {
-    controlador->dibujar();
+    app->dibujar();
 }
 
-void mouseCallback(int button, int state, int x, int y) {
-    controlador->manejarClick(button, state, x, y);
+void mouseCallback(int boton, int estado, int x, int y) {
+    app->manejarClick(boton, estado, x, y);
 }
 
 void keyboardCallback(unsigned char key, int x, int y) {
-    controlador->manejarTecla(key, x, y);
+    app->manejarTecla(key, x, y);
 }
 
 int main(int argc, char** argv) {
-    std::string variante;
-    std::cout << "Elige variante (clasico, silverman, demi): ";
-    std::cin >> variante;
-
-    partida* p = new partida(variante);
-    controlador = new ControladorJuego(p);
-
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-    glutInitWindowSize(p->getColumnas() * controlador->getVista().getCeldaSize(), p->getFilas() * controlador->getVista().getCeldaSize());
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
+    glutInitWindowSize(800, 800); // se puede ajustar dinámicamente luego
     glutCreateWindow("Ajedrez POO");
+
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
+    gluOrtho2D(0, 800, 800, 0); // origen arriba izquierda
 
-<<<<<<< HEAD
-    while (true) {
-
-        jugador* jugadorActual = p.getJugadorActual();
-        color colorJugador = jugadorActual->getColor();
-
-        std::cout << "\nTurno de " << (p.getJugadorActual()->getColor() == color::BLANCO ? "blancas" : "negras") << std::endl;
-=======
->>>>>>> main
-
-    gluOrtho2D(0, p->getColumnas() * controlador->getVista().getCeldaSize(), p->getFilas() * controlador->getVista().getCeldaSize(), 0); 
+    app = new ControladorApp();
 
     glutDisplayFunc(displayCallback);
     glutMouseFunc(mouseCallback);
     glutKeyboardFunc(keyboardCallback);
 
-<<<<<<< HEAD
-        p.jugarTurno(x1, y1, x2, y2, colorJugador);
-        p.mostrarTablero();
-    }
-=======
     glutMainLoop();
 
-    delete controlador;
-    delete p;
->>>>>>> main
-
+    delete app;
     return 0;
 }

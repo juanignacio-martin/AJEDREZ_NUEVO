@@ -37,14 +37,10 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
     if (y_origen == y_destino && x_destino == x_origen + direccion && tablero[x_destino][y_destino] == nullptr) {
         // Comprobar si ha llegado al final y promocionar
         if ((this->getColor() == color::BLANCO && x_destino == 0) || (this->getColor() == color::NEGRO && x_origen == promo)) {
-<<<<<<< HEAD
-            // Llamar a la funci髇 de promoci髇 directamente
-=======
             // Llamar a la funci贸n de promoci贸n directamente
->>>>>>> main
             peon* p = dynamic_cast<peon*>(tablero[x_origen][y_origen]);
             if (p) {
-                p->promocionar(tablero, x_origen, y_origen);
+             //   p->promocionar(tablero, x_origen, y_origen);
             }
         }
         return true;
@@ -63,14 +59,10 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
         tablero[x_destino][y_destino]->getColor() != this->getColor()) {
         // Comprobar si ha llegado al final y promocionar
         if ((this->getColor() == color::BLANCO && x_destino == 0) || (this->getColor() == color::NEGRO && x_origen == promo)) {
-<<<<<<< HEAD
-            // Llamar a la funci髇 de promoci髇 directamente
-=======
             // Llamar a la funci贸n de promoci贸n directamente
->>>>>>> main
             peon* p = dynamic_cast<peon*>(tablero[x_origen][y_origen]);
             if (p) {
-                p->promocionar(tablero, x_origen, y_origen);
+              //  p->promocionar(tablero, x_origen, y_origen);
             }
         }
         return true;
@@ -80,21 +72,13 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
 
     if (abs(y_destino - y_origen) == 1 && x_destino == x_origen + direccion &&
         tablero[x_destino][y_destino] == nullptr &&
-<<<<<<< HEAD
-        x_origen == ultima_fila_doble && // El pe髇 contrario debe haber pasado justo junto
-=======
         x_origen == ultima_fila_doble && // El pe贸n contrario debe haber pasado justo junto
->>>>>>> main
         y_destino == ultima_columna_doble &&
         tablero[x_origen][y_destino] != nullptr &&
         tablero[x_origen][y_destino]->getTipo() == tipo_pieza::PEON &&
         tablero[x_origen][y_destino]->getColor() != this->getColor()) {
 
-<<<<<<< HEAD
-        // Eliminar el pe髇 enemigo
-=======
         // Eliminar el pe贸n enemigo
->>>>>>> main
         delete tablero[x_origen][y_destino];
         tablero[x_origen][y_destino] = nullptr;
 
@@ -103,51 +87,30 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
         return true;
     }
 
-<<<<<<< HEAD
-    return false; // Si no cumple ninguna condici髇, es un movimiento inv醠ido.
-=======
     return false; // Si no cumple ninguna condici贸n, es un movimiento inv谩lido.
->>>>>>> main
 }
 
-void peon::promocionar(Pieza*** pieza_tablero, int x, int y) {
-    int opcion;
-    std::cout << "隆Tu pe贸n ha llegado al final!\n";
-    std::cout << "驴A qu茅 pieza quieres promocionar?\n";
-    std::cout << "1. Dama\n";
-    std::cout << "2. Torre\n";
-    std::cout << "3. Alfil\n";
-    std::cout << "4. Caballo\n";
-    std::cout << "Elige una opci贸n (1-4): ";
-    std::cin >> opcion;
 
-    color c = (x == 0 || x == 1) ? color::BLANCO : color::NEGRO;
-    delete pieza_tablero[x][y];
+void peon::promocionar(Pieza*** tablero, int fila, int columna, tipo_pieza nueva) {
+    color c = tablero[fila][columna]->getColor();
+    delete tablero[fila][columna];
 
-    switch (opcion) {
-    case 1:
-        pieza_tablero[x][y] = new dama(c);
+    switch (nueva) {
+    case tipo_pieza::DAMA:
+        tablero[fila][columna] = new dama(c);
         break;
-    case 2:
-        pieza_tablero[x][y] = new torre(c);
+    case tipo_pieza::TORRE:
+        tablero[fila][columna] = new torre(c);
         break;
-    case 3:
-        pieza_tablero[x][y] = new alfil(c);
+    case tipo_pieza::ALFIL:
+        tablero[fila][columna] = new alfil(c);
         break;
-    case 4:
-        pieza_tablero[x][y] = new caballo(c);
+    case tipo_pieza::CABALLO:
+        tablero[fila][columna] = new caballo(c);
         break;
     default:
-<<<<<<< HEAD
-        std::cout << "Opci髇 inv醠ida. Promocionando a Dama por defecto.\n";
-        pieza_tablero[x][y] = new dama(c);
+        tablero[fila][columna] = new dama(c);
         break;
     }
 }
-=======
-        std::cout << "Opci贸n inv谩lida. Promocionando a Dama por defecto.\n";
-        pieza_tablero[x][y] = new dama(c);
-        break;
-    }
-}
->>>>>>> main
+
