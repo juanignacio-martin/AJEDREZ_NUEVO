@@ -92,7 +92,7 @@ void tablero::reserva_inicializacionDemi() {
 
 	tab[0][3] = new torre(color::NEGRO);
 	tab[0][1] = new caballo(color::NEGRO);
-	tab[0][2] = tab[0][5] = new alfil(color::NEGRO);
+	tab[0][2] = new alfil(color::NEGRO);
 	tab[0][0] = new rey(color::NEGRO);
 	//tab[0][1] = new dama(color::NEGRO);
 	for (int j = 0; j < _M; ++j) {
@@ -136,7 +136,8 @@ void tablero::reserva_inicializacionSilver() {
 
 	std::cout << "Tablero inicializado correctamente." << std::endl;
 
-	tab[0][3] = tab[0][0] = new torre(color::NEGRO);
+	tab[0][3] = new torre(color::NEGRO);
+	tab[0][0] = new torre(color::NEGRO);
 	//tab[0][1]  = new caballo(color::NEGRO);
 	//tab[0][2]  = new alfil(color::NEGRO);
 	tab[0][2] = new rey(color::NEGRO);
@@ -150,7 +151,8 @@ void tablero::reserva_inicializacionSilver() {
 	for (int j = 0; j < _M; ++j) {
 		tab[3][j] = new peon(color::BLANCO);; // Peones blancos
 	}
-	tab[4][3] = tab[4][0] = new torre(color::BLANCO); // Torres blancas
+	tab[4][3] = new torre(color::BLANCO); // Torres blancas
+	tab[4][0] = new torre(color::BLANCO);
 	//tab[7][1] =  new caballo(color::BLANCO); // Caballos blancos
 	//tab[7][2] = new alfil(color::BLANCO); // Alfiles blancos
 	tab[4][2] = new rey(color::BLANCO);              // Dama blanca
@@ -279,7 +281,7 @@ bool tablero::estaEnJaque(color jugadorColor) {
 	for (int i = 0; i < _N; i++) {
 		for (int j = 0; j < _M; j++) {
 			if (tab[i][j] != nullptr && tab[i][j]->getColor() != jugadorColor) {
-				if (tab[i][j]->movimiento_valido(i, j, reyX, reyY, tab,colorContrario)) {
+				if (tab[i][j]->movimiento_valido(i, j, reyX, reyY, tab, colorContrario)) {
 					std::cout << "Jaque! El rey de " << (jugadorColor == color::BLANCO ? "Blanco" : "Negro")
 						<< " esta bajo ataque de un " << tipoPiezaToString(tab[i][j]->getTipo())
 						<< " en (" << i << ", " << j << ")." << std::endl;
