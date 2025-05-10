@@ -204,21 +204,26 @@ const Pieza* const* tablero::operator[](int i) const {
 	throw std::out_of_range("Ãndice fuera de rango");
 }
 
-void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor) {
-
-	// Verificar si el movimiento es válido
-	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab, jugadorColor)) {
-		std::cout << "Movimiento inválido." << std::endl;
-		return;
+bool tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor) {
+	// Validar que haya una pieza en origen
+	if (!tab[x_origen][y_origen]) {
+		std::cout << "No hay pieza en la casilla de origen.\n";
+		return false;
 	}
 
 	// Verificar que la pieza sea del jugador
 	if (tab[x_origen][y_origen]->getColor() != jugadorColor) {
 		std::cout << "La pieza no pertenece al jugador.\n";
-		return;
+		return false;
 	}
 
-	// Guardar punteros antes de mover (simulaciÃ³n)
+	// Verificar si el movimiento es válido
+	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab, jugadorColor)) {
+		std::cout << "Movimiento inválido.\n";
+		return false;
+	}
+
+	// Guardar punteros antes de mover
 	Pieza* piezaOrigen = tab[x_origen][y_origen];
 	Pieza* piezaDestino = tab[x_destino][y_destino];
 
@@ -226,24 +231,24 @@ void tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_desti
 	tab[x_destino][y_destino] = piezaOrigen;
 	tab[x_origen][y_origen] = nullptr;
 
-	// Verificar si el movimiento deja al rey en jaque
+	// Verificar si el rey queda en jaque
 	if (estaEnJaque(jugadorColor)) {
 		// Deshacer movimiento
 		tab[x_origen][y_origen] = piezaOrigen;
 		tab[x_destino][y_destino] = piezaDestino;
-		std::cout << "Movimiento invÃ¡lido: el rey sigue en jaque." << std::endl;
-		return;
+		std::cout << "Movimiento inválido: el rey sigue en jaque.\n";
+		return false;
 	}
 
-	// Si habÃ­a una pieza enemiga, eliminarla (ya es legal hacerlo)
+	// Si había una pieza enemiga, eliminarla
 	if (piezaDestino != nullptr) {
 		std::cout << "Capturando " << tipoPiezaToString(piezaDestino->getTipo())
 			<< " (" << (piezaDestino->getColor() == color::BLANCO ? "Blanco" : "Negro") << ").\n";
 		delete piezaDestino;
 	}
 
-	// Confirmar movimiento
-	std::cout << "Moviendo pieza..." << std::endl;
+	std::cout << "Moviendo pieza...\n";
+	return true;
 }
 
 

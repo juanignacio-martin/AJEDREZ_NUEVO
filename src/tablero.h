@@ -27,7 +27,7 @@ public:
 	std::ostream& print(std::ostream&);
 
 
-	void mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor);
+	bool mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor);
 
 
 	//SET

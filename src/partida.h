@@ -16,7 +16,7 @@ public:
     partida(const std::string& tipo = "clasico");
     ~partida();
 
-    void jugarTurno(int x1, int y1, int x2, int y2);
+    bool jugarTurno(int x1, int y1, int x2, int y2);
 
 
     void mostrarTablero() const;

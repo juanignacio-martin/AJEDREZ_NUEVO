@@ -45,22 +45,25 @@ void partida::colocarClasico() {
 
 
 
-void partida::jugarTurno(int x1, int y1, int x2, int y2) {
-
+bool partida::jugarTurno(int x1, int y1, int x2, int y2) {
 
     color colorJugador = jugadorActual->getColor();
+    std::cout << "Turno de " << (colorJugador == color::BLANCO ? "blancas" : "negras") << std::endl;
 
-    std::cout << "Turno de " << (jugadorActual->getColor() == color::BLANCO ? "blancas" : "negras") << std::endl;
-
-    if (t->estaEnJaque(jugadorActual->getColor())) {
-
-        std::cout << "Tu rey esta en jaque." << std::endl;
+    if (t->estaEnJaque(colorJugador)) {
+        std::cout << "Tu rey está en jaque.\n";
     }
 
-    t->mueve_pieza(x1, y1, x2, y2, colorJugador);
+    // Intentar mover la pieza
+    bool exito = t->mueve_pieza(x1, y1, x2, y2, colorJugador);
 
-    cambiarTurno();
-    turno++;
+    // Solo cambiar turno si el movimiento fue válido
+    if (exito) {
+        cambiarTurno();
+        turno++;
+    }
+
+    return exito;
 }
 
 
