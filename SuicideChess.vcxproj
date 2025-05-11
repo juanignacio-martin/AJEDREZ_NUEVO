@@ -149,7 +149,6 @@
     <Library Include="lib\freeglut.lib" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SeleccionVariante.h" />
     <ClInclude Include="src\alfil.h" />
     <ClInclude Include="src\caballo.h" />
     <ClInclude Include="src\ControladorApp.h" />
@@ -180,7 +179,6 @@
     <ClCompile Include="src\peon.cpp" />
     <ClCompile Include="src\pieza.cpp" />
     <ClCompile Include="src\rey.cpp" />
-    <ClCompile Include="src\SeleccionVariante.cpp" />
     <ClCompile Include="src\tablero.cpp" />
     <ClCompile Include="src\torre.cpp" />
     <ClCompile Include="src\VistaTablero.cpp" />
