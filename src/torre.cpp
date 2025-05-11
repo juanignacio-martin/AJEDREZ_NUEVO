@@ -8,7 +8,7 @@ bool torre::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_d
         return false;
     }
     if (x_origen != x_destino && y_origen != y_destino) return false; // Solo en línea recta
-
+    if (x_origen==x_destino&& y_origen==y_destino) return false;
     if (x_origen != x_destino && y_origen != y_destino) return false; // Solo en lÃ­nea recta
 
 

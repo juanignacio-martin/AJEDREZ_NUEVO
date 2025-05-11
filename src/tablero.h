@@ -53,7 +53,7 @@ public:
 	int getColumnas() const { return _M; }
 
 	bool esJaqueMate(color jugadorColor);
-	bool esEmpate(color jugadorColor);
+	bool esTablas(color jugadorColor);
 
 };
 

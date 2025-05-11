@@ -11,6 +11,7 @@ private:
     tablero* t;
     std::string variante;
     int turno;
+    bool juegoTerminado;
 
 public:
     partida(const std::string& tipo = "clasico");

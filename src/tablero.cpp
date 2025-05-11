@@ -71,7 +71,7 @@ void tablero::reserva_inicializacionDemi() {
 
 	peon::setModoJuego(0);
 	if (_N <= 0 || _M <= 0) {
-		std::cout << "Error: dimensiones invÃ¡lidas del tablero" << std::endl;
+		std::cout << "Error: dimensiones invalidas del tablero" << std::endl;
 		return;
 	}
 
@@ -117,7 +117,7 @@ void tablero::reserva_inicializacionSilver() {
 	peon::setModoJuego(1);
 
 	if (_N <= 0 || _M <= 0) {
-		std::cout << "Error: dimensiones invÃ¡lidas del tablero" << std::endl;
+		std::cout << "Error: dimensiones invalidas del tablero" << std::endl;
 		return;
 	}
 
@@ -143,7 +143,7 @@ void tablero::reserva_inicializacionSilver() {
 	tab[0][2] = new rey(color::NEGRO);
 	tab[0][1] = new dama(color::NEGRO);
 	for (int j = 0; j < _M; ++j) {
-		tab[1][j] = new peon(color::NEGRO);
+     tab[1][j] = new peon(color::NEGRO);
 	}
 
 
@@ -196,14 +196,14 @@ Pieza** tablero::operator[](int i) {
 	if (i >= 0 && i < _N) {
 		return tab[i];  // Devuelve Pieza*
 	}
-	throw std::out_of_range("Ãndice fuera de rango");
+	throw std::out_of_range("Indice fuera de rango");
 }
 
 const Pieza* const* tablero::operator[](int i) const {
 	if (i >= 0 && i < _N) {
 		return tab[i];  // Devuelve const Pieza* const*
 	}
-	throw std::out_of_range("Ãndice fuera de rango");
+	throw std::out_of_range("Indice fuera de rango");
 }
 
 bool tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_destino, color jugadorColor) {
@@ -249,6 +249,15 @@ bool tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_desti
 		delete piezaDestino;
 	}
 
+	color oponente = (jugadorColor == color::BLANCO) ? color::NEGRO : color::BLANCO;
+
+	if (esJaqueMate(oponente)) {
+		std::cout << "¡Jaque mate! " << (jugadorColor == color::BLANCO ? "Blancas" : "Negras") << " ganan." << std::endl;
+	}
+	else if (esTablas(oponente)) {
+		std::cout << "¡Tablas!" << std::endl;
+	}
+
 	std::cout << "Moviendo pieza...\n";
 	return true;
 }
@@ -271,7 +280,7 @@ bool tablero::estaEnJaque(color jugadorColor) {
 	}
 
 	if (reyX == -1 || reyY == -1) {
-		std::cout << "NoÂ¡se encontro el rey en el tablero." << std::endl;
+		std::cout << "No se encontro el rey en el tablero." << std::endl;
 		return false;
 	}
 
@@ -282,7 +291,7 @@ bool tablero::estaEnJaque(color jugadorColor) {
 		for (int j = 0; j < _M; j++) {
 			if (tab[i][j] != nullptr && tab[i][j]->getColor() != jugadorColor) {
 				if (tab[i][j]->movimiento_valido(i, j, reyX, reyY, tab, colorContrario)) {
-					std::cout << "Jaque! El rey de " << (jugadorColor == color::BLANCO ? "Blanco" : "Negro")
+					std::cout << "Jaque El rey de " << (jugadorColor == color::BLANCO ? "Blanco" : "Negro")
 						<< " esta bajo ataque de un " << tipoPiezaToString(tab[i][j]->getTipo())
 						<< " en (" << i << ", " << j << ")." << std::endl;
 					return true;
@@ -292,4 +301,102 @@ bool tablero::estaEnJaque(color jugadorColor) {
 	}
 
 	return false; // No hay jaque
+}
+
+bool tablero::esJaqueMate(color jugadorColor) {
+	if (!estaEnJaque(jugadorColor)) return false;
+
+	for (int i = 0; i < _N; i++) {
+		for (int j = 0; j < _M; j++) {
+			Pieza* pieza = tab[i][j];
+			if (pieza && pieza->getColor() == jugadorColor) {
+				for (int x = 0; x < _N; x++) {
+					for (int y = 0; y < _M; y++) {
+						// Ignorar si intenta comerse a su propio rey
+						Pieza* destino = tab[x][y];
+						if (destino && destino->getColor() == jugadorColor && destino->getTipo() == tipo_pieza::REY)
+							continue;
+
+						if (pieza->movimiento_valido(i, j, x, y, tab, jugadorColor)) {
+							// Simular movimiento
+							tab[x][y] = pieza;
+							tab[i][j] = nullptr;
+
+							bool sigueEnJaque = estaEnJaque(jugadorColor);
+
+							// Deshacer
+							tab[i][j] = pieza;
+							tab[x][y] = destino;
+
+							if (!sigueEnJaque)
+								return false;
+						}
+					}
+				}
+			}
+		}
+	}
+	return true;
+}
+
+
+bool tablero::esTablas(color jugadorColor) {
+
+	//Comprobar si solo quedan los dos reyes
+	int totalPiezas = 0;
+	int cantidadReyes = 0;
+
+	for (int i = 0; i < _N; i++) {
+		for (int j = 0; j < _M; j++) {
+			if (tab[i][j]) {
+				totalPiezas++;
+				if (tab[i][j]->getTipo() == tipo_pieza::REY)
+					cantidadReyes++;
+			}
+		}
+	}
+	if (totalPiezas == 2 && cantidadReyes == 2) {
+		std::cout << "Empate por material insuficiente (solo reyes).\n";
+		return true;
+	}
+
+	// Comprobar si el jugador no está en jaque y no tiene jugadas legales válidas -> ahogado
+	if (!estaEnJaque(jugadorColor)) {
+		for (int i = 0; i < _N; i++) {
+			for (int j = 0; j < _M; j++) {
+				if (tab[i][j] && tab[i][j]->getColor() == jugadorColor) {
+					for (int x = 0; x < _N; x++) {
+						for (int y = 0; y < _M; y++) {
+							if (tab[i][j]->movimiento_valido(i, j, x, y, tab, jugadorColor)) {
+								// Simular el movimiento
+								Pieza* origen = tab[i][j];
+								Pieza* destino = tab[x][y];
+
+								//Evitar suicidios: no permitir comerse a su propio rey
+								if (destino != nullptr && destino->getColor() == jugadorColor && destino->getTipo() == tipo_pieza::REY)
+									continue;
+
+								tab[x][y] = origen;
+								tab[i][j] = nullptr;
+
+								bool sigueEnJaque = estaEnJaque(jugadorColor);
+
+								// Deshacer
+								tab[i][j] = origen;
+								tab[x][y] = destino;
+
+								if (!sigueEnJaque) {
+									return false;  // Hay una jugada válida -> no es empate
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		std::cout << "Empate por ahogado: no hay jugadas válidas.\n";
+		return true;
+	}
+
+	return false;  // No es empate
 }
