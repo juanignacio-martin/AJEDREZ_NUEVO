@@ -51,7 +51,17 @@
     <ClInclude Include="src\ControladorJuego.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="SeleccionVariante.h">
+=======
+    <ClInclude Include="src\ControladorMenu.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ControladorPromocion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ControladorApp.h">
+>>>>>>> main
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
@@ -95,7 +105,17 @@
     <ClCompile Include="src\ControladorJuego.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="src\SeleccionVariante.cpp">
+=======
+    <ClCompile Include="src\ControladorApp.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControladorMenu.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControladorPromocion.cpp">
+>>>>>>> main
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
   </ItemGroup>

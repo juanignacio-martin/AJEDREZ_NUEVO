@@ -6,7 +6,7 @@ public:
     dama(color col)
         :Pieza(tipo_pieza::DAMA, col)
     {}
-    bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const;
+    bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero, color jugadorColor) const;
 
 };
 

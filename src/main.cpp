@@ -1,21 +1,27 @@
 #pragma once
 #include <freeglut.h>
+<<<<<<< HEAD
 #include "ControladorJuego.h"
 #include "SeleccionVariante.h"
 
 ControladorJuego* controlador = nullptr;
 SeleccionVariante* selector = nullptr;
+=======
+#include "ControladorApp.h"
+
+ControladorApp* app = nullptr;
+>>>>>>> main
 
 void displayCallback() {
-    controlador->dibujar();
+    app->dibujar();
 }
 
-void mouseCallback(int button, int state, int x, int y) {
-    controlador->manejarClick(button, state, x, y);
+void mouseCallback(int boton, int estado, int x, int y) {
+    app->manejarClick(boton, estado, x, y);
 }
 
 void keyboardCallback(unsigned char key, int x, int y) {
-    controlador->manejarTecla(key, x, y);
+    app->manejarTecla(key, x, y);
 }
 
 void display() {
@@ -41,6 +47,7 @@ void mouse(int button, int state, int x, int y) {
 
 
 int main(int argc, char** argv) {
+<<<<<<< HEAD
     std::string variante;
     std::cout << "Elige variante (clasico, silverman, demi): ";
     std::cin >> variante;
@@ -63,15 +70,18 @@ int main(int argc, char** argv) {
     partida* p = new partida(variante);
     controlador = new ControladorJuego(p);
 
+=======
+>>>>>>> main
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-    glutInitWindowSize(p->getColumnas() * controlador->getVista().getCeldaSize(), p->getFilas() * controlador->getVista().getCeldaSize());
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
+    glutInitWindowSize(800, 800); // se puede ajustar dinámicamente luego
     glutCreateWindow("Ajedrez POO");
+
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
+    gluOrtho2D(0, 800, 800, 0); // origen arriba izquierda
 
-
-    gluOrtho2D(0, p->getColumnas() * controlador->getVista().getCeldaSize(), p->getFilas() * controlador->getVista().getCeldaSize(), 0); 
+    app = new ControladorApp();
 
     glutDisplayFunc(displayCallback);
     glutMouseFunc(mouseCallback);
@@ -79,8 +89,6 @@ int main(int argc, char** argv) {
 
     glutMainLoop();
 
-    delete controlador;
-    delete p;
-
+    delete app;
     return 0;
 }
