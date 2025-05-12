@@ -1,113 +1,8 @@
-﻿  BotFacil.cpp
-  BotMedio.cpp
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(17,8): error C2143: error de sintaxis: falta ';' delante de '*'
-  (compilando archivo de origen "src/BotFacil.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(17,8): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-  (compilando archivo de origen "src/BotFacil.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(17,13): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "src/BotFacil.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(19,16): error C3646: 'dificultadIA': especificador de invalidación desconocido
-  (compilando archivo de origen "src/BotFacil.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(19,28): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-  (compilando archivo de origen "src/BotFacil.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(37,20): error C2061: error de sintaxis: identificador 'Dificultad'
-  (compilando archivo de origen "src/BotFacil.cpp")
-  
-  ControladorApp.cpp
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(17,8): error C2143: error de sintaxis: falta ';' delante de '*'
-  (compilando archivo de origen "src/BotMedio.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(17,8): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-  (compilando archivo de origen "src/BotMedio.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(17,13): error C2238: símbolos (token) inesperados delante de ';'
-  (compilando archivo de origen "src/BotMedio.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(19,16): error C3646: 'dificultadIA': especificador de invalidación desconocido
-  (compilando archivo de origen "src/BotMedio.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(19,28): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-  (compilando archivo de origen "src/BotMedio.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.h(37,20): error C2061: error de sintaxis: identificador 'Dificultad'
-  (compilando archivo de origen "src/BotMedio.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,37): error C2061: error de sintaxis: identificador 'partida'
-  (compilando archivo de origen "src/ControladorApp.cpp")
-  
+﻿  ControladorApp.cpp
   ControladorJuego.cpp
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,37): error C2061: error de sintaxis: identificador 'partida'
-  (compilando archivo de origen "src/ControladorJuego.cpp")
-  
   main.cpp
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,37): error C2061: error de sintaxis: identificador 'partida'
-  (compilando archivo de origen "src/main.cpp")
-  
   partida.cpp
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,37): error C2061: error de sintaxis: identificador 'partida'
-  (compilando archivo de origen "src/partida.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\BotFacil.h(6,7): error C3668: 'BotFacil::realizarMovimiento': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
-  (compilando archivo de origen "src/partida.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\BotMedio.h(6,7): error C3668: 'BotMedio::realizarMovimiento': el método con el especificador de invalidación 'override' no invalidó ningún método de clase base
-  (compilando archivo de origen "src/partida.cpp")
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(119,19): error C2259: "BotFacil": no se puede crear una instancia de una clase abstract
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\BotFacil.h(4,7):
-  vea la declaración de 'BotFacil'
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(119,19):
-  debido a los siguientes miembros:
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(119,19):
-  'void Bot::realizarMovimiento(void)': es abstracto
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,18):
-  vea la declaración de 'Bot::realizarMovimiento'
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(119,27): error C2259: "BotFacil": no se puede crear una instancia de una clase abstract
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\BotFacil.h(4,7):
-  vea la declaración de 'BotFacil'
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(119,27):
-  debido a los siguientes miembros:
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(119,27):
-  'void Bot::realizarMovimiento(void)': es abstracto
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,18):
-  vea la declaración de 'Bot::realizarMovimiento'
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(122,19): error C2259: "BotMedio": no se puede crear una instancia de una clase abstract
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\BotMedio.h(4,7):
-  vea la declaración de 'BotMedio'
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(122,19):
-  debido a los siguientes miembros:
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(122,19):
-  'void Bot::realizarMovimiento(void)': es abstracto
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,18):
-  vea la declaración de 'Bot::realizarMovimiento'
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(122,27): error C2259: "BotMedio": no se puede crear una instancia de una clase abstract
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\BotMedio.h(4,7):
-  vea la declaración de 'BotMedio'
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(122,27):
-  debido a los siguientes miembros:
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(122,27):
-  'void Bot::realizarMovimiento(void)': es abstracto
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,18):
-  vea la declaración de 'Bot::realizarMovimiento'
-  
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(130,12): error C2660: 'Bot::realizarMovimiento': la función no acepta 1 argumentos
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,18):
-  vea la declaración de 'Bot::realizarMovimiento'
-  C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\partida.cpp(130,12):
-  al hacer coincidir la lista de argumentos '(partida)'
-  
   VistaTablero.cpp
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\Bot.h(9,37): error C2061: error de sintaxis: identificador 'partida'
-  (compilando archivo de origen "src/VistaTablero.cpp")
-  
 C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,41): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
 C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
 C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\VistaTablero.cpp(20,47): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
@@ -119,3 +14,4 @@ C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\terc
 C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,65): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
 C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,45): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
   Generando código...
+  SuicideChess.vcxproj -> C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\bin\SuicideChess.exe

@@ -3,44 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\partida.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotMedio.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\BotMedio.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorPromocion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorPromocion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotFacil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\BotFacil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\VistaTablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotMedio.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\BotMedio.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorPromocion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorPromocion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotFacil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\BotFacil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\jugador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\jugador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\jugador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\jugador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorJuego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\Dificultad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:Dificultad.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\jugador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\jugador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorJuego.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -99,14 +103,6 @@
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\VistaTablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\pieza.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -126,8 +122,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ControladorPromocion.h",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorPromocion.h",
+              "RelativeDocumentMoniker": "src\\ControladorPromocion.h",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorPromocion.h",
+              "RelativeToolTip": "src\\ControladorPromocion.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T15:07:26.675Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -138,110 +147,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BotFacil.h",
-              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotFacil.h",
-              "RelativeDocumentMoniker": "src\\BotFacil.h",
-              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotFacil.h",
-              "RelativeToolTip": "src\\BotFacil.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-12T10:28:35.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BotMedio.h",
-              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotMedio.h",
-              "RelativeDocumentMoniker": "src\\BotMedio.h",
-              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotMedio.h",
-              "RelativeToolTip": "src\\BotMedio.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-12T10:28:56.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "partida.h",
-              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.h",
-              "RelativeDocumentMoniker": "src\\partida.h",
-              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.h",
-              "RelativeToolTip": "src\\partida.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T10:04:41.504Z",
+              "DocumentIndex": 6,
+              "Title": "ControladorPromocion.cpp",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorPromocion.cpp",
+              "RelativeDocumentMoniker": "src\\ControladorPromocion.cpp",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorPromocion.cpp",
+              "RelativeToolTip": "src\\ControladorPromocion.cpp",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-12T15:07:09.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Bot.h",
-              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Bot.h",
-              "RelativeDocumentMoniker": "src\\Bot.h",
-              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Bot.h",
-              "RelativeToolTip": "src\\Bot.h",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAmwAgAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-12T10:09:57.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BotMedio.cpp",
-              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotMedio.cpp",
-              "RelativeDocumentMoniker": "src\\BotMedio.cpp",
-              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotMedio.cpp",
-              "RelativeToolTip": "src\\BotMedio.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-12T14:20:01.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BotFacil.cpp",
-              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotFacil.cpp",
-              "RelativeDocumentMoniker": "src\\BotFacil.cpp",
-              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\BotFacil.cpp",
-              "RelativeToolTip": "src\\BotFacil.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-12T14:18:55.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "partida.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.cpp",
               "RelativeDocumentMoniker": "src\\partida.cpp",
               "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.cpp",
               "RelativeToolTip": "src\\partida.cpp",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAAAHcAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-11T09:55:32.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "partida.h",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.h",
+              "RelativeDocumentMoniker": "src\\partida.h",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\partida.h",
+              "RelativeToolTip": "src\\partida.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-06T10:04:41.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bot.h",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Bot.h",
+              "RelativeDocumentMoniker": "src\\Bot.h",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Bot.h*",
+              "RelativeToolTip": "src\\Bot.h*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T10:09:57.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ControladorJuego.h",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.h",
+              "RelativeDocumentMoniker": "src\\ControladorJuego.h",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.h",
+              "RelativeToolTip": "src\\ControladorJuego.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-29T17:10:57.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VistaTablero.cpp",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp",
+              "RelativeDocumentMoniker": "src\\VistaTablero.cpp",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp",
+              "RelativeToolTip": "src\\VistaTablero.cpp",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAC0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-29T17:09:09.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dificultad.h",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\Dificultad.h",
+              "RelativeDocumentMoniker": "Dificultad.h",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\Dificultad.h",
+              "RelativeToolTip": "Dificultad.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T14:33:16.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "jugador.h",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\jugador.h",
               "RelativeDocumentMoniker": "src\\jugador.h",
               "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\jugador.h",
               "RelativeToolTip": "src\\jugador.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-06T09:56:24.424Z"
+              "WhenOpened": "2025-04-06T09:56:24.424Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
+              "Title": "jugador.cpp",
+              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\jugador.cpp",
+              "RelativeDocumentMoniker": "src\\jugador.cpp",
+              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\jugador.cpp",
+              "RelativeToolTip": "src\\jugador.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-06T10:04:08.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ControladorJuego.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp",
               "RelativeDocumentMoniker": "src\\ControladorJuego.cpp",
@@ -253,19 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "jugador.cpp",
-              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\jugador.cpp",
-              "RelativeDocumentMoniker": "src\\jugador.cpp",
-              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\jugador.cpp",
-              "RelativeToolTip": "src\\jugador.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-06T10:04:08.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "caballo.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\caballo.cpp",
               "RelativeDocumentMoniker": "src\\caballo.cpp",
@@ -277,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ControladorApp.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorApp.cpp",
               "RelativeDocumentMoniker": "src\\ControladorApp.cpp",
@@ -289,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "torre.h",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Torre.h",
               "RelativeDocumentMoniker": "src\\Torre.h",
@@ -301,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "pieza.h",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Pieza.h",
               "RelativeDocumentMoniker": "src\\Pieza.h",
@@ -313,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "pieza.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Pieza.cpp",
               "RelativeDocumentMoniker": "src\\Pieza.cpp",
@@ -325,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "peon.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\peon.cpp",
               "RelativeDocumentMoniker": "src\\peon.cpp",
@@ -337,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "dama.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\dama.cpp",
               "RelativeDocumentMoniker": "src\\dama.cpp",
@@ -349,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "rey.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\rey.cpp",
               "RelativeDocumentMoniker": "src\\rey.cpp",
@@ -361,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "tablero.h",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\tablero.h",
               "RelativeDocumentMoniker": "src\\tablero.h",
@@ -373,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "tablero.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\tablero.cpp",
               "RelativeDocumentMoniker": "src\\tablero.cpp",
@@ -385,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "torre.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\torre.cpp",
               "RelativeDocumentMoniker": "src\\torre.cpp",
@@ -397,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\main.cpp",
               "RelativeDocumentMoniker": "src\\main.cpp",
@@ -409,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "peon.h",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Peon.h",
               "RelativeDocumentMoniker": "src\\Peon.h",
@@ -421,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "freeglut.h",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\lib\\freeglut.h",
               "RelativeDocumentMoniker": "lib\\freeglut.h",
@@ -433,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "alfil.cpp",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\alfil.cpp",
               "RelativeDocumentMoniker": "src\\alfil.cpp",
@@ -445,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "alfil.h",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\Alfil.h",
               "RelativeDocumentMoniker": "src\\Alfil.h",
@@ -457,19 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ControladorJuego.h",
-              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.h",
-              "RelativeDocumentMoniker": "src\\ControladorJuego.h",
-              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\ControladorJuego.h",
-              "RelativeToolTip": "src\\ControladorJuego.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-29T17:10:57.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "VistaTablero.h",
               "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\VistaTablero.h",
               "RelativeDocumentMoniker": "src\\VistaTablero.h",
@@ -478,18 +477,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-29T17:08:39.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "VistaTablero.cpp",
-              "DocumentMoniker": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp",
-              "RelativeDocumentMoniker": "src\\VistaTablero.cpp",
-              "ToolTip": "C:\\Users\\gmari\\OneDrive - Universidad Polit\u00E9cnica de Madrid\\Documentos\\uni\\tercero\\cuatri2\\Informatica Industrial\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp",
-              "RelativeToolTip": "src\\VistaTablero.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-29T17:09:09.6Z"
             }
           ]
         }

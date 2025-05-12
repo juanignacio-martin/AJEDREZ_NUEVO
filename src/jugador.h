@@ -14,9 +14,9 @@ public:
     // Getters
     color getColor() const { return col; }
     bool esTurno() const { return turno; }
-    bool esIA() const { return esIA_; }
+    //bool esIA() const { return esIA_; }
     // Métodos para manejar turnos
-    void setEsIA(bool esIA) { esIA_ = esIA; }
+    //void setEsIA(bool esIA) { esIA_ = esIA; }
     void iniciarTurno() { turno = true; }
     void terminarTurno() { turno = false; }
 };
