@@ -1,7 +1,8 @@
 #pragma once
-
+#include<string>
 #include "tablero.h"
 #include "jugador.h"
+#include "Bot.h"
 
 class partida {
 private:
@@ -12,6 +13,10 @@ private:
     std::string variante;
     int turno;
     bool juegoTerminado;
+    //ModoIA
+    Bot* bot;
+    bool modoIA;
+    Dificultad dificultadIA;
 
 public:
     partida(const std::string& tipo = "clasico");
@@ -28,7 +33,10 @@ public:
     }
     int getFilas() const { return t->getFilas(); }
     int getColumnas() const { return t->getColumnas(); }
-
+    //Metodos IA
+    void setModoIA(Dificultad dificultad);
+    void jugarTurnoBot();
+    bool esModoIA() const { return modoIA;};
 
 private:
     void inicializarTablero();     // crea el tablero según la variante

@@ -149,8 +149,10 @@
     <Library Include="lib\freeglut.lib" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Bot.h" />
     <ClInclude Include="src\alfil.h" />
+    <ClInclude Include="src\Bot.h" />
+    <ClInclude Include="src\BotFacil.h" />
+    <ClInclude Include="src\BotMedio.h" />
     <ClInclude Include="src\caballo.h" />
     <ClInclude Include="src\ControladorApp.h" />
     <ClInclude Include="src\ControladorJuego.h" />
@@ -167,9 +169,9 @@
     <ClInclude Include="src\VistaTablero.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BotFacil.cpp" />
-    <ClCompile Include="BotMedio.cpp" />
     <ClCompile Include="src\alfil.cpp" />
+    <ClCompile Include="src\BotFacil.cpp" />
+    <ClCompile Include="src\BotMedio.cpp" />
     <ClCompile Include="src\caballo.cpp" />
     <ClCompile Include="src\ControladorApp.cpp" />
     <ClCompile Include="src\ControladorJuego.cpp" />

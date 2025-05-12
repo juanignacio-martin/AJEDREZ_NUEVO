@@ -1,4 +1,7 @@
 #include "partida.h"
+#include"Bot.h"
+#include"BotFacil.h"
+#include"BotMedio.h"
 #include <iostream>
 
 partida::partida(const std::string& tipo)
@@ -7,12 +10,16 @@ partida::partida(const std::string& tipo)
     jugadorActual(&jugadorBlanco),
     variante(tipo),
     turno(0),
-    juegoTerminado(false) {
+    juegoTerminado(false),
+    bot(nullptr),
+    modoIA(false), // Nuevo miembro
+    dificultadIA(Dificultad::FACIL) { // Nuevo miembro
     inicializarTablero();
 }
 
 partida::~partida() {
     delete t;
+    delete bot;
 }
 
 void partida::inicializarTablero() {
@@ -46,6 +53,11 @@ bool partida::jugarTurno(int x1, int y1, int x2, int y2) {
     if (juegoTerminado) {
         std::cout << "La partida ya ha terminado.\n";
         return false;
+    }
+    //Lógica para el turno de la IA (jugador NEGRO)
+    if (modoIA && jugadorActual->esIA()) {
+        jugarTurnoBot();  
+        return true;
     }
 
     color colorJugador = jugadorActual->getColor();
@@ -93,4 +105,30 @@ bool partida::estaEnJaque() const {
     return t->estaEnJaque(jugadorActual->getColor());
 }
 
+
+void partida::setModoIA(Dificultad dificultad) {
+    if (bot) {
+        delete bot;
+    }
+
+    modoIA = true;
+    dificultadIA = dificultad;
+
+    switch (dificultad) {
+    case Dificultad::FACIL:
+        bot = new BotFacil();
+        break;
+    case Dificultad::MEDIO:
+        bot = new BotMedio();
+        break;
+    }
+    jugadorNegro.setEsIA(true);
+}
+
+void partida::jugarTurnoBot() {
+    if (bot && jugadorActual->esIA()) {
+        bot->realizarMovimiento(*this);
+        cambiarTurno();
+    }
+}
 
