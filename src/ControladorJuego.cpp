@@ -43,8 +43,11 @@ void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
                 return;
             }
         }
+        // Si es contra bot y le toca al bot
+        if (juego->esContraBot() && juego->getJugadorActual()->getColor() == color::NEGRO) {
+            juego->getBot()->jugarTurnoBot(juego);
+        }
     }
-
     glutPostRedisplay();
 }
 

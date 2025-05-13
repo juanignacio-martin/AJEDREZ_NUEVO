@@ -1,5 +1,4 @@
 #include "partida.h"
-#include"Bot.h"
 #include <iostream>
 
 partida::partida(const std::string& tipo)
@@ -8,16 +7,12 @@ partida::partida(const std::string& tipo)
     jugadorActual(&jugadorBlanco),
     variante(tipo),
     turno(0),
-    juegoTerminado(false)
-    //bot(nullptr),
-    //modoIA(false), // Nuevo miembro
-    //dificultadIA(Dificultad::FACIL) { // Nuevo miembro
-{inicializarTablero();
+    juegoTerminado(false) {
+    inicializarTablero();
 }
 
 partida::~partida() {
     delete t;
-    //delete bot;
 }
 
 void partida::inicializarTablero() {
@@ -52,30 +47,25 @@ bool partida::jugarTurno(int x1, int y1, int x2, int y2) {
         std::cout << "La partida ya ha terminado.\n";
         return false;
     }
-    //Lógica para el turno de la IA (jugador NEGRO)
-   //if (modoIA && jugadorActual->esIA()) {
-     //   jugarTurnoBot();  
-       // return true;
-    //}
 
     color colorJugador = jugadorActual->getColor();
     std::cout << "Turno de " << (colorJugador == color::BLANCO ? "blancas" : "negras") << std::endl;
 
     if (t->estaEnJaque(colorJugador)) {
-        std::cout << "Tu rey está en jaque.\n";
+        std::cout << "Tu rey est? en jaque.\n";
     }
 
     bool exito = t->mueve_pieza(x1, y1, x2, y2, colorJugador);
 
     if (exito) {
-        // Comprobar si terminó la partida
+        // Comprobar si termin? la partida
         color siguienteColor = (colorJugador == color::BLANCO) ? color::NEGRO : color::BLANCO;
         if (t->esJaqueMate(siguienteColor)) {
-            std::cout << "¡Jaque mate! " << (colorJugador == color::BLANCO ? "Blancas" : "Negras") << " ganan.\n";
+            std::cout << "?Jaque mate! " << (colorJugador == color::BLANCO ? "Blancas" : "Negras") << " ganan.\n";
             juegoTerminado = true;
         }
         else if (t->esTablas(siguienteColor)) {
-            std::cout << "¡Tablas!\n";
+            std::cout << "?Tablas!\n";
             juegoTerminado = true;
         }
         else {
@@ -103,30 +93,7 @@ bool partida::estaEnJaque() const {
     return t->estaEnJaque(jugadorActual->getColor());
 }
 
-
-/*void partida::setModoIA(Dificultad dificultad) {
-    if (bot) {
-        delete bot;
-    }
-
-    modoIA = true;
-    dificultadIA = dificultad;
-
-    switch (dificultad) {
-    case Dificultad::FACIL:
-        bot = new BotFacil();
-        break;
-    case Dificultad::MEDIO:
-        bot = new BotMedio();
-        break;
-    }
-    jugadorNegro.setEsIA(true);
+void partida::setBot(Bot* b) {
+    bot = b;
+    contraBot = true;
 }
-
-void partida::jugarTurnoBot() {
-    if (bot && jugadorActual->esIA()) {
-        bot->realizarMovimiento(*this);
-        cambiarTurno();
-    }
-}
-*/

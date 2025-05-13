@@ -3,7 +3,7 @@
 #include "ControladorMenu.h"
 #include "ControladorPromocion.h"
 
-enum class EstadoApp { MENU, JUEGO, PROMOCION };
+enum class EstadoApp { MENU,SELECCION_OPNENTE, JUEGO, PROMOCION };
 
 class ControladorApp {
 public:

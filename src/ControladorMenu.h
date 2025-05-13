@@ -4,6 +4,7 @@
 #include <functional>
 #include <freeglut.h>
 
+
 class ControladorMenu {
 public:
     ControladorMenu();

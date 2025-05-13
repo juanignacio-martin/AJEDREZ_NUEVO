@@ -1,6 +1,8 @@
 #pragma once
-#include "partida.h"
-#include "tablero.h"
-enum class Dificultad{FACIL, MEDIO};
+class partida;
+
 class Bot {
+public:
+    virtual ~Bot() = default;
+    virtual void jugarTurnoBot(partida* juego) = 0;
 };
