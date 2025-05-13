@@ -6,7 +6,12 @@ class ControladorJuego {
 
     partida* juego;
     VistaTablero vista;
+    Menu puntero; //clase de menu de goyo
+    enum ESTADO { MENU, PARTIDA } state{ MENU };
+    //Esto  mejor desde menu de goyo
+    enum VISTA { dosde = 0, tresde };
 
+    //
     bool seleccionandoOrigen = true;
     int origenX = -1, origenY = -1;
 

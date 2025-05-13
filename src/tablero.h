@@ -8,7 +8,7 @@
 #include "Alfil.h"
 #include "Caballo.h"
 #include "Jugador.h"
-
+#define square 3
 class tablero {
 public:
 
@@ -16,6 +16,9 @@ public:
 	int _N, _M;
 	Pieza*** tab = nullptr;
 
+	//interfaz
+	int tema{};
+	
 
 
 public:
@@ -52,5 +55,7 @@ public:
 	int getFilas() const { return _N; }
 	int getColumnas() const { return _M; }
 
+	//interfaz
+	void dibuja(bool tema);
 };
 

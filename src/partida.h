@@ -24,7 +24,8 @@ public:
     }
     int getFilas() const { return t->getFilas(); }
     int getColumnas() const { return t->getColumnas(); }
-
+    //interfaz
+    void drawpartida(int variante, int vision);
 
 private:
     void inicializarTablero();     // crea el tablero según la variante
@@ -32,5 +33,6 @@ private:
     void colocarSilverman();
     void colocarDemi();
     void colocarClasico();
+
 };
 

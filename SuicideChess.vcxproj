@@ -119,7 +119,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>lib;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>lib;src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,9 +151,11 @@
   <ItemGroup>
     <ClInclude Include="src\alfil.h" />
     <ClInclude Include="src\caballo.h" />
+    <ClInclude Include="src\casilla.h" />
     <ClInclude Include="src\ControladorJuego.h" />
     <ClInclude Include="src\dama.h" />
     <ClInclude Include="src\jugador.h" />
+    <ClInclude Include="src\menu.h" />
     <ClInclude Include="src\partida.h" />
     <ClInclude Include="src\peon.h" />
     <ClInclude Include="src\pieza.h" />
@@ -165,10 +167,12 @@
   <ItemGroup>
     <ClCompile Include="src\alfil.cpp" />
     <ClCompile Include="src\caballo.cpp" />
+    <ClCompile Include="src\casilla.cpp" />
     <ClCompile Include="src\ControladorJuego.cpp" />
     <ClCompile Include="src\dama.cpp" />
     <ClCompile Include="src\jugador.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\menu.cpp" />
     <ClCompile Include="src\partida.cpp" />
     <ClCompile Include="src\peon.cpp" />
     <ClCompile Include="src\pieza.cpp" />

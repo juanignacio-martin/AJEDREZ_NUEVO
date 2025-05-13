@@ -77,3 +77,12 @@ bool partida::estaEnJaque() const {
     return t->estaEnJaque(jugadorActual->getColor());
 }
 
+void partida::drawpartida(int variante, int vision) {
+
+    //Tablero
+    tablero.dibuja();
+
+
+    //Piezas 
+    
+}

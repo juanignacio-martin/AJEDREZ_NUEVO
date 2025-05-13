@@ -271,3 +271,30 @@ bool tablero::estaEnJaque(color jugadorColor) {
 
 	return false; // No hay jaque
 }
+
+
+
+void tablero::dibuja(bool tematica)
+{	//Base
+	glDisable(GL_LIGHTING);
+	glColor3ub(128, 128, 128); //color
+
+	//Hay que arreglar esto
+	
+
+	glBegin(GL_POLYGON);//para cuadrado
+	glVertex3d(-2, 0, -2); //Inferior izquierda
+	glVertex3d(-2, 0, square  * _M + 2); //Superior izquierda 
+	glVertex3d(square * _N + 2, 0, square * _M + 2); //Superior derecha 
+	glVertex3d(square * _N + 2, 0, -2); //Inferior derecha
+	glEnd();
+
+	glEnable(GL_LIGHTING);
+
+	
+
+	//Dibujo de las casillas por encima de la base
+	for (int i = 0; i < _N; i++) {
+		for (int j = 0; j < _M; j++)
+			tablero[_N][_M].dibucasilla(i, j);
+}

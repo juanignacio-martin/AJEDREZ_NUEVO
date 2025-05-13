@@ -1,7 +1,7 @@
 
 #include "VistaTablero.h"
 #include <freeglut.h>
-void VistaTablero::dibujar(const partida& p) {
+void VistaTablero::dibujaV(const partida& p) {
     glClear(GL_COLOR_BUFFER_BIT);
 
     Pieza*** tablero = p.getTablero();      // obtener el tablero
@@ -11,9 +11,9 @@ void VistaTablero::dibujar(const partida& p) {
     for (int i = 0; i < filas; ++i) {
         for (int j = 0; j < columnas; ++j) {
             if ((i + j) % 2 == 0)
-                glColor3f(1.0f, 1.0f, 1.0f); // blanco
+                glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/WhiteTileSW.png").id);
             else
-                glColor3f(0.5f, 0.5f, 0.5f); // gris
+                glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/BlackTileSW.png").id);
 
             glBegin(GL_QUADS);
             glVertex2f(j * celdaSize, i * celdaSize);
@@ -39,7 +39,7 @@ void VistaTablero::dibujar(const partida& p) {
     glutSwapBuffers();
 }
 
-
+/*
 char VistaTablero::obtenerSimbolo(const Pieza* pieza) {
     if (!pieza) return ' ';
     switch (pieza->getTipo()) {
@@ -52,3 +52,4 @@ char VistaTablero::obtenerSimbolo(const Pieza* pieza) {
     default: return ' ';
     }
 }
+*/

@@ -1,9 +1,16 @@
 #pragma once
 #include "partida.h"
+#pragma once
 
+
+#include "freeglut.h"
+#include "ETSIDI.h"
+#include "math.h"
+#include <iostream>
+#include "cstring"
 class VistaTablero {
 public:
-    void dibujar(const partida& p);
+    void dibujaV(const partida& p);
     int getCeldaSize() const { return celdaSize; }
 
 private:
