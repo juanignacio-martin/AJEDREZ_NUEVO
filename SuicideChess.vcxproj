@@ -151,14 +151,8 @@
   <ItemGroup>
     <ClInclude Include="src\alfil.h" />
     <ClInclude Include="src\caballo.h" />
-<<<<<<< HEAD
     <ClInclude Include="src\casilla.h" />
-=======
-    <ClInclude Include="src\ControladorApp.h" />
->>>>>>> main
     <ClInclude Include="src\ControladorJuego.h" />
-    <ClInclude Include="src\ControladorMenu.h" />
-    <ClInclude Include="src\ControladorPromocion.h" />
     <ClInclude Include="src\dama.h" />
     <ClInclude Include="src\jugador.h" />
     <ClInclude Include="src\menu.h" />
@@ -173,14 +167,8 @@
   <ItemGroup>
     <ClCompile Include="src\alfil.cpp" />
     <ClCompile Include="src\caballo.cpp" />
-<<<<<<< HEAD
     <ClCompile Include="src\casilla.cpp" />
-=======
-    <ClCompile Include="src\ControladorApp.cpp" />
->>>>>>> main
     <ClCompile Include="src\ControladorJuego.cpp" />
-    <ClCompile Include="src\ControladorMenu.cpp" />
-    <ClCompile Include="src\ControladorPromocion.cpp" />
     <ClCompile Include="src\dama.cpp" />
     <ClCompile Include="src\jugador.cpp" />
     <ClCompile Include="src\main.cpp" />

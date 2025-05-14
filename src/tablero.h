@@ -55,13 +55,7 @@ public:
 	int getFilas() const { return _N; }
 	int getColumnas() const { return _M; }
 
-<<<<<<< HEAD
 	//interfaz
 	void dibuja(bool tema);
-=======
-	bool esJaqueMate(color jugadorColor);
-	bool esTablas(color jugadorColor);
-
->>>>>>> main
 };
 

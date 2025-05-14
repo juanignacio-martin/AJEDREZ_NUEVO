@@ -4,113 +4,109 @@
 #include "alfil.h"
 #include "caballo.h"
 
-int peon::modo_juego = 0; // Inicialmente en modo cl√°sico/demichess
+int peon::modo_juego = 0; // Inicialmente en modo cl·sico/demichess
 
-int peon::ultima_fila_doble = -1;
-int peon::ultima_columna_doble = -1;
-
-void peon::registrarMovimientoDoble(int fila, int columna) {
-    ultima_fila_doble = fila;
-    ultima_columna_doble = columna;
-}
-
-void peon::setModoJuego(int modo) {
-    peon::modo_juego = modo;
-}
-
-bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero, color jugadorColor) const {
-   
-    if (tablero[x_origen][y_origen] == nullptr ||
-        tablero[x_origen][y_origen]->getColor() != jugadorColor) {
-        return false;
-    }
-
-    int promo;
-    if (modo_juego == 1)
-        promo = 3;
-    else
-        promo = 6;
-
-    int direccion = (this->getColor() == color::BLANCO) ? -1 : 1; // Blancos avanzan hacia arriba, negros hacia abajo
+bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const {
+    int direccion = (this->getColor() == color::BLANCO) ? -1 : 1; // Blancos suben, negros bajan
 
     // Movimiento normal (una casilla adelante)
     if (y_origen == y_destino && x_destino == x_origen + direccion && tablero[x_destino][y_destino] == nullptr) {
-        // Comprobar si ha llegado al final y promocionar
-        if ((this->getColor() == color::BLANCO && x_destino == 0) || (this->getColor() == color::NEGRO && x_origen == promo)) {
-            // Llamar a la funci√≥n de promoci√≥n directamente
+        // Comprobar si llegÛ para promocionar
+        if ((this->getColor() == color::BLANCO && x_destino == 0) ||
+            (this->getColor() == color::NEGRO &&
+                ((modo_juego == 0 && x_destino == 7) || (modo_juego == 1 && x_destino == 4))))
+        {
             peon* p = dynamic_cast<peon*>(tablero[x_origen][y_origen]);
             if (p) {
-             //   p->promocionar(tablero, x_origen, y_origen);
+                p->promocionar(tablero, x_origen + 1 , y_origen + 1);
             }
         }
         return true;
     }
 
-    // Movimiento doble si es el primer turno
-    if (y_origen == y_destino && x_destino == x_origen + 2 * direccion && (x_origen == 1 || x_origen == 6) &&
+    // Movimiento doble si es primer turno
+    if (y_origen == y_destino && x_destino == x_origen + 2 * direccion &&
+        ((this->getColor() == color::BLANCO && x_origen == 6) || (this->getColor() == color::NEGRO && x_origen == 1)) &&
         tablero[x_destino][y_destino] == nullptr && tablero[x_origen + direccion][y_destino] == nullptr) {
-        registrarMovimientoDoble(x_destino, y_destino); 
         return true;
     }
 
-    // **Captura en diagonal**
+    // Captura en diagonal
     if (abs(y_destino - y_origen) == 1 && x_destino == x_origen + direccion &&
         tablero[x_destino][y_destino] != nullptr &&
-        tablero[x_destino][y_destino]->getColor() != this->getColor()) {
-        // Comprobar si ha llegado al final y promocionar
-        if ((this->getColor() == color::BLANCO && x_destino == 0) || (this->getColor() == color::NEGRO && x_origen == promo)) {
-            // Llamar a la funci√≥n de promoci√≥n directamente
+        tablero[x_destino][y_destino]->getColor() != this->getColor())
+    {
+        if ((this->getColor() == color::BLANCO && x_destino == 0) ||
+            (this->getColor() == color::NEGRO &&
+                ((modo_juego == 0 && x_destino == 7) || (modo_juego == 1 && x_destino == 4))))
+        {
             peon* p = dynamic_cast<peon*>(tablero[x_origen][y_origen]);
             if (p) {
-              //  p->promocionar(tablero, x_origen, y_origen);
+                p->promocionar(tablero, x_origen + 1, y_origen + 1);
             }
         }
         return true;
     }
 
-    //Captura al paso
-
-    if (abs(y_destino - y_origen) == 1 && x_destino == x_origen + direccion &&
-        tablero[x_destino][y_destino] == nullptr &&
-        x_origen == ultima_fila_doble && // El pe√≥n contrario debe haber pasado justo junto
-        y_destino == ultima_columna_doble &&
-        tablero[x_origen][y_destino] != nullptr &&
-        tablero[x_origen][y_destino]->getTipo() == tipo_pieza::PEON &&
-        tablero[x_origen][y_destino]->getColor() != this->getColor()) {
-
-        // Eliminar el pe√≥n enemigo
-        delete tablero[x_origen][y_destino];
-        tablero[x_origen][y_destino] = nullptr;
-
-        ultima_fila_doble = -1;
-        ultima_columna_doble = -1;
-        return true;
-    }
-
-    return false; // Si no cumple ninguna condici√≥n, es un movimiento inv√°lido.
+    return false; // Movimiento inv·lido
 }
 
+void peon::promocionar(Pieza*** pieza_tablero, int x, int y) {
+    int opcion;
+    std::cout << "°Tu peÛn ha llegado al final!\n";
+    std::cout << "øA quÈ pieza quieres promocionar?\n";
+    std::cout << "1. Dama\n";
+    std::cout << "2. Torre\n";
+    std::cout << "3. Alfil\n";
+    std::cout << "4. Caballo\n";
+    std::cout << "Elige una opciÛn (1-4): ";
+    std::cin >> opcion;
 
-void peon::promocionar(Pieza*** tablero, int fila, int columna, tipo_pieza nueva) {
-    color c = tablero[fila][columna]->getColor();
-    delete tablero[fila][columna];
+    // Eliminar el peÛn
+    delete pieza_tablero[x][y];
 
-    switch (nueva) {
-    case tipo_pieza::DAMA:
-        tablero[fila][columna] = new dama(c);
-        break;
-    case tipo_pieza::TORRE:
-        tablero[fila][columna] = new torre(c);
-        break;
-    case tipo_pieza::ALFIL:
-        tablero[fila][columna] = new alfil(c);
-        break;
-    case tipo_pieza::CABALLO:
-        tablero[fila][columna] = new caballo(c);
-        break;
-    default:
-        tablero[fila][columna] = new dama(c);
-        break;
+    if (x == 1) {
+        switch (opcion) {
+        case 1:
+            pieza_tablero[x][y] = new dama(color::BLANCO);
+            break;
+        case 2:
+            pieza_tablero[x][y] = new torre(color::BLANCO);
+            break;
+        case 3:
+            pieza_tablero[x][y] = new alfil(color::BLANCO);
+            break;
+        case 4:
+            pieza_tablero[x][y] = new caballo(color::BLANCO);
+            break;
+        default:
+            std::cout << "OpciÛn inv·lida. Promocionando a Dama por defecto.\n";
+            pieza_tablero[x][y] = new dama(color::BLANCO);
+            break;
+        }
+    }
+    if (x == 3) {
+        switch (opcion) {
+        case 1:
+            pieza_tablero[x][y] = new dama(color::NEGRO);
+            break;
+        case 2:
+            pieza_tablero[x][y] = new torre(color::NEGRO);
+            break;
+        case 3:
+            pieza_tablero[x][y] = new alfil(color::NEGRO);
+            break;
+        case 4:
+            pieza_tablero[x][y] = new caballo(color::NEGRO);
+            break;
+        default:
+            std::cout << "OpciÛn inv·lida. Promocionando a Dama por defecto.\n";
+            pieza_tablero[x][y] = new dama(color::NEGRO);
+            break;
+        }
     }
 }
 
+void peon::setModoJuego(int modo) {
+    modo_juego = modo;
+}

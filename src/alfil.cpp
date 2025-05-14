@@ -2,15 +2,8 @@
 
 
 
-bool alfil::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero, color jugadorColor) const {
-   
-    if (tablero[x_origen][y_origen] == nullptr ||
-        tablero[x_origen][y_origen]->getColor() != jugadorColor) {
-        return false;
-    }
-    
+bool alfil::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const {
     if (abs(x_destino - x_origen) != abs(y_destino - y_origen)) return false; // Debe ser un movimiento en diagonal
-    if (x_origen == x_destino && y_origen == y_destino) return false;
 
     int paso_x = (x_destino > x_origen) ? 1 : -1; //Si se mueve a la derecha =1, si izquierda = -1
     int paso_y = (y_destino > y_origen) ? 1 : -1; //Si se mueve hacia arriba =1, si abajo = -1
