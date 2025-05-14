@@ -51,10 +51,20 @@
     <ClInclude Include="src\ControladorJuego.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="src\menu.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="src\casilla.h">
+=======
+    <ClInclude Include="src\ControladorMenu.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ControladorPromocion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ControladorApp.h">
+>>>>>>> main
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
@@ -98,10 +108,20 @@
     <ClCompile Include="src\ControladorJuego.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="src\casilla.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
     <ClCompile Include="src\menu.cpp">
+=======
+    <ClCompile Include="src\ControladorApp.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControladorMenu.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ControladorPromocion.cpp">
+>>>>>>> main
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
   </ItemGroup>

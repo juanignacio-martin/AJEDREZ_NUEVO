@@ -1,9 +1,19 @@
 #include "ControladorJuego.h"
 #include <freeglut.h>
 #include <iostream>
+#include "Partida.h"
+#include "ControladorApp.h"
+#include "peon.h"
 
-ControladorJuego::ControladorJuego(partida* p)
-    : juego(p) {}
+ControladorJuego::ControladorJuego(partida* p, ControladorApp* app)
+    : juego(p), app(app) {
+    // Ajustar tamaño de ventana al tablero
+    int ancho = juego->getColumnas() * vista.getCeldaSize();
+    int alto = juego->getFilas() * vista.getCeldaSize();
+    glutReshapeWindow(ancho, alto);
+    glLoadIdentity();
+    gluOrtho2D(0, ancho, alto, 0);
+}
 
 void ControladorJuego::dibujar() {
    
@@ -36,6 +46,16 @@ void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
     else {
         juego->jugarTurno(origenX, origenY, fila, columna);
         seleccionandoOrigen = true;
+
+        // Detectar si hay promoción
+        Pieza* pz = juego->getTablero()[fila][columna];
+        if (peon* p = dynamic_cast<peon*>(pz)) {
+            if ((p->getColor() == color::BLANCO && fila == 0) ||
+                (p->getColor() == color::NEGRO && fila == juego->getFilas() - 1)) {
+                app->mostrarMenuPromocion(fila, columna, p->getColor());
+                return;
+            }
+        }
     }
 
     glutPostRedisplay();
