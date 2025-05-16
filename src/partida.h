@@ -32,9 +32,12 @@ public:
     }
     int getFilas() const { return t->getFilas(); }
     int getColumnas() const { return t->getColumnas(); }
-    void setBot(Bot* b);
-    bool esContraBot() const { return contraBot; }
+    void setBot(Bot* b) {
+        bot = b;
+        contraBot = true;
+    }
     Bot* getBot() const { return bot; }
+    bool esContraBot() const { return contraBot; }    
 
 private:
     void inicializarTablero();     // crea el tablero según la variante

@@ -1,7 +1,9 @@
 #pragma once
 #include "Bot.h"
+#include <vector>
+#include <utility>
 
 class BotFacil : public Bot {
 public:
-	void realizarMovimiento(partida& juego)override;
+    void jugarTurnoBot(partida* juego); //override;
 };

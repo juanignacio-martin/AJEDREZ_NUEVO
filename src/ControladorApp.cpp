@@ -1,4 +1,5 @@
 #include "ControladorApp.h"
+#include "BotFacil.h"
 #include <iostream>
 
 ControladorApp::ControladorApp() {
@@ -12,10 +13,24 @@ ControladorApp::ControladorApp() {
     };
 
     std::vector<std::function<void()>> acciones = {
-        [this]() { iniciarJuego("clasico"); },
-        [this]() { iniciarJuego("silverman"); },
-        [this]() { iniciarJuego("demi"); },
-        []() { exit(0); }
+    [this]() { varianteSeleccionada = "clasico"; cambiarEstado(EstadoApp::SELECCION_OPONENTE); mostrarSeleccionOponente(); },
+    [this]() { varianteSeleccionada = "silverman"; cambiarEstado(EstadoApp::SELECCION_OPONENTE); mostrarSeleccionOponente(); },
+    [this]() { varianteSeleccionada = "demi"; cambiarEstado(EstadoApp::SELECCION_OPONENTE); mostrarSeleccionOponente(); },
+    []() { exit(0); }
+    };
+
+    menu.setOpciones(opciones, acciones);
+}
+
+void ControladorApp::mostrarSeleccionOponente() {
+    std::vector<std::string> opciones = {
+        "Jugar contra Humano",
+        "Jugar contra Bot"
+    };
+
+    std::vector<std::function<void()>> acciones = {
+        [this]() { iniciarJuego(varianteSeleccionada, false); },
+        [this]() { iniciarJuego(varianteSeleccionada, true); }
     };
 
     menu.setOpciones(opciones, acciones);
@@ -24,6 +39,7 @@ ControladorApp::ControladorApp() {
 void ControladorApp::dibujar() {
     switch (estado) {
     case EstadoApp::MENU:
+    case EstadoApp::SELECCION_OPONENTE:
         menu.dibujar(); break;
     case EstadoApp::JUEGO:
         if (juego) juego->dibujar(); break;
@@ -37,6 +53,7 @@ void ControladorApp::manejarClick(int boton, int estadoClick, int x, int y) {
 
     switch (estado) {
     case EstadoApp::MENU:
+    case EstadoApp::SELECCION_OPONENTE:
         menu.manejarClick(x, y);
         break;
 
@@ -60,10 +77,13 @@ void ControladorApp::cambiarEstado(EstadoApp nuevo) {
     estado = nuevo;
 }
 
-void ControladorApp::iniciarJuego(std::string variante) {
+void ControladorApp::iniciarJuego(std::string variante,bool contraBot) {
     if (juego) delete juego;
 
     partida* nuevaPartida = new partida(variante);
+    if (contraBot) {
+        nuevaPartida->setBot(new BotFacil());
+    }
     juego = new ControladorJuego(nuevaPartida, this);
 
     int ancho = nuevaPartida->getColumnas() * 100;

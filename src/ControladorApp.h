@@ -2,8 +2,9 @@
 #include "ControladorJuego.h"
 #include "ControladorMenu.h"
 #include "ControladorPromocion.h"
+#include "BotFacil.h"
 
-enum class EstadoApp { MENU,SELECCION_OPNENTE, JUEGO, PROMOCION };
+enum class EstadoApp { MENU,SELECCION_OPONENTE, JUEGO, PROMOCION };
 
 class ControladorApp {
 public:
@@ -16,9 +17,10 @@ public:
     EstadoApp getEstado() const { return estado; }
     void cambiarEstado(EstadoApp nuevo);
 
-    void iniciarJuego(std::string variante);
+    void iniciarJuego(std::string variante,bool contraBot);
     void mostrarMenuPromocion(int fila, int columna, color c);
     void realizarPromocion(tipo_pieza nuevaPieza);
+    void mostrarSeleccionOponente();
 
 private:
     EstadoApp estado;
@@ -29,4 +31,6 @@ private:
     // datos de la promoción
     int promFila = -1, promColumna = -1;
     color colorPromocion;
+
+    std::string varianteSeleccionada;
 };

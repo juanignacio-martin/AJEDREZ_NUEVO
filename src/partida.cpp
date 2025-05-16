@@ -93,7 +93,3 @@ bool partida::estaEnJaque() const {
     return t->estaEnJaque(jugadorActual->getColor());
 }
 
-void partida::setBot(Bot* b) {
-    bot = b;
-    contraBot = true;
-}
