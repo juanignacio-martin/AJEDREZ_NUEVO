@@ -3,8 +3,8 @@
 class dama :public Pieza
 {
 public:
-    dama(color col)
-        :Pieza(tipo_pieza::DAMA, col)
+    dama(color col, int t, int v)
+        :Pieza(tipo_pieza::DAMA, , col, t, v)
     {}
     bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const;
 

@@ -1,55 +1,79 @@
 
 #include "VistaTablero.h"
-#include <freeglut.h>
-void VistaTablero::dibujaV(const partida& p) {
-    glClear(GL_COLOR_BUFFER_BIT);
+#include <iostream>
+#define mirax 12.0
+#define miray 0.0
+#define miraz 15.0
 
-    Pieza*** tablero = p.getTablero();      // obtener el tablero
-    int filas = p.getFilas();               // necesitas tener estos getters en partida
-    int columnas = p.getColumnas();
+//Establece posiciones iniciales de la camara tanto en el menu como al iniciar la partida
+void vistatablero::dib(menu& principal)
+{
 
-    for (int i = 0; i < filas; ++i) {
-        for (int j = 0; j < columnas; ++j) {
-            if ((i + j) % 2 == 0)
-                glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/WhiteTileSW.png").id);
-            else
-                glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/BlackTileSW.png").id);
+    if (principal.getMenu())
+    {
+        gluLookAt(6, 8, 16,  // posicion del ojo
+            6, 8, 0,      // hacia que punto mira  
+            1.0, 0.0, 0.0);      // definimos visión hacia arriba (eje X)
+    }
+    else if (!vistaPuntuaciones && !fin)
+    {
+        gluLookAt(posx, posy, posz,  // posicion del ojo
+            mirax, miray, miraz,      // hacia que punto mira  
+            0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y)  
+    }
+    else
+    {
+        gluLookAt(7.5, 8, 8,  // posicion del ojo   
+            7.5, 8, 0,      // hacia que punto mira   
+            0.0, 1.0, 0.0);      // definimos hacia arriba  
+    }
 
-            glBegin(GL_QUADS);
-            glVertex2f(j * celdaSize, i * celdaSize);
-            glVertex2f((j + 1) * celdaSize, i * celdaSize);
-            glVertex2f((j + 1) * celdaSize, (i + 1) * celdaSize);
-            glVertex2f(j * celdaSize, (i + 1) * celdaSize);
-            glEnd();
+}
 
-            const Pieza* pieza = tablero[i][j];
-            if (pieza != nullptr) {
-                char simbolo = obtenerSimbolo(pieza);
-                if (pieza->getColor() == color::BLANCO)
-                    glColor3f(0.0f, 0.0f, 0.0f);
-                else
-                    glColor3f(1.0f, 0.0f, 0.0f);
 
-                glRasterPos2f(j * celdaSize + 25, i * celdaSize + 50);
-                glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, simbolo);
-            }
+
+//Permite acercar la camara al tablero al pulsar '+' y alejarla al pulsar '-'
+void vistatablero::zoom(menu& principal, unsigned char key)
+{
+    if (!principal.getMenu() && estatico && principal.getVision())
+    {
+        double zoom = 0.5; // Ajusta el factor de zoom según sea necesario
+
+        double dirx = mirax - posx;
+        double diry = miray - posy;
+        double dirz = miraz - posz;
+
+        // Normaliza el vector de dirección
+        double modulodir = sqrt(dirx * dirx + diry * diry + dirz * dirz);
+        double unitariodirx = dirx / modulodir;
+        double unitariodiry = diry / modulodir;
+        double unitariodirz = dirz / modulodir;
+
+        if (key == '+' && zoomin < 30)
+        {
+            // Mueve el punto de mira en la dirección opuesta al vector de dirección de la cámara
+            posx = posx + unitariodirx * zoom;
+            posy = posy + unitariodiry * zoom;
+            posz = posz + unitariodirz * zoom;
+            zoomin = zoomin + 1;
+            zoomout = zoomout - 1;
         }
-    }
 
-    glutSwapBuffers();
-}
+        else if (key == '-' && zoomout < 20)
+        {
+            // Mueve el punto de mira en la dirección del vector de dirección de la cámara
+            posx = posx - unitariodirx * zoom;
+            posy = posy - unitariodiry * zoom;
+            posz = posz - unitariodirz * zoom;
+            zoomin = zoomin - 1;
+            zoomout = zoomout + 1;
+        }
 
-/*
-char VistaTablero::obtenerSimbolo(const Pieza* pieza) {
-    if (!pieza) return ' ';
-    switch (pieza->getTipo()) {
-    case tipo_pieza::PEON: return 'P';
-    case tipo_pieza::TORRE: return 'T';
-    case tipo_pieza::REY: return 'R';
-    case tipo_pieza::DAMA: return 'D';
-    case tipo_pieza::ALFIL: return 'A';
-    case tipo_pieza::CABALLO: return 'C';
-    default: return ' ';
+        else if (key == 'p' || key == 'P')  vistaPuntuaciones = true;
+
+        else if (key == 'j' || key == 'J') vistaPuntuaciones = false;
     }
 }
-*/
+
+
+

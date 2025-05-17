@@ -21,7 +21,7 @@ tablero::tablero(int N, int M) : _N(N), _M(M) {
 	}
 }
 
-void tablero::reserva_inicializacionClasico() {
+void tablero::reserva_inicializacionClasico(int *t, int *v) {
 
 	peon::setModoJuego(0);
 	if (_N != 8 || _M != 8) {
@@ -38,35 +38,35 @@ void tablero::reserva_inicializacionClasico() {
 	}
 
 	// Piezas negras
-	tab[0][0] = new torre(color::NEGRO);
-	tab[0][1] = new caballo(color::NEGRO);
-	tab[0][2] = new alfil(color::NEGRO);
-	tab[0][3] = new dama(color::NEGRO);
-	tab[0][4] = new rey(color::NEGRO);
-	tab[0][5] = new alfil(color::NEGRO);
-	tab[0][6] = new caballo(color::NEGRO);
-	tab[0][7] = new torre(color::NEGRO);
+	tab[0][0] = new torre(color::NEGRO,t, v);
+	tab[0][1] = new caballo(color::NEGRO,t,v);
+	tab[0][2] = new alfil(color::NEGRO,t,v);
+	tab[0][3] = new dama(color::NEGRO, t, v);
+	tab[0][4] = new rey(color::NEGRO, t, v);
+	tab[0][5] = new alfil(color::NEGRO, t, v);
+	tab[0][6] = new caballo(color::NEGRO, t,v);
+	tab[0][7] = new torre(color::NEGRO, t,v);
 
 	for (int j = 0; j < _M; ++j)
-		tab[1][j] = new peon(color::NEGRO);
+		tab[1][j] = new peon(color::NEGRO, t,v);
 
 	// Piezas blancas
 	for (int j = 0; j < _M; ++j)
-		tab[6][j] = new peon(color::BLANCO);
+		tab[6][j] = new peon(color::BLANCO, t, v);
 
-	tab[7][0] = new torre(color::BLANCO);
-	tab[7][1] = new caballo(color::BLANCO);
-	tab[7][2] = new alfil(color::BLANCO);
-	tab[7][3] = new dama(color::BLANCO);
-	tab[7][4] = new rey(color::BLANCO);
-	tab[7][5] = new alfil(color::BLANCO);
-	tab[7][6] = new caballo(color::BLANCO);
-	tab[7][7] = new torre(color::BLANCO);
+	tab[7][0] = new torre(color::BLANCO, t, v);
+	tab[7][1] = new caballo(color::BLANCO, t, v);
+	tab[7][2] = new alfil(color::BLANCO, t ,v);
+	tab[7][3] = new dama(color::BLANCO, t, v);
+	tab[7][4] = new rey(color::BLANCO, t, v);
+	tab[7][5] = new alfil(color::BLANCO, t, v);
+	tab[7][6] = new caballo(color::BLANCO, t,v);
+	tab[7][7] = new torre(color::BLANCO, t, v);
 }
 
 
 
-void tablero::reserva_inicializacionDemi() {
+void tablero::reserva_inicializacionDemi(int *t, int *v) {
 
 	peon::setModoJuego(1);
 
@@ -90,29 +90,29 @@ void tablero::reserva_inicializacionDemi() {
 
 	std::cout << "Tablero inicializado correctamente." << std::endl;
 
-	tab[0][3] = new torre(color::NEGRO);
-	tab[0][1] = new caballo(color::NEGRO);
-	tab[0][2] = tab[0][5] = new alfil(color::NEGRO);
-	tab[0][0] = new rey(color::NEGRO);
+	tab[0][3] = new torre(color::NEGRO, t, v);
+	tab[0][1] = new caballo(color::NEGRO, t, v);
+	tab[0][2] = tab[0][5] = new alfil(color::NEGRO, t, v);
+	tab[0][0] = new rey(color::NEGRO, t, v);
 	//tab[0][1] = new dama(color::NEGRO);
 	for (int j = 0; j < _M; ++j) {
-		tab[1][j] = new peon(color::NEGRO);
+		tab[1][j] = new peon(color::NEGRO, t, v);
 	}
 
 
 	//Blancas
 	for (int j = 0; j < _M; ++j) {
-		tab[6][j] = new peon(color::BLANCO);; // Peones blancos
+		tab[6][j] = new peon(color::BLANCO, t, v);; // Peones blancos
 	}
-	tab[7][3] = new torre(color::BLANCO); // Torres blancas
-	tab[7][1] = new caballo(color::BLANCO); // Caballos blancos
-	tab[7][2] = new alfil(color::BLANCO); // Alfiles blancos
-	tab[7][0] = new rey(color::BLANCO);              // Dama blanca
+	tab[7][3] = new torre(color::BLANCO, t, v); // Torres blancas
+	tab[7][1] = new caballo(color::BLANCO, t, v); // Caballos blancos
+	tab[7][2] = new alfil(color::BLANCO, t, v); // Alfiles blancos
+	tab[7][0] = new rey(color::BLANCO, t, v);              // Dama blanca
 	//tab[4][1] = new dama(color::BLANCO);              // Rey blanco
 
 
 }
-void tablero::reserva_inicializacionSilver() {
+void tablero::reserva_inicializacionSilver(int *t, int *v) {
 
 	peon::setModoJuego(1);
 	if (_N <= 0 || _M <= 0) {
@@ -135,25 +135,25 @@ void tablero::reserva_inicializacionSilver() {
 
 	std::cout << "Tablero inicializado correctamente." << std::endl;
 
-	tab[0][3] = tab[0][0] = new torre(color::NEGRO);
+	tab[0][3] = tab[0][0] = new torre(color::NEGRO, t, v);
 	//tab[0][1]  = new caballo(color::NEGRO);
 	//tab[0][2]  = new alfil(color::NEGRO);
-	tab[0][2] = new rey(color::NEGRO);
-	tab[0][1] = new dama(color::NEGRO);
+	tab[0][2] = new rey(color::NEGRO, t, v);
+	tab[0][1] = new dama(color::NEGRO, t, v);
 	for (int j = 0; j < _M; ++j) {
-		tab[1][j] = new peon(color::NEGRO);
+		tab[1][j] = new peon(color::NEGRO, t, v);
 	}
 
 
 	//Blancas
 	for (int j = 0; j < _M; ++j) {
-		tab[3][j] = new peon(color::BLANCO);; // Peones blancos
+		tab[3][j] = new peon(color::BLANCO, t, v);; // Peones blancos
 	}
-	tab[4][3] = tab[4][0] = new torre(color::BLANCO); // Torres blancas
+	tab[4][3] = tab[4][0] = new torre(color::BLANCO, t, v); // Torres blancas
 	//tab[7][1] =  new caballo(color::BLANCO); // Caballos blancos
 	//tab[7][2] = new alfil(color::BLANCO); // Alfiles blancos
-	tab[4][2] = new rey(color::BLANCO);              // Dama blanca
-	tab[4][1] = new dama(color::BLANCO);              // Rey blanco
+	tab[4][2] = new rey(color::BLANCO, t, v);              // Dama blanca
+	tab[4][1] = new dama(color::BLANCO, t, v);              // Rey blanco
 
 
 }

@@ -7,7 +7,7 @@ private:
     jugador jugadorBlanco;
     jugador jugadorNegro;
     jugador* jugadorActual;
-    tablero* t;
+    tablero* tab;
     std::string variante;
     int turno;
 
@@ -20,19 +20,19 @@ public:
     jugador* getJugadorActual() const;
     bool estaEnJaque() const;
     Pieza*** getTablero() const {
-        return t->getTablero(); // en `tablero` haces return tab;
+        return tab->getTablero(); // en `tablero` haces return tab;
     }
-    int getFilas() const { return t->getFilas(); }
-    int getColumnas() const { return t->getColumnas(); }
+    int getFilas() const { return tab->getFilas(); }
+    int getColumnas() const { return tab->getColumnas(); }
     //interfaz
     void drawpartida(int variante, int vision);
-
+    void inicializarTablero(int t, int v);     // crea el tablero según la variante
 private:
-    void inicializarTablero();     // crea el tablero según la variante
+    
     void cambiarTurno();
-    void colocarSilverman();
-    void colocarDemi();
-    void colocarClasico();
+    void colocarSilverman(int t, int v);
+    void colocarDemi(int t, int v);
+    void colocarClasico(int t, int v);
 
 };
 

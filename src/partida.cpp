@@ -7,47 +7,47 @@ partida::partida(const std::string& tipo)
     jugadorActual(&jugadorBlanco),
     variante(tipo),
     turno(0) {
-    inicializarTablero();
+    inicializarTablero(int t,int v);
 }
 
 partida::~partida() {
-    delete t;
+    delete tab;
 }
 
-void partida::inicializarTablero() {
+void partida::inicializarTablero(int t, int v) {
     if (variante == "silverman") {
-        t = new tablero(5, 4);
-        colocarSilverman();
+        tab = new tablero(5, 4);
+        colocarSilverman(t,v);
     }
     else if (variante == "demi") {
-        t = new tablero(8, 4);
-        colocarDemi();
+        tab = new tablero(8, 4);
+        colocarDemi(t,v);
     }
     else {
-        t = new tablero(8, 8);
-        colocarClasico();
+        tab = new tablero(8, 8);
+        colocarClasico(t,v);
     }
 }
 
-void partida::colocarSilverman() {
-    t->reserva_inicializacionSilver();
+void partida::colocarSilverman(int t, int v) {
+    tab->reserva_inicializacionSilver(int t, int v);
 }
 
 
-void partida::colocarDemi() {
+void partida::colocarDemi(int t,int v) {
 
-    t->reserva_inicializacionDemi();
+    tab->reserva_inicializacionDemi(int t,int v);
 }
 
-void partida::colocarClasico() {
-    t->reserva_inicializacionClasico();
+void partida::colocarClasico(int t, int v) {
+    tab->reserva_inicializacionClasico(int t,int v);
 }
 
 
 void partida::jugarTurno(int x1, int y1, int x2, int y2) {
     std::cout << "Turno de " << (jugadorActual->getColor() == color::BLANCO ? "blancas" : "negras") << std::endl;
 
-    if (!t->mueve_pieza(x1, y1, x2, y2, jugadorActual->getColor())) {
+    if (!tab->mueve_pieza(x1, y1, x2, y2, jugadorActual->getColor())) {
         std::cout << "Movimiento no ejecutado." << std::endl;
         return;
     }
@@ -66,7 +66,7 @@ void partida::cambiarTurno() {
 }
 
 void partida::mostrarTablero() const {
-    t->print(std::cout);
+    tab->print(std::cout);
 }
 
 jugador* partida::getJugadorActual() const {
@@ -74,13 +74,19 @@ jugador* partida::getJugadorActual() const {
 }
 
 bool partida::estaEnJaque() const {
-    return t->estaEnJaque(jugadorActual->getColor());
+    return tab->estaEnJaque(jugadorActual->getColor());
 }
 
 void partida::drawpartida(int variante, int vision) {
 
     //Tablero
-    tablero.dibuja();
+    tablero.dibuja(tema);
+
+    //Dibuja las piezas segun el modo de vista
+    blancas.cambiaTematica(tema);
+    negras.cambiaTematica(tema);
+    blancas.cambiaVision(vision);
+    negras.cambiaVision(vision);
 
 
     //Piezas 

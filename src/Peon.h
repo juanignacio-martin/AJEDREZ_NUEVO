@@ -8,8 +8,8 @@ private:
     static int modo_juego; // 0 = Clásico/Demi, 1 = Silverman
 
 public:
-    peon(color col)
-        : Pieza(tipo_pieza::PEON, col)
+    peon(color col, int t, int v)
+        : Pieza(tipo_pieza::PEON, col, t, v)
     {}
 
     bool movimiento_valido(int x_origen, int y_origen, int x_destino, int y_destino, Pieza*** tablero) const override;

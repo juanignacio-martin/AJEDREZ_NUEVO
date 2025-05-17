@@ -12,8 +12,8 @@ std::string tipoPiezaToString(tipo_pieza tipo);
 
 class Pieza {
 public:
-    Pieza(tipo_pieza tip = tipo_pieza::VACIO, color col = color::BLANCO)
-        : tipo(tip), col(col) {}
+    Pieza(tipo_pieza tip = tipo_pieza::VACIO, color col = color::BLANCO, int t, int v)
+        : tipo(tip), col(col), tema (t), vista (v){}
 
     virtual ~Pieza() {}  // Destructor virtual obligatorio para clases base
 
@@ -28,9 +28,21 @@ public:
 
     friend ostream& operator<<(std::ostream& os, const Pieza& pieza);
 
+    //Metodos interfaz 
+    void cambiaTematica(int t) { tema = t; }
+    void cambiaVision(int v) { vista = v; }
 protected:
     tipo_pieza tipo;
     color col;
+    int tema{};             //Tematica del juego, por defecto normal
+    int vista = 1;          //Por defecto vista modo 3D
+
+    inline static Model King{ "resources/model/King.obj" };
+    inline static Model Queen{ "resources/model/Queen.obj" };
+    inline static Model Bishop{ "resources/model/Bishop.obj" };
+    inline static Model Rook{ "resources/model/Rook.obj" };
+    inline static Model Knight{ "resources/model/Knight.obj" };
+    inline static Model Pawn{ "resources/model/Pawn.obj" };
 };
 
 

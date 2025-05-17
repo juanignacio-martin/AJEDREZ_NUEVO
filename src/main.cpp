@@ -29,13 +29,30 @@ void display(void)
 void mouseCallback(int button, int state, int x, int y) {
     controlador->manejarClick(button, state, x, y);
 }
+
+
+//Funcion para control movimiento raton 
+void mouseMoveCallback(int x, int y)
+{
+    controlador->manejarmov(x, y);
+}
+
+
 //Funcion para control teclado
 void keyboardCallback(unsigned char key, int x, int y) {
     controlador->manejarTecla(key, x, y);
 
     glutPostRedisplay(); //fuerza que se vuelva a ejectutar
 }
-//Faltaria añadir una funcion para cuando se arrastra el raton y otra para cuando se mueve el raton
+
+//Funcion para temporizar
+void OnTimer(int value)
+{
+    
+    glutTimerFunc(25, OnTimer, 0);
+    glutPostRedisplay();
+}
+
 int main(int argc, char** argv) {
     std::string variante;
     std::cout << "Elige variante (clasico, silverman, demi): ";
@@ -45,28 +62,27 @@ int main(int argc, char** argv) {
     controlador = new ControladorJuego(p);
 
     //Inicializar el gestor de ventanas y crearla
+    double ancho = 800.0f, altura = 600.0f;
     glutInit(&argc, argv);
-    //glutInitWindowSize(p->getColumnas() * controlador->getVista().getCeldaSize(), p->getFilas() * controlador->getVista().getCeldaSize());
-    glutInitWindowSize(1000.0f, 1000.0f); //Tamaño general cambiar luego
+    glutInitWindowSize(ancho, altura); //Tamaño general cambiar luego
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutCreateWindow("Ajedrez POO");
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
 
 
+    //Perspectiva, luz
     glEnable(GL_LIGHT0);
     glEnable(GL_LIGHTING);
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_COLOR_MATERIAL);
     glMatrixMode(GL_PROJECTION);
-    gluPerspective(40.0, 1000.0f / 1000.0f, 0.1, 150); //Tamaño general cambiar luego. este permite 3D
-    //gluOrtho2D(0, p->getColumnas() * controlador->getVista().getCeldaSize(), p->getFilas() * controlador->getVista().getCeldaSize(), 0); 
-
-    //Callbacks
+    gluPerspective(40.0, ancho/altura, 0.1, 150); //Tamaño general cambiar luego. este permite 3D
     
-    glutDisplayFunc(display);   //Antes displaycallback 
-    glutMouseFunc(mouseCallback);
-    glutKeyboardFunc(keyboardCallback);
+    //Callbacks
+    glutDisplayFunc(display);  //Antes displaycallback
+    glutTimerFunc(25, OnTimer, 0);  //cada 25msllame 1 vez a la funcion OnTimer() 
+    glutMouseFunc(mouseCallback);   //click del raton
+    glutKeyboardFunc(keyboardCallback); //Teclado
+    glutPassiveMotionFunc(mouseMoveCallback); // Movimiento pasivo del ratón (sin botón presionado)
 
     //Bucle infinito
     glutMainLoop();
