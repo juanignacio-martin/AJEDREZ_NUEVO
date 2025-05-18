@@ -33,6 +33,13 @@ void BotFacil::jugarTurnoBot(partida* juego){
         int dx = rand() % filas;
         int dy = rand() % columnas;
 
+        Pieza* destino = tablero[dx][dy];
+
+        // Si la casilla de destino tiene al Rey aliado, saltamos esta jugada
+        if (destino && destino->getColor() == colorBot && destino->getTipo() == tipo_pieza::REY) {
+            continue;
+        }
+
         if (juego->jugarTurno(x1, y1, dx, dy)) {
             return; // éxito
         }
