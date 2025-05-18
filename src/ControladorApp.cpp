@@ -1,5 +1,6 @@
 #include "ControladorApp.h"
 #include "BotFacil.h"
+#include "BotMedio.h"
 #include <iostream>
 
 ControladorApp::ControladorApp() {
@@ -25,12 +26,15 @@ ControladorApp::ControladorApp() {
 void ControladorApp::mostrarSeleccionOponente() {
     std::vector<std::string> opciones = {
         "Jugar contra Humano",
-        "Jugar contra Bot"
+        "Jugar contra Bot Facil",
+        "Jugar contra Bot Medio"
     };
 
     std::vector<std::function<void()>> acciones = {
-        [this]() { iniciarJuego(varianteSeleccionada, false); },
-        [this]() { iniciarJuego(varianteSeleccionada, true); }
+        [this]() { iniciarJuego(varianteSeleccionada, nullptr); },
+        [this]() { iniciarJuego(varianteSeleccionada, new BotFacil()); },
+        [this]() { iniciarJuego(varianteSeleccionada, new BotMedio()); }
+
     };
 
     menu.setOpciones(opciones, acciones);
@@ -77,12 +81,12 @@ void ControladorApp::cambiarEstado(EstadoApp nuevo) {
     estado = nuevo;
 }
 
-void ControladorApp::iniciarJuego(std::string variante,bool contraBot) {
+void ControladorApp::iniciarJuego(std::string variante,Bot* bot) {
     if (juego) delete juego;
 
     partida* nuevaPartida = new partida(variante);
-    if (contraBot) {
-        nuevaPartida->setBot(new BotFacil());
+    if (bot) {
+        nuevaPartida->setBot(bot);
     }
     juego = new ControladorJuego(nuevaPartida, this);
 

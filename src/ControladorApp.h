@@ -17,7 +17,7 @@ public:
     EstadoApp getEstado() const { return estado; }
     void cambiarEstado(EstadoApp nuevo);
 
-    void iniciarJuego(std::string variante,bool contraBot);
+    void iniciarJuego(std::string variante, Bot* bot);
     void mostrarMenuPromocion(int fila, int columna, color c);
     void realizarPromocion(tipo_pieza nuevaPieza);
     void mostrarSeleccionOponente();
