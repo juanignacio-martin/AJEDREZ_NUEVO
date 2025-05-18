@@ -47,10 +47,12 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
     }
 
     // Movimiento doble si es el primer turno
-    if (y_origen == y_destino && x_destino == x_origen + 2 * direccion && (x_origen == 1 || x_origen == 6) &&
-        tablero[x_destino][y_destino] == nullptr && tablero[x_origen + direccion][y_destino] == nullptr) {
-        registrarMovimientoDoble(x_destino, y_destino); 
-        return true;
+    if (modo_juego == 0) {
+        if (y_origen == y_destino && x_destino == x_origen + 2 * direccion && (x_origen == 1 || x_origen == 6) &&
+            tablero[x_destino][y_destino] == nullptr && tablero[x_origen + direccion][y_destino] == nullptr) {
+            registrarMovimientoDoble(x_destino, y_destino);
+            return true;
+        }
     }
 
     // **Captura en diagonal**
