@@ -48,6 +48,18 @@ void BotMedio::jugarTurnoBot(partida* juego) {
                             continue;
 
                         if (p->movimiento_valido(i, j, xd, yd, tablero, colorBot)) {
+                            // Simular el movimiento
+                            Pieza* tempDestino = tablero[xd][yd];
+                            tablero[xd][yd] = p;
+                            tablero[i][j] = nullptr;
+                            bool dejaEnJaque = juego->getTableroPtr()->estaEnJaque(colorBot);                            // Deshacer
+                            tablero[i][j] = p;
+                            tablero[xd][yd] = tempDestino;
+
+                            // Si deja en jaque, no considerar
+                            if (dejaEnJaque)
+                                continue;
+
                             int valor = (destino && destino->getColor() != colorBot)
                                 ? valorPieza(destino->getTipo())
                                 : 0;

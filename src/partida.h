@@ -30,6 +30,9 @@ public:
     Pieza*** getTablero() const {
         return t->getTablero(); // en `tablero` haces return tab;
     }
+    tablero* getTableroPtr() const {
+        return t;
+    }
     int getFilas() const { return t->getFilas(); }
     int getColumnas() const { return t->getColumnas(); }
     void setBot(Bot* b) {
