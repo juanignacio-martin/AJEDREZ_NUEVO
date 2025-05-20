@@ -21,9 +21,11 @@ public:
 private:
     std::vector<std::string> textos;
     std::vector<std::function<void()>> callbacks;
-    int anchoBoton = 300;
+    int anchoBoton = 200;
     int altoBoton = 60;
-    int separacion = 20;
-    int xInicio = 100;
+    int separacion = 40;
+    int xInicio = 300;
     int yInicio = 100;
+    int altoBotonGrande = 100;
+    int separacionExtra = 50;
 };

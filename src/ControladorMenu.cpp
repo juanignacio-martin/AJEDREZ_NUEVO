@@ -14,23 +14,45 @@ void ControladorMenu::dibujar() {
     dibujaFondo();
     for (size_t i = 0; i < textos.size(); ++i) {
         int x = xInicio;
-        int y = yInicio + i * (altoBoton + separacion);
+        int y;
 
-        glColor3f(0.2f, 0.6f, 0.8f);
-        glBegin(GL_QUADS);
-        glVertex2f(x, y);
-        glVertex2f(x + anchoBoton, y);
-        glVertex2f(x + anchoBoton, y + altoBoton);
-        glVertex2f(x, y + altoBoton);
-        glEnd();
+        // Si es el último botón (suponiendo que es "Empezar")
+        if (i == textos.size() - 1) {
+            y = yInicio + i * (altoBoton + separacion) + separacionExtra;
 
-        glColor3f(1.0f, 1.0f, 1.0f);
-        glRasterPos2f(x + 20, y + altoBoton / 2);
-        for (char c : textos[i]) {
-            glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+            // Dibujar botón más grande
+            glColor3f(0.0f, 0.5f, 0.2f);  // otro color si quieres
+            glBegin(GL_QUADS);
+            glVertex2f(x, y);
+            glVertex2f(x + anchoBoton, y);
+            glVertex2f(x + anchoBoton, y + altoBotonGrande);
+            glVertex2f(x, y + altoBotonGrande);
+            glEnd();
+
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glRasterPos2f(x + 20, y + altoBotonGrande / 2);
+            for (char c : textos[i]) {
+                glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+            }
+        }
+        else {
+            // Botones normales
+            y = yInicio + i * (altoBoton + separacion);
+            glColor3f(0.2f, 0.6f, 0.8f);
+            glBegin(GL_QUADS);
+            glVertex2f(x, y);
+            glVertex2f(x + anchoBoton, y);
+            glVertex2f(x + anchoBoton, y + altoBoton);
+            glVertex2f(x, y + altoBoton);
+            glEnd();
+
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glRasterPos2f(x + 20, y + altoBoton / 2);
+            for (char c : textos[i]) {
+                glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+            }
         }
     }
-
     glutSwapBuffers();
 }
 
@@ -60,20 +82,21 @@ void ControladorMenu::dibujaFondo()
     glColor3f(1, 1, 1);
     glBegin(GL_QUADS);
 
-    glTexCoord2d(0, 1); glVertex3f(0, 0, -0.1);
-    glTexCoord2d(0, 0); glVertex3f(0, 800, -0.1);
-    glTexCoord2d(1, 0); glVertex3f(800, 800, -0.1);
-    glTexCoord2d(1, 1); glVertex3f(800, 0, -0.1);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0, 0); glVertex3f(0, 0, -0.1);           // Esquina superior izquierda
+    glTexCoord2f(1, 0); glVertex3f(800, 0, -0.1);         // Esquina superior derecha
+    glTexCoord2f(1, 1); glVertex3f(800, 600, -0.1);       // Inferior derecha
+    glTexCoord2f(0, 1); glVertex3f(0, 600, -0.1);         // Inferior izquierda
     glEnd();
 
-    glEnable(GL_LIGHTING);
+    glDisable(GL_LIGHTING);
     glDisable(GL_TEXTURE_2D);
 }
 void ControladorMenu::Tema()
 {
     switch (tematica)
     {
-    case 0: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/MenuSW.png").id); break;
-    case 1: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/MenuETSIDI.png").id); break;
+    case 0: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/menu.png").id); break;
+    case 1: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/menu.png").id); break;
     }
 }

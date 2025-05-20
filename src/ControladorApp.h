@@ -4,7 +4,7 @@
 #include "ControladorPromocion.h"
 #include "BotFacil.h"
 
-enum class EstadoApp { MENU_PRINCIPAL,MENU_VARIANTE,MENU_TEMATICA,SELECCION_OPONENTE, JUEGO, PROMOCION };
+enum class EstadoApp { MENU_PRINCIPAL, MENU_VARIANTE, MENU_TEMATICA, SELECCION_OPONENTE, JUEGO, PROMOCION };
 
 class ControladorApp {
 public:

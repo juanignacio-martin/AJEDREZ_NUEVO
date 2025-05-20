@@ -1,20 +1,33 @@
 ﻿  ControladorApp.cpp
+  ControladorJuego.cpp
   ControladorMenu.cpp
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(17,15): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(21,23): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(21,20): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(22,36): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(22,22): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(23,38): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(23,22): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(24,25): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(24,20): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(28,33): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(28,25): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(40,16): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(63,42): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(64,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(65,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(66,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(21,56): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(26,27): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(26,24): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(27,40): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(27,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(28,42): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(28,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(29,29): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(29,24): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(33,37): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(33,29): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(40,25): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(43,27): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(43,24): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(44,40): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(44,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(45,42): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(45,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(46,29): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(46,24): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(50,37): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(50,29): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(62,16): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(86,42): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(87,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(88,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorMenu.cpp(89,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  main.cpp
   Generando código...
   SuicideChess.vcxproj -> D:\Datos\Universidad\AJEDREZ_NUEVO\bin\SuicideChess.exe
