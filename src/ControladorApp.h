@@ -4,7 +4,7 @@
 #include "ControladorPromocion.h"
 #include "BotFacil.h"
 
-enum class EstadoApp { MENU,SELECCION_OPONENTE, JUEGO, PROMOCION };
+enum class EstadoApp { MENU_PRINCIPAL,MENU_VARIANTE,MENU_TEMATICA,SELECCION_OPONENTE, JUEGO, PROMOCION };
 
 class ControladorApp {
 public:
@@ -16,8 +16,10 @@ public:
 
     EstadoApp getEstado() const { return estado; }
     void cambiarEstado(EstadoApp nuevo);
-
-    void iniciarJuego(std::string variante,bool contraBot);
+    void mostrarMenuTematica();
+    void mostrarMenuVariante();
+    void mostrarMenuPrincipal();
+    void iniciarJuego(std::string variante, std::string tema, bool contraBot);
     void mostrarMenuPromocion(int fila, int columna, color c);
     void realizarPromocion(tipo_pieza nuevaPieza);
     void mostrarSeleccionOponente();
@@ -33,4 +35,6 @@ private:
     color colorPromocion;
 
     std::string varianteSeleccionada;
+    std::string tematicaSeleccionada;
+
 };

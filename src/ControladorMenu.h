@@ -6,11 +6,15 @@
 
 
 class ControladorMenu {
+    enum TEMATICA { SW = 0, ETSIDI } tematica{ SW };
+
 public:
     ControladorMenu();
 
     void dibujar();
     void manejarClick(int x, int y);
+    void Tema();
+    void dibujaFondo();
 
     void setOpciones(const std::vector<std::string>& opciones, const std::vector<std::function<void()>>& acciones);
 

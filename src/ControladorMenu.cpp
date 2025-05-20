@@ -1,5 +1,6 @@
 #include "ControladorMenu.h"
 #include <string>
+#include <ETSIDI.h>
 
 ControladorMenu::ControladorMenu() {}
 
@@ -10,7 +11,7 @@ void ControladorMenu::setOpciones(const std::vector<std::string>& opciones, cons
 
 void ControladorMenu::dibujar() {
     glClear(GL_COLOR_BUFFER_BIT);
-
+    dibujaFondo();
     for (size_t i = 0; i < textos.size(); ++i) {
         int x = xInicio;
         int y = yInicio + i * (altoBoton + separacion);
@@ -46,5 +47,33 @@ void ControladorMenu::manejarClick(int x, int y) {
             }
             return;
         }
+    }
+}
+
+void ControladorMenu::dibujaFondo()
+{
+    glEnable(GL_TEXTURE_2D);
+
+    Tema();
+    glDisable(GL_LIGHTING);
+    glBegin(GL_POLYGON);
+    glColor3f(1, 1, 1);
+    glBegin(GL_QUADS);
+
+    glTexCoord2d(0, 1); glVertex3f(0, 0, -0.1);
+    glTexCoord2d(0, 0); glVertex3f(0, 800, -0.1);
+    glTexCoord2d(1, 0); glVertex3f(800, 800, -0.1);
+    glTexCoord2d(1, 1); glVertex3f(800, 0, -0.1);
+    glEnd();
+
+    glEnable(GL_LIGHTING);
+    glDisable(GL_TEXTURE_2D);
+}
+void ControladorMenu::Tema()
+{
+    switch (tematica)
+    {
+    case 0: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/MenuSW.png").id); break;
+    case 1: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/MenuETSIDI.png").id); break;
     }
 }
