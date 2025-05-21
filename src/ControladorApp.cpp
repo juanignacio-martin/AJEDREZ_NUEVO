@@ -4,6 +4,7 @@
 #include <iostream>
 
 ControladorApp::ControladorApp() {
+    ranking.cargar(archivoRanking);
     estado = EstadoApp::MENU;
 
     std::vector<std::string> opciones = {
@@ -73,9 +74,11 @@ void ControladorApp::manejarClick(int boton, int estadoClick, int x, int y) {
 }
 
 void ControladorApp::manejarTecla(unsigned char key, int x, int y) {
-    if (estado == EstadoApp::JUEGO && juego)
+    if (estado == EstadoApp::JUEGO && juego) {
         juego->manejarTecla(key, x, y);
+    }
 }
+
 
 void ControladorApp::cambiarEstado(EstadoApp nuevo) {
     estado = nuevo;

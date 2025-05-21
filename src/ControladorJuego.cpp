@@ -31,8 +31,10 @@ void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
         seleccionandoOrigen = false;
     }
     else {
-        juego->jugarTurno(origenX, origenY, fila, columna);
+        bool exito = juego->jugarTurno(origenX, origenY, fila, columna);
         seleccionandoOrigen = true;
+
+        if (!exito) return;
 
         // Detectar si hay promoción
         Pieza* pz = juego->getTablero()[fila][columna];
@@ -43,13 +45,25 @@ void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
                 return;
             }
         }
-        // Si es contra bot y le toca al bot
+
+        if (juego->haFinalizado()) {
+            std::cout << "Fin de la partida.\n";
+            return;
+        }
+
         if (juego->esContraBot() && juego->getJugadorActual()->getColor() == color::NEGRO) {
             juego->getBot()->jugarTurnoBot(juego);
+
+            if (juego->haFinalizado()) {
+                std::cout << "Fin de la partida.\n";
+                return;
+            }
         }
+
+        glutPostRedisplay();
     }
-    glutPostRedisplay();
 }
+
 
 void ControladorJuego::manejarTecla(unsigned char key, int x, int y) {
     if (key == 27) { // ESC para cancelar selección

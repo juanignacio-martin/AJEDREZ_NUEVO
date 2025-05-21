@@ -3,8 +3,9 @@
 #include "ControladorMenu.h"
 #include "ControladorPromocion.h"
 #include "BotFacil.h"
+#include "clasificacion.h"
 
-enum class EstadoApp { MENU,SELECCION_OPONENTE, JUEGO, PROMOCION };
+enum class EstadoApp { MENU,SELECCION_OPONENTE, JUEGO, PROMOCION};
 
 class ControladorApp {
 public:
@@ -27,6 +28,10 @@ private:
     ControladorMenu menu;
     ControladorJuego* juego = nullptr;
     ControladorPromocion promo;
+
+    //clasificacion
+    Clasificacion ranking;
+    const std::string archivoRanking = "ranking.txt";
 
     // datos de la promoción
     int promFila = -1, promColumna = -1;
