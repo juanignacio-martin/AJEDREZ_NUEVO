@@ -1,9 +1,9 @@
-#include "Punto2D.h"
+#include "Punto.h"
 #include "freeglut.h"
 #include <math.h>
 
 
-double modulo(Punto2D a, Punto2D b)
+double modulo(Punto a, Punto b)
 {
 	return sqrt(pow((a.x - b.x), 2) + pow((a.z - b.z), 2));
 }

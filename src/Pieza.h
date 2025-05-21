@@ -36,13 +36,13 @@ protected:
     color col;
     int tema{};             //Tematica del juego, por defecto normal
     int vista = 1;          //Por defecto vista modo 3D
-
-    inline static Model King{ "resources/model/King.obj" };
+    /*
+    inline static Model Rey{ "resources/model/King.obj" };
     inline static Model Queen{ "resources/model/Queen.obj" };
     inline static Model Bishop{ "resources/model/Bishop.obj" };
     inline static Model Rook{ "resources/model/Rook.obj" };
     inline static Model Knight{ "resources/model/Knight.obj" };
-    inline static Model Pawn{ "resources/model/Pawn.obj" };
+    inline static Model Pawn{ "resources/model/Pawn.obj" };*/
 };
 
 

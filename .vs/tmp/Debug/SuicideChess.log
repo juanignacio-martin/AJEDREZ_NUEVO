@@ -1,14 +1,989 @@
-﻿  tablero.cpp
+﻿  alfil.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/alfil.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/alfil.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(6,43): error C2665: 'Pieza::Pieza':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+  (compilando archivo de origen "src/alfil.cpp")
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,5):
+      puede ser 'Pieza::Pieza(tipo_pieza,color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(6,43):
+          'Pieza::Pieza(tipo_pieza,color,int,int)': el argumento 2 no puede convertirse de 'int' a 'color'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(6,63):
+              La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis)
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(6,43):
+      al hacer coincidir la lista de argumentos '(tipo_pieza, int, int)'
+  
+  caballo.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/caballo.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/caballo.cpp")
+  
+  casilla.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(3,6): error C2653: 'Casilla': no es un nombre de clase o espacio de nombres
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(7,3): error C2065: 'color': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(7,189): error C2059: error de sintaxis: ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(7,190): error C2059: error de sintaxis: ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(7,191): error C2059: error de sintaxis: ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(15,37): error C2065: 'tam': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(15,52): error C2065: 'tam': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(15,22): error C2660: 'glVertex3d': la función no acepta 2 argumentos
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1475,25):
+      vea la declaración de 'glVertex3d'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(15,22):
+      al hacer coincidir la lista de argumentos '()'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(16,37): error C2065: 'tam': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(16,48): error C2065: 'tam': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(16,22): error C2660: 'glVertex3d': la función no acepta 2 argumentos
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1475,25):
+      vea la declaración de 'glVertex3d'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(16,22):
+      al hacer coincidir la lista de argumentos '()'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(17,33): error C2065: 'tam': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(17,54): error C2065: 'tam': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(17,22): error C2660: 'glVertex3d': la función no acepta 2 argumentos
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1475,25):
+      vea la declaración de 'glVertex3d'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(17,22):
+      al hacer coincidir la lista de argumentos '()'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(18,33): error C2065: 'tam': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(18,58): error C2065: 'tam': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(18,22): error C2660: 'glVertex3d': la función no acepta 2 argumentos
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\GL\gl.h(1475,25):
+      vea la declaración de 'glVertex3d'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\casilla.cpp(18,22):
+      al hacer coincidir la lista de argumentos '()'
+  
+  ControladorJuego.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/ControladorJuego.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/ControladorJuego.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(7,34): error C2059: error de sintaxis: ','
+  (compilando archivo de origen "src/ControladorJuego.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43): error C2665: 'Pieza::Pieza':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+  (compilando archivo de origen "src/ControladorJuego.cpp")
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,5):
+      puede ser 'Pieza::Pieza(tipo_pieza,color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+          'Pieza::Pieza(tipo_pieza,color,int,int)': el argumento 2 no puede convertirse de 'int' a 'color'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,63):
+              La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis)
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+      al hacer coincidir la lista de argumentos '(tipo_pieza, int, int)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(36,13): error C2059: error de sintaxis: ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(39,13): error C2059: error de sintaxis: ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(43,10): error C2275: 'ControladorJuego::ESTADO': se esperaba una expresión en lugar de un tipo
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(43,10): error C2131: la expresión no se evaluó como una constante
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(43,10):
+      el error se debió a argumentos no constantes o una referencia a un símbolo no constante
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(43,10):
+      consulte el uso de 'ControladorJuego::ESTADO'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(48,10): error C2275: 'ControladorJuego::ESTADO': se esperaba una expresión en lugar de un tipo
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(48,10): error C2131: la expresión no se evaluó como una constante
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(48,10):
+      el error se debió a argumentos no constantes o una referencia a un símbolo no constante
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(48,10):
+      consulte el uso de 'ControladorJuego::ESTADO'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(58,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(59,50): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(60,51): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(61,50): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(71,24): error C2601: 'ControladorJuego::manejarClick': las definiciones de funciones locales no son válidas
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(9,34):
+      esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(90,24): error C2601: 'ControladorJuego::manejarTecla': las definiciones de funciones locales no son válidas
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(9,34):
+      esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.cpp(9,34): error C1075: "{": no se encontró ningún token coincidente
+  dama.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/dama.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/dama.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.h(7,34): error C2059: error de sintaxis: ','
+  (compilando archivo de origen "src/dama.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(6,43): error C2665: 'Pieza::Pieza':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+  (compilando archivo de origen "src/dama.cpp")
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,5):
+      puede ser 'Pieza::Pieza(tipo_pieza,color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(6,43):
+          'Pieza::Pieza(tipo_pieza,color,int,int)': el argumento 2 no puede convertirse de 'int' a 'color'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(6,63):
+              La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis)
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(6,43):
+      al hacer coincidir la lista de argumentos '(tipo_pieza, int, int)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(7,12): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\torre.h(10,1):
+      puede ser 'torre::torre(torre &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(7,12):
+          'torre::torre(torre &&)': el argumento 1 no puede convertirse de 'color' a 'torre &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(7,27):
+              Razón: no se puede realizar la conversión de 'color' a 'torre'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(7,27):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\torre.h(10,1):
+      o       'torre::torre(const torre &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(7,12):
+          'torre::torre(const torre &)': el argumento 1 no puede convertirse de 'color' a 'const torre &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(7,27):
+              Razón: no se puede realizar la conversión de 'color' a 'const torre'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(7,27):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(7,12):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(8,12): error C2665: 'alfil::alfil':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(10,1):
+      puede ser 'alfil::alfil(alfil &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(8,12):
+          'alfil::alfil(alfil &&)': el argumento 1 no puede convertirse de 'color' a 'alfil &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(8,27):
+              Razón: no se puede realizar la conversión de 'color' a 'alfil'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(8,27):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\alfil.h(10,1):
+      o       'alfil::alfil(const alfil &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(8,12):
+          'alfil::alfil(const alfil &)': el argumento 1 no puede convertirse de 'color' a 'const alfil &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(8,27):
+              Razón: no se puede realizar la conversión de 'color' a 'const alfil'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(8,27):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\dama.cpp(8,12):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+  jugador.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/jugador.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/jugador.cpp")
+  
+  main.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/main.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/main.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(7,34): error C2059: error de sintaxis: ','
+  (compilando archivo de origen "src/main.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43): error C2665: 'Pieza::Pieza':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+  (compilando archivo de origen "src/main.cpp")
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,5):
+      puede ser 'Pieza::Pieza(tipo_pieza,color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+          'Pieza::Pieza(tipo_pieza,color,int,int)': el argumento 2 no puede convertirse de 'int' a 'color'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,63):
+              La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis)
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+      al hacer coincidir la lista de argumentos '(tipo_pieza, int, int)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\main.cpp(37,18): error C2039: "manejarmov": no es un miembro de "ControladorJuego"
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\ControladorJuego.h(5,7):
+      vea la declaración de 'ControladorJuego'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\main.cpp(67,31): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\main.cpp(67,24): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+  Menu.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/Menu.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/Menu.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(7,34): error C2059: error de sintaxis: ','
+  (compilando archivo de origen "src/Menu.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43): error C2665: 'Pieza::Pieza':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+  (compilando archivo de origen "src/Menu.cpp")
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,5):
+      puede ser 'Pieza::Pieza(tipo_pieza,color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+          'Pieza::Pieza(tipo_pieza,color,int,int)': el argumento 2 no puede convertirse de 'int' a 'color'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,63):
+              La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis)
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+      al hacer coincidir la lista de argumentos '(tipo_pieza, int, int)'
+  
+  Model.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(8,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(19,18): error C2079: 'obj' utiliza class 'std::basic_fstream<char,std::char_traits<char>>' sin definir
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(25,16): error C2672: 'getline': no se encontró una función sobrecargada que coincida
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string(82,32):
+      puede ser 'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(25,16):
+          "std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "std::basic_istream<_Elem,_Traits> &" de "int"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string(75,32):
+      o       'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(25,16):
+          "std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)": espera 3 argumentos - 2 proporcionado
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string(68,32):
+      o       'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(25,16):
+          "std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &)": no se pudo deducir el argumento plantilla para "std::basic_istream<_Elem,_Traits> &&" de "int"
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string(25,32):
+      o       'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(25,16):
+          "std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)": espera 3 argumentos - 2 proporcionado
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(28,20): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(84,41): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(111,12): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(128,24): error C2079: 'ssinput' utiliza class 'std::basic_istringstream<char,std::char_traits<char>,std::allocator<char>>' sin definir
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(128,31): error C2440: 'inicializando': no se puede realizar la conversión de 'std::string' a 'int'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(128,31):
+      No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(131,13): error C2297: '>>': no es válido porque el operando derecho tiene el tipo 'float'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(131,13): warning C4552: ">>": el resultado de la expresión no se usa
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(137,24): error C2079: 'ssinput' utiliza class 'std::basic_istringstream<char,std::char_traits<char>,std::allocator<char>>' sin definir
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(137,31): error C2440: 'inicializando': no se puede realizar la conversión de 'std::string' a 'int'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(137,31):
+      No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Model.cpp(140,13): warning C4552: ">>": el resultado de la expresión no se usa
+  partida.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/partida.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/partida.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(7,34): error C2059: error de sintaxis: ','
+  (compilando archivo de origen "src/partida.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43): error C2665: 'Pieza::Pieza':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+  (compilando archivo de origen "src/partida.cpp")
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,5):
+      puede ser 'Pieza::Pieza(tipo_pieza,color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+          'Pieza::Pieza(tipo_pieza,color,int,int)': el argumento 2 no puede convertirse de 'int' a 'color'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,63):
+              La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis)
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+      al hacer coincidir la lista de argumentos '(tipo_pieza, int, int)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(10,24): error C2144: error de sintaxis: 'int' debe estar precedido de ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(10,5): error C2660: 'partida::inicializarTablero': la función no acepta 0 argumentos
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.h(29,10):
+      vea la declaración de 'partida::inicializarTablero'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(10,5):
+      al hacer coincidir la lista de argumentos '()'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(10,24): error C2144: error de sintaxis: 'int' debe estar precedido de ';'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(10,30): error C2062: tipo 'int' inesperado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(10,35): error C2059: error de sintaxis: ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(33,39): error C2144: error de sintaxis: 'int' debe estar precedido de ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(33,10): error C2660: 'tablero::reserva_inicializacionSilver': la función no acepta 0 argumentos
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.h(50,7):
+      vea la declaración de 'tablero::reserva_inicializacionSilver'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(33,10):
+      al hacer coincidir la lista de argumentos '()'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(33,39): error C2144: error de sintaxis: 'int' debe estar precedido de ';'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(33,43): error C2082: nueva definición del parámetro formal 't'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(33,46): error C2062: tipo 'int' inesperado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(33,51): error C2059: error de sintaxis: ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(39,37): error C2144: error de sintaxis: 'int' debe estar precedido de ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(39,10): error C2660: 'tablero::reserva_inicializacionDemi': la función no acepta 0 argumentos
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.h(49,7):
+      vea la declaración de 'tablero::reserva_inicializacionDemi'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(39,10):
+      al hacer coincidir la lista de argumentos '()'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(39,37): error C2144: error de sintaxis: 'int' debe estar precedido de ';'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(39,41): error C2082: nueva definición del parámetro formal 't'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(39,43): error C2062: tipo 'int' inesperado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(39,48): error C2059: error de sintaxis: ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(43,40): error C2144: error de sintaxis: 'int' debe estar precedido de ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(43,10): error C2660: 'tablero::reserva_inicializacionClasico': la función no acepta 0 argumentos
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.h(48,7):
+      vea la declaración de 'tablero::reserva_inicializacionClasico'
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(43,10):
+      al hacer coincidir la lista de argumentos '()'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(43,40): error C2144: error de sintaxis: 'int' debe estar precedido de ';'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(43,44): error C2082: nueva definición del parámetro formal 't'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(43,46): error C2062: tipo 'int' inesperado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(43,51): error C2059: error de sintaxis: ')'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(55,9): error C2065: 't': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(83,12): error C2059: error de sintaxis: '.'
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(86,5): error C2065: 'blancas': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(86,28): error C2065: 'tema': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(87,5): error C2065: 'negras': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(87,27): error C2065: 'tema': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(88,5): error C2065: 'blancas': identificador no declarado
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\partida.cpp(89,5): error C2065: 'negras': identificador no declarado
+  peon.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/peon.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/peon.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(7,34): error C2059: error de sintaxis: ','
+  (compilando archivo de origen "src/peon.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43): error C2665: 'Pieza::Pieza':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+  (compilando archivo de origen "src/peon.cpp")
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,5):
+      puede ser 'Pieza::Pieza(tipo_pieza,color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+          'Pieza::Pieza(tipo_pieza,color,int,int)': el argumento 2 no puede convertirse de 'int' a 'color'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,63):
+              La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis)
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+      al hacer coincidir la lista de argumentos '(tipo_pieza, int, int)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(71,43): error C2665: 'dama::dama':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(11,1):
+      puede ser 'dama::dama(dama &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(71,43):
+          'dama::dama(dama &&)': el argumento 1 no puede convertirse de 'color' a 'dama &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(71,51):
+              Razón: no se puede realizar la conversión de 'color' a 'dama'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(71,51):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(11,1):
+      o       'dama::dama(const dama &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(71,43):
+          'dama::dama(const dama &)': el argumento 1 no puede convertirse de 'color' a 'const dama &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(71,51):
+              Razón: no se puede realizar la conversión de 'color' a 'const dama'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(71,51):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(71,43):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(74,44): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(10,1):
+      puede ser 'torre::torre(torre &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(74,44):
+          'torre::torre(torre &&)': el argumento 1 no puede convertirse de 'color' a 'torre &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(74,52):
+              Razón: no se puede realizar la conversión de 'color' a 'torre'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(74,52):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(10,1):
+      o       'torre::torre(const torre &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(74,44):
+          'torre::torre(const torre &)': el argumento 1 no puede convertirse de 'color' a 'const torre &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(74,52):
+              Razón: no se puede realizar la conversión de 'color' a 'const torre'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(74,52):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(74,44):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(77,44): error C2665: 'alfil::alfil':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(10,1):
+      puede ser 'alfil::alfil(alfil &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(77,44):
+          'alfil::alfil(alfil &&)': el argumento 1 no puede convertirse de 'color' a 'alfil &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(77,52):
+              Razón: no se puede realizar la conversión de 'color' a 'alfil'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(77,52):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(10,1):
+      o       'alfil::alfil(const alfil &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(77,44):
+          'alfil::alfil(const alfil &)': el argumento 1 no puede convertirse de 'color' a 'const alfil &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(77,52):
+              Razón: no se puede realizar la conversión de 'color' a 'const alfil'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(77,52):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(77,44):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(80,46): error C2665: 'caballo::caballo':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(11,1):
+      puede ser 'caballo::caballo(caballo &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(80,46):
+          'caballo::caballo(caballo &&)': el argumento 1 no puede convertirse de 'color' a 'caballo &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(80,54):
+              Razón: no se puede realizar la conversión de 'color' a 'caballo'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(80,54):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(11,1):
+      o       'caballo::caballo(const caballo &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(80,46):
+          'caballo::caballo(const caballo &)': el argumento 1 no puede convertirse de 'color' a 'const caballo &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(80,54):
+              Razón: no se puede realizar la conversión de 'color' a 'const caballo'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(80,54):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(80,46):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(84,43): error C2665: 'dama::dama':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(11,1):
+      puede ser 'dama::dama(dama &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(84,43):
+          'dama::dama(dama &&)': el argumento 1 no puede convertirse de 'color' a 'dama &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(84,51):
+              Razón: no se puede realizar la conversión de 'color' a 'dama'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(84,51):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(11,1):
+      o       'dama::dama(const dama &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(84,43):
+          'dama::dama(const dama &)': el argumento 1 no puede convertirse de 'color' a 'const dama &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(84,51):
+              Razón: no se puede realizar la conversión de 'color' a 'const dama'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(84,51):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(84,43):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(91,43): error C2665: 'dama::dama':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(11,1):
+      puede ser 'dama::dama(dama &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(91,43):
+          'dama::dama(dama &&)': el argumento 1 no puede convertirse de 'color' a 'dama &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(91,51):
+              Razón: no se puede realizar la conversión de 'color' a 'dama'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(91,51):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(11,1):
+      o       'dama::dama(const dama &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(91,43):
+          'dama::dama(const dama &)': el argumento 1 no puede convertirse de 'color' a 'const dama &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(91,51):
+              Razón: no se puede realizar la conversión de 'color' a 'const dama'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(91,51):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(91,43):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(94,44): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(10,1):
+      puede ser 'torre::torre(torre &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(94,44):
+          'torre::torre(torre &&)': el argumento 1 no puede convertirse de 'color' a 'torre &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(94,52):
+              Razón: no se puede realizar la conversión de 'color' a 'torre'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(94,52):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(10,1):
+      o       'torre::torre(const torre &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(94,44):
+          'torre::torre(const torre &)': el argumento 1 no puede convertirse de 'color' a 'const torre &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(94,52):
+              Razón: no se puede realizar la conversión de 'color' a 'const torre'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(94,52):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(94,44):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(97,44): error C2665: 'alfil::alfil':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(10,1):
+      puede ser 'alfil::alfil(alfil &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(97,44):
+          'alfil::alfil(alfil &&)': el argumento 1 no puede convertirse de 'color' a 'alfil &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(97,52):
+              Razón: no se puede realizar la conversión de 'color' a 'alfil'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(97,52):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(10,1):
+      o       'alfil::alfil(const alfil &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(97,44):
+          'alfil::alfil(const alfil &)': el argumento 1 no puede convertirse de 'color' a 'const alfil &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(97,52):
+              Razón: no se puede realizar la conversión de 'color' a 'const alfil'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(97,52):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(97,44):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(100,46): error C2665: 'caballo::caballo':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(11,1):
+      puede ser 'caballo::caballo(caballo &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(100,46):
+          'caballo::caballo(caballo &&)': el argumento 1 no puede convertirse de 'color' a 'caballo &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(100,54):
+              Razón: no se puede realizar la conversión de 'color' a 'caballo'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(100,54):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(11,1):
+      o       'caballo::caballo(const caballo &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(100,46):
+          'caballo::caballo(const caballo &)': el argumento 1 no puede convertirse de 'color' a 'const caballo &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(100,54):
+              Razón: no se puede realizar la conversión de 'color' a 'const caballo'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(100,54):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(100,46):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(104,43): error C2665: 'dama::dama':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(11,1):
+      puede ser 'dama::dama(dama &&)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(104,43):
+          'dama::dama(dama &&)': el argumento 1 no puede convertirse de 'color' a 'dama &&'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(104,51):
+              Razón: no se puede realizar la conversión de 'color' a 'dama'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(104,51):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(11,1):
+      o       'dama::dama(const dama &)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(104,43):
+          'dama::dama(const dama &)': el argumento 1 no puede convertirse de 'color' a 'const dama &'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(104,51):
+              Razón: no se puede realizar la conversión de 'color' a 'const dama'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(104,51):
+              No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\peon.cpp(104,43):
+      al hacer coincidir la lista de argumentos '(color)'
+  
+  pieza.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/pieza.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/pieza.cpp")
+  
+  rey.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/rey.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/rey.cpp")
+  
+  tablero.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/tablero.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/tablero.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(7,34): error C2059: error de sintaxis: ','
+  (compilando archivo de origen "src/tablero.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43): error C2665: 'Pieza::Pieza':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+  (compilando archivo de origen "src/tablero.cpp")
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,5):
+      puede ser 'Pieza::Pieza(tipo_pieza,color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+          'Pieza::Pieza(tipo_pieza,color,int,int)': el argumento 2 no puede convertirse de 'int' a 'color'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,63):
+              La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis)
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+      al hacer coincidir la lista de argumentos '(tipo_pieza, int, int)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(41,23): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(7,5):
+      puede ser 'torre::torre(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(41,23):
+          'torre::torre(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(41,37):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(41,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(42,25): error C2665: 'caballo::caballo':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(6,5):
+      puede ser 'caballo::caballo(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(42,25):
+          'caballo::caballo(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(42,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(42,25):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(43,23): error C2665: 'alfil::alfil':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,5):
+      puede ser 'alfil::alfil(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(43,23):
+          'alfil::alfil(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(43,37):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(43,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(44,22): error C2665: 'dama::dama':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(6,5):
+      puede ser 'dama::dama(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(44,22):
+          'dama::dama(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(44,37):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(44,22):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(45,21): error C2665: 'rey::rey':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Rey.h(6,5):
+      puede ser 'rey::rey(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(45,21):
+          'rey::rey(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(45,36):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(45,21):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(46,23): error C2665: 'alfil::alfil':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,5):
+      puede ser 'alfil::alfil(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(46,23):
+          'alfil::alfil(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(46,38):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(46,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(47,25): error C2665: 'caballo::caballo':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(6,5):
+      puede ser 'caballo::caballo(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(47,25):
+          'caballo::caballo(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(47,40):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(47,25):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(48,23): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(7,5):
+      puede ser 'torre::torre(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(48,23):
+          'torre::torre(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(48,38):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(48,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(51,23): error C2665: 'peon::peon':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Peon.h(11,5):
+      puede ser 'peon::peon(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(51,23):
+          'peon::peon(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(51,38):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(51,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(55,23): error C2665: 'peon::peon':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Peon.h(11,5):
+      puede ser 'peon::peon(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(55,23):
+          'peon::peon(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(55,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(55,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(57,23): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(7,5):
+      puede ser 'torre::torre(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(57,23):
+          'torre::torre(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(57,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(57,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(58,25): error C2665: 'caballo::caballo':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(6,5):
+      puede ser 'caballo::caballo(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(58,25):
+          'caballo::caballo(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(58,41):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(58,25):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(59,23): error C2665: 'alfil::alfil':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,5):
+      puede ser 'alfil::alfil(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(59,23):
+          'alfil::alfil(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(59,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(59,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(60,22): error C2665: 'dama::dama':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(6,5):
+      puede ser 'dama::dama(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(60,22):
+          'dama::dama(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(60,38):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(60,22):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(61,21): error C2665: 'rey::rey':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Rey.h(6,5):
+      puede ser 'rey::rey(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(61,21):
+          'rey::rey(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(61,37):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(61,21):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(62,23): error C2665: 'alfil::alfil':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,5):
+      puede ser 'alfil::alfil(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(62,23):
+          'alfil::alfil(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(62,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(62,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(63,25): error C2665: 'caballo::caballo':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(6,5):
+      puede ser 'caballo::caballo(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(63,25):
+          'caballo::caballo(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(63,41):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(63,25):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(64,23): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(7,5):
+      puede ser 'torre::torre(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(64,23):
+          'torre::torre(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(64,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(64,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(93,23): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(7,5):
+      puede ser 'torre::torre(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(93,23):
+          'torre::torre(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(93,38):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(93,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(94,25): error C2665: 'caballo::caballo':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(6,5):
+      puede ser 'caballo::caballo(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(94,25):
+          'caballo::caballo(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(94,40):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(94,25):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(95,35): error C2665: 'alfil::alfil':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,5):
+      puede ser 'alfil::alfil(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(95,35):
+          'alfil::alfil(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(95,50):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(95,35):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(96,21): error C2665: 'rey::rey':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Rey.h(6,5):
+      puede ser 'rey::rey(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(96,21):
+          'rey::rey(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(96,36):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(96,21):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(99,23): error C2665: 'peon::peon':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Peon.h(11,5):
+      puede ser 'peon::peon(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(99,23):
+          'peon::peon(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(99,38):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(99,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(105,23): error C2665: 'peon::peon':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Peon.h(11,5):
+      puede ser 'peon::peon(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(105,23):
+          'peon::peon(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(105,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(105,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(107,23): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(7,5):
+      puede ser 'torre::torre(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(107,23):
+          'torre::torre(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(107,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(107,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(108,25): error C2665: 'caballo::caballo':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Caballo.h(6,5):
+      puede ser 'caballo::caballo(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(108,25):
+          'caballo::caballo(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(108,41):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(108,25):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(109,23): error C2665: 'alfil::alfil':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,5):
+      puede ser 'alfil::alfil(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(109,23):
+          'alfil::alfil(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(109,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(109,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(110,21): error C2665: 'rey::rey':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Rey.h(6,5):
+      puede ser 'rey::rey(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(110,21):
+          'rey::rey(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(110,37):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(110,21):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(138,35): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(7,5):
+      puede ser 'torre::torre(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(138,35):
+          'torre::torre(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(138,50):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(138,35):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(141,21): error C2665: 'rey::rey':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Rey.h(6,5):
+      puede ser 'rey::rey(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(141,21):
+          'rey::rey(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(141,36):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(141,21):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(142,22): error C2665: 'dama::dama':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(6,5):
+      puede ser 'dama::dama(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(142,22):
+          'dama::dama(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(142,37):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(142,22):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(144,23): error C2665: 'peon::peon':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Peon.h(11,5):
+      puede ser 'peon::peon(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(144,23):
+          'peon::peon(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(144,38):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(144,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(150,23): error C2665: 'peon::peon':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Peon.h(11,5):
+      puede ser 'peon::peon(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(150,23):
+          'peon::peon(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(150,39):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(150,23):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(152,35): error C2665: 'torre::torre':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Torre.h(7,5):
+      puede ser 'torre::torre(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(152,35):
+          'torre::torre(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(152,51):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(152,35):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(155,21): error C2665: 'rey::rey':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Rey.h(6,5):
+      puede ser 'rey::rey(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(155,21):
+          'rey::rey(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(155,37):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(155,21):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(156,22): error C2665: 'dama::dama':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(6,5):
+      puede ser 'dama::dama(color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(156,22):
+          'dama::dama(color,int,int)': el argumento 2 no puede convertirse de 'int *' a 'int'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(156,38):
+              No existe un contexto en el que sea posible realizar esta conversión
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(156,22):
+      al hacer coincidir la lista de argumentos '(color, int *, int *)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(299,15): error C2059: error de sintaxis: '['
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\tablero.cpp(278,1): error C1075: "{": no se encontró ningún token coincidente
+  torre.cpp
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/torre.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/torre.cpp")
+  
   VistaTablero.cpp
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,41): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(20,47): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(20,32): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(21,53): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(21,32): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(22,47): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(22,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,65): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,45): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 3
+  (compilando archivo de origen "src/VistaTablero.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,10): error C2548: "Pieza::Pieza": falta el argumento predeterminado para el parámetro 4
+  (compilando archivo de origen "src/VistaTablero.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Dama.h(7,34): error C2059: error de sintaxis: ','
+  (compilando archivo de origen "src/VistaTablero.cpp")
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43): error C2665: 'Pieza::Pieza':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+  (compilando archivo de origen "src/VistaTablero.cpp")
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Pieza.h(15,5):
+      puede ser 'Pieza::Pieza(tipo_pieza,color,int,int)'
+          D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+          'Pieza::Pieza(tipo_pieza,color,int,int)': el argumento 2 no puede convertirse de 'int' a 'color'
+              D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,63):
+              La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis)
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\Alfil.h(6,43):
+      al hacer coincidir la lista de argumentos '(tipo_pieza, int, int)'
+  
+D:\Datos\Universidad\AJEDREZ_NUEVO\src\VistaTablero.cpp(38,55): error C2039: "getVision": no es un miembro de "menu"
+      D:\Datos\Universidad\AJEDREZ_NUEVO\src\menu.h(7,7):
+      vea la declaración de 'menu'
+  
   Generando código...
-  SuicideChess.vcxproj -> D:\Datos\Universidad\AJEDREZ_NUEVO\bin\SuicideChess.exe
