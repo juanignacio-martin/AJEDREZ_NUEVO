@@ -74,18 +74,22 @@ bool peon::movimiento_valido(int x_origen, int y_origen, int x_destino, int y_de
 
     if (abs(y_destino - y_origen) == 1 && x_destino == x_origen + direccion &&
         tablero[x_destino][y_destino] == nullptr &&
-        x_origen == ultima_fila_doble && // El peón contrario debe haber pasado justo junto
+        x_origen == ultima_fila_doble &&  // fila donde se puede capturar en passant
         y_destino == ultima_columna_doble &&
         tablero[x_origen][y_destino] != nullptr &&
         tablero[x_origen][y_destino]->getTipo() == tipo_pieza::PEON &&
-        tablero[x_origen][y_destino]->getColor() != this->getColor()) {
-
-        // Eliminar el peón enemigo
+        tablero[x_origen][y_destino]->getColor() != this->getColor() &&
+        this->getColor() == jugadorColor) // Aquí comprobamos que el peón que mueve tiene el turno correcto
+    {
+        // Eliminar el peón enemigo (captura al paso)
         delete tablero[x_origen][y_destino];
         tablero[x_origen][y_destino] = nullptr;
 
+        // Resetear la bandera de en passant
         ultima_fila_doble = -1;
         ultima_columna_doble = -1;
+
+        std::cout << "Intento de en passant: origen (" << x_origen << ", " << y_origen << ") destino (" << x_destino << ", " << y_destino << ")\n";
         return true;
     }
 

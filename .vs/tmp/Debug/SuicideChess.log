@@ -1,21 +1,2 @@
-﻿  BotFacil.cpp
-  BotMedio.cpp
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\BotFacil.cpp(8,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\BotMedio.cpp(23,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  ControladorApp.cpp
-  ControladorJuego.cpp
-  main.cpp
-  partida.cpp
-  VistaTablero.cpp
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,41): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(19,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(20,47): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(20,32): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(21,53): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(21,32): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(22,47): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(22,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,65): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\src\VistaTablero.cpp(33,45): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-  Generando código...
-  SuicideChess.vcxproj -> C:\Users\gmari\OneDrive - Universidad Politécnica de Madrid\Documentos\uni\tercero\cuatri2\Informatica Industrial\AJEDREZ_NUEVO\AJEDREZ_NUEVO\bin\SuicideChess.exe
+﻿  peon.cpp
+  SuicideChess.vcxproj -> C:\Users\Luis_vildé\Documents\GitHub\AJEDREZ_NUEVO\bin\SuicideChess.exe
