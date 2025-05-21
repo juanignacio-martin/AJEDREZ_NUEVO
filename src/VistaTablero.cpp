@@ -16,7 +16,21 @@ VistaTablero::VistaTablero()
     spriteNegroRey("resources/images/piezas/negro_rey.png", 0, 0, 80, 80)
 {}
 void VistaTablero::dibujar(const partida& p) {
-    glClear(GL_COLOR_BUFFER_BIT);
+    int ancho = p.getColumnas() * celdaSize;
+    int alto = p.getFilas() * celdaSize;
+
+    glutReshapeWindow(ancho, alto);
+    glViewport(0, 0, ancho, alto);                  // usa toda la ventana
+    glMatrixMode(GL_PROJECTION);                   // cámara
+    glLoadIdentity();
+    gluOrtho2D(0, ancho, alto, 0);                  // origen arriba izquierda
+
+    glMatrixMode(GL_MODELVIEW);                    // modo modelado
+    glLoadIdentity();
+
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);           // fondo blanco
+    glClear(GL_COLOR_BUFFER_BIT);                  // limpiar pantalla
+
 
     Pieza*** tablero = p.getTablero();      // obtener el tablero
     int filas = p.getFilas();               // necesitas tener estos getters en partida

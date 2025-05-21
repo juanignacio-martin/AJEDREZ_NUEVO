@@ -7,12 +7,8 @@
 
 ControladorJuego::ControladorJuego(partida* p, ControladorApp* app)
     : juego(p), app(app) {
-    // Ajustar tamaño de ventana al tablero
-    int ancho = juego->getColumnas() * vista.getCeldaSize();
-    int alto = juego->getFilas() * vista.getCeldaSize();
-    glutReshapeWindow(ancho, alto);
-    glLoadIdentity();
-    gluOrtho2D(0, ancho, alto, 0);
+
+                      
 }
 
 void ControladorJuego::dibujar() {
