@@ -1,5 +1,6 @@
 #pragma once
 #include "partida.h"
+#include <ETSIDI.h>
 
 class VistaTablero {
 public:
@@ -20,7 +21,7 @@ public:
 
     VistaTablero();
    
-
+    ETSIDI::Sprite* getSprite(const Pieza* pieza);
     void dibujar(const partida& p);
     int getCeldaSize() const { return celdaSize; }
 

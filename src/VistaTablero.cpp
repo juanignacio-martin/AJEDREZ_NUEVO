@@ -15,6 +15,8 @@ VistaTablero::VistaTablero()
     spriteNegroDama("resources/images/piezas/negro_reina.png", 0, 0, 80, 80),
     spriteNegroRey("resources/images/piezas/negro_rey.png", 0, 0, 80, 80)
 {}
+
+
 void VistaTablero::dibujar(const partida& p) {
     int ancho = p.getColumnas() * celdaSize;
     int alto = p.getFilas() * celdaSize;
@@ -35,7 +37,8 @@ void VistaTablero::dibujar(const partida& p) {
     Pieza*** tablero = p.getTablero();      // obtener el tablero
     int filas = p.getFilas();               // necesitas tener estos getters en partida
     int columnas = p.getColumnas();
-    glDisable(GL_TEXTURE_2D);
+
+    // === 1. DIBUJAR TABLERO ===
     for (int i = 0; i < filas; ++i) {
         for (int j = 0; j < columnas; ++j) {
             if ((i + j) % 2 == 0)
@@ -49,44 +52,45 @@ void VistaTablero::dibujar(const partida& p) {
             glVertex2f((j + 1) * celdaSize, (i + 1) * celdaSize);
             glVertex2f(j * celdaSize, (i + 1) * celdaSize);
             glEnd();
-
             const Pieza* pieza = tablero[i][j];
             if (pieza != nullptr) {
-                ETSIDI::Sprite* sprite = nullptr;
-
-                if (pieza->getColor() == color::BLANCO) {
-                    switch (pieza->getTipo()) {
-                    case tipo_pieza::PEON: sprite = &spriteBlancoPeon; break;
-                    case tipo_pieza::TORRE: sprite = &spriteBlancoTorre; break;
-                    case tipo_pieza::ALFIL: sprite = &spriteBlancoAlfil; break;
-                    case tipo_pieza::CABALLO: sprite = &spriteBlancoCaballo; break;
-                    case tipo_pieza::DAMA: sprite = &spriteBlancoDama; break;
-                    case tipo_pieza::REY: sprite = &spriteBlancoRey; break;
-                    }
-                }
-                else {
-                    switch (pieza->getTipo()) {
-                    case tipo_pieza::PEON: sprite = &spriteNegroPeon; break;
-                    case tipo_pieza::TORRE: sprite = &spriteNegroTorre; break;
-                    case tipo_pieza::ALFIL: sprite = &spriteNegroAlfil; break;
-                    case tipo_pieza::CABALLO: sprite = &spriteNegroCaballo; break;
-                    case tipo_pieza::DAMA: sprite = &spriteNegroDama; break;
-                    case tipo_pieza::REY: sprite = &spriteNegroRey; break;
-                    }
-                }
-
+                ETSIDI::Sprite* sprite = getSprite(pieza);
                 if (sprite != nullptr) {
                     sprite->setPos(j * celdaSize + 40, i * celdaSize + 40);
                     sprite->setAngle(180);
+
+                    glPushAttrib(GL_ALL_ATTRIB_BITS);   //  salva el estado
+                    glColor3f(1.0f, 1.0f, 1.0f);         // asegura color correcto
                     sprite->draw();
-                    glDisable(GL_TEXTURE_2D);
+                    glPopAttrib();                      //  restaura estado
                 }
             }
-        }
+        } 
     }
+
 
     glutSwapBuffers();
 }
 
+ETSIDI::Sprite* VistaTablero::getSprite(const Pieza* pieza) {
+    if (!pieza) return nullptr;
 
+    color c = pieza->getColor();
 
+    switch (pieza->getTipo()) {
+    case tipo_pieza::PEON:
+        return c == color::BLANCO ? &spriteBlancoPeon : &spriteNegroPeon;
+    case tipo_pieza::TORRE:
+        return c == color::BLANCO ? &spriteBlancoTorre : &spriteNegroTorre;
+    case tipo_pieza::CABALLO:
+        return c == color::BLANCO ? &spriteBlancoCaballo : &spriteNegroCaballo;
+    case tipo_pieza::ALFIL:
+        return c == color::BLANCO ? &spriteBlancoAlfil : &spriteNegroAlfil;
+    case tipo_pieza::DAMA:
+        return c == color::BLANCO ? &spriteBlancoDama : &spriteNegroDama;
+    case tipo_pieza::REY:
+        return c == color::BLANCO ? &spriteBlancoRey : &spriteNegroRey;
+    default:
+        return nullptr;
+    }
+}
