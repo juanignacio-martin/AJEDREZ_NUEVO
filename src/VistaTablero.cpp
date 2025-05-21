@@ -62,7 +62,8 @@ void VistaTablero::dibujar(const partida& p) {
                 }
 
                 if (sprite != nullptr) {
-                    sprite->setPos(j * celdaSize, i * celdaSize);
+                    sprite->setPos(j * celdaSize + 40, i * celdaSize + 40);
+                    sprite->setAngle(180);
                     sprite->draw();
                     glDisable(GL_TEXTURE_2D);
                 }
