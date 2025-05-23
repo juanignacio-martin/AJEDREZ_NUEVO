@@ -21,7 +21,7 @@ void ControladorMenu::dibujar() {
             y = yInicio + i * (altoBoton + separacion) + separacionExtra;
 
             // Dibujar botón más grande
-            glColor3f(0.0f, 0.5f, 0.2f);  // otro color si quieres
+            glColor3f(0.0f, 0.5f, 0.2f);  
             glBegin(GL_QUADS);
             glVertex2f(x, y);
             glVertex2f(x + anchoBoton, y);
@@ -38,7 +38,12 @@ void ControladorMenu::dibujar() {
         else {
             // Botones normales
             y = yInicio + i * (altoBoton + separacion);
-            glColor3f(0.2f, 0.6f, 0.8f);
+            if (i == indiceSel) {
+                glColor3f(1.0f, 0.0f, 0.0f); // Color rojo para el seleccionado
+            }
+            else {
+                glColor3f(0.2f, 0.6f, 0.8f); // Color normal
+            }
             glBegin(GL_QUADS);
             glVertex2f(x, y);
             glVertex2f(x + anchoBoton, y);
@@ -59,9 +64,19 @@ void ControladorMenu::dibujar() {
 void ControladorMenu::manejarClick(int x, int y) {
     for (size_t i = 0; i < textos.size(); ++i) {
         int x1 = xInicio;
-        int y1 = yInicio + i * (altoBoton + separacion);
+        int y1;
+        int altoReal = altoBoton;
+
+        if (i == textos.size() - 1) {
+            y1 = yInicio + i * (altoBoton + separacion-20) + separacionExtra;
+            altoReal = altoBotonGrande;
+        }
+        else {
+            y1 = yInicio + i * (altoBoton + separacion-20);
+        }
+
         int x2 = x1 + anchoBoton;
-        int y2 = y1 + altoBoton;
+        int y2 = y1 + altoReal;
 
         if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
             if (i < callbacks.size()) {
@@ -71,7 +86,6 @@ void ControladorMenu::manejarClick(int x, int y) {
         }
     }
 }
-
 void ControladorMenu::dibujaFondo()
 {
     glEnable(GL_TEXTURE_2D);
@@ -84,9 +98,9 @@ void ControladorMenu::dibujaFondo()
 
     glBegin(GL_QUADS);
     glTexCoord2f(0, 0); glVertex3f(0, 0, -0.1);           // Esquina superior izquierda
-    glTexCoord2f(1, 0); glVertex3f(800, 0, -0.1);         // Esquina superior derecha
-    glTexCoord2f(1, 1); glVertex3f(800, 600, -0.1);       // Inferior derecha
-    glTexCoord2f(0, 1); glVertex3f(0, 600, -0.1);         // Inferior izquierda
+    glTexCoord2f(1, 0); glVertex3f(1500, 0, -0.1);         // Esquina superior derecha
+    glTexCoord2f(1, 1); glVertex3f(1500, 1000, -0.1);       // Inferior derecha
+    glTexCoord2f(0, 1); glVertex3f(0, 1000, -0.1);         // Inferior izquierda
     glEnd();
 
     glDisable(GL_LIGHTING);
@@ -96,7 +110,10 @@ void ControladorMenu::Tema()
 {
     switch (tematica)
     {
-    case 0: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/menu.png").id); break;
-    case 1: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/menu.png").id); break;
+    case 0: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/Menu2.png").id); break;
+    case 1: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/Menu2.png").id); break;
     }
+}
+void ControladorMenu::setIndiceSeleccionado(int indice) {
+    int indiceSel = indice;
 }

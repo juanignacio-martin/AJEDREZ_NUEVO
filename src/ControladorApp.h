@@ -23,7 +23,7 @@ public:
     void mostrarMenuPromocion(int fila, int columna, color c);
     void realizarPromocion(tipo_pieza nuevaPieza);
     void mostrarSeleccionOponente();
-
+    bool contraBotSeleccionado = false;
 private:
     EstadoApp estado;
     ControladorMenu menu;
