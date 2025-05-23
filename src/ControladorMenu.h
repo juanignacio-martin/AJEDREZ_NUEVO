@@ -17,7 +17,7 @@ public:
     void dibujaFondo();
     void setIndiceSeleccionado(int indice);
     void setOpciones(const std::vector<std::string>& opciones, const std::vector<std::function<void()>>& acciones);
-    
+    void setTematicaSeleccionada(const std::string& tema);
 private:
     std::vector<std::string> textos;
     std::vector<std::function<void()>> callbacks;
@@ -29,4 +29,5 @@ private:
     int altoBotonGrande = 80;
     int separacionExtra = 50;
     int indiceSel = -1;
+    std::string tematicaSeleccionada = "CLASICO";
 };

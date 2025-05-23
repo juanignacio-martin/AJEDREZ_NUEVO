@@ -108,12 +108,19 @@ void ControladorMenu::dibujaFondo()
 }
 void ControladorMenu::Tema()
 {
-    switch (tematica)
-    {
-    case 0: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/Menu2.png").id); break;
-    case 1: glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/Menu2.png").id); break;
+    if (tematicaSeleccionada == "CLASICO") {
+        glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/Menu2.png").id);
+    }
+    else if (tematicaSeleccionada == "ELECTRONICA") {
+        glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/menu.png").id);
+    }
+    else {
+        glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/Menu2.png").id); // Default
     }
 }
 void ControladorMenu::setIndiceSeleccionado(int indice) {
     int indiceSel = indice;
+}
+void ControladorMenu::setTematicaSeleccionada(const std::string& tema) {
+    tematicaSeleccionada = tema;
 }

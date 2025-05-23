@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\VistaTablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -21,18 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorJuego.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|solutionrelative:src\\ControladorApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CF307B4-B40F-4652-B8E7-FA916CE5B525}|SuicideChess.vcxproj|D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\partida.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -176,6 +176,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ControladorMenu.cpp",
+              "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.cpp",
+              "RelativeDocumentMoniker": "src\\ControladorMenu.cpp",
+              "ToolTip": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.cpp",
+              "RelativeToolTip": "src\\ControladorMenu.cpp",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-12T17:12:05.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControladorApp.cpp",
+              "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.cpp",
+              "RelativeDocumentMoniker": "src\\ControladorApp.cpp",
+              "ToolTip": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.cpp",
+              "RelativeToolTip": "src\\ControladorApp.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-09T23:09:17.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ControladorApp.h",
+              "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.h",
+              "RelativeDocumentMoniker": "src\\ControladorApp.h",
+              "ToolTip": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.h",
+              "RelativeToolTip": "src\\ControladorApp.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T17:19:20.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ControladorMenu.h",
+              "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.h",
+              "RelativeDocumentMoniker": "src\\ControladorMenu.h",
+              "ToolTip": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.h",
+              "RelativeToolTip": "src\\ControladorMenu.h",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwB8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T17:11:57.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "VistaTablero.cpp",
               "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\VistaTablero.cpp",
               "RelativeDocumentMoniker": "src\\VistaTablero.cpp",
@@ -188,20 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ControladorApp.cpp",
-              "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.cpp",
-              "RelativeDocumentMoniker": "src\\ControladorApp.cpp",
-              "ToolTip": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.cpp",
-              "RelativeToolTip": "src\\ControladorApp.cpp",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD4AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-09T23:09:17.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "VistaTablero.h",
               "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\VistaTablero.h",
               "RelativeDocumentMoniker": "src\\VistaTablero.h",
@@ -214,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ControladorJuego.cpp",
               "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorJuego.cpp",
               "RelativeDocumentMoniker": "src\\ControladorJuego.cpp",
@@ -227,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ControladorJuego.h",
               "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorJuego.h",
               "RelativeDocumentMoniker": "src\\ControladorJuego.h",
@@ -236,45 +275,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-29T17:10:57.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ControladorMenu.h",
-              "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.h",
-              "RelativeDocumentMoniker": "src\\ControladorMenu.h",
-              "ToolTip": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.h",
-              "RelativeToolTip": "src\\ControladorMenu.h",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBEAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-12T17:11:57.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ControladorMenu.cpp",
-              "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.cpp",
-              "RelativeDocumentMoniker": "src\\ControladorMenu.cpp",
-              "ToolTip": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorMenu.cpp",
-              "RelativeToolTip": "src\\ControladorMenu.cpp",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-12T17:12:05.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ControladorApp.h",
-              "DocumentMoniker": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.h",
-              "RelativeDocumentMoniker": "src\\ControladorApp.h",
-              "ToolTip": "D:\\Datos\\Universidad\\AJEDREZ_NUEVO\\src\\ControladorApp.h",
-              "RelativeToolTip": "src\\ControladorApp.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-12T17:19:20.58Z",
               "EditorCaption": ""
             },
             {
