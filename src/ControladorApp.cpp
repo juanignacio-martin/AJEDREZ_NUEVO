@@ -60,7 +60,7 @@ void ControladorApp::mostrarMenuTematica() {
 
     std::vector<std::function<void()>> acciones = {
         [this]() { tematicaSeleccionada = "CLASICO"; mostrarMenuPrincipal(); },
-        [this]() { tematicaSeleccionada = "CLASICO"; mostrarMenuPrincipal(); },
+        [this]() { tematicaSeleccionada = "ELECTRONICA"; mostrarMenuPrincipal(); },
         [this]() { mostrarMenuPrincipal(); }
     };
 
@@ -156,7 +156,7 @@ void ControladorApp::iniciarJuego(std::string variante, std::string tema,bool co
     if (contraBot) {
         nuevaPartida->setBot(new BotFacil());
     }
-    juego = new ControladorJuego(nuevaPartida, this);
+    juego = new ControladorJuego(nuevaPartida, this,tematicaSeleccionada);
 
     int ancho = nuevaPartida->getColumnas() * 100;
     int alto = nuevaPartida->getFilas() * 100;

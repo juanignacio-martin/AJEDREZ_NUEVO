@@ -5,10 +5,10 @@
 #include "ControladorApp.h"
 #include "peon.h"
 
-ControladorJuego::ControladorJuego(partida* p, ControladorApp* app)
+ControladorJuego::ControladorJuego(partida* p, ControladorApp* app, const std::string& tematica)
     : juego(p), app(app) {
 
-                      
+    vista.setTematica(tematica);
 }
 
 void ControladorJuego::dibujar() {

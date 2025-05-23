@@ -94,3 +94,23 @@ ETSIDI::Sprite* VistaTablero::getSprite(const Pieza* pieza) {
         return nullptr;
     }
 }
+void VistaTablero::setTematica(const std::string& tema) {
+    tematica = tema;
+
+    if (tematica == "ELECTRONICA") {
+        spriteBlancoPeon = ETSIDI::Sprite("resources/images/electro/peonm.png", 0, 0, 80, 80);
+        spriteBlancoTorre = ETSIDI::Sprite("resources/images/electro/torrem.png", 0, 0, 80, 80);
+        spriteBlancoAlfil = ETSIDI::Sprite("resources/images/electro/alfilm.png", 0, 0, 80, 80);
+        spriteBlancoCaballo = ETSIDI::Sprite("resources/images/electro/caballom.png", 0, 0, 80, 80);
+        spriteBlancoDama = ETSIDI::Sprite("resources/images/electro/reinam.png", 0, 0, 80, 80);
+        spriteBlancoRey = ETSIDI::Sprite("resources/images/electro/reym.png", 0, 0, 80, 80);
+
+        spriteNegroPeon = ETSIDI::Sprite("resources/images/electro/peone.png", 0, 0, 80, 80);
+        spriteNegroTorre = ETSIDI::Sprite("resources/images/electro/torree.png", 0, 0, 80, 80);
+        spriteNegroAlfil = ETSIDI::Sprite("resources/images/electro/alfile.png", 0, 0, 80, 80);
+        spriteNegroCaballo = ETSIDI::Sprite("resources/images/electro/caballoe.png", 0, 0, 80, 80);
+        spriteNegroDama = ETSIDI::Sprite("resources/images/electro/reinae.png", 0, 0, 80, 80);
+        spriteNegroRey = ETSIDI::Sprite("resources/images/electro/reye.png", 0, 0, 80, 80);
+    }
+    // Si no es electrónica, se mantienen las piezas por defecto cargadas en el constructor
+}
