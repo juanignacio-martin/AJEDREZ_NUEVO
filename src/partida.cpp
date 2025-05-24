@@ -1,6 +1,6 @@
 #include "partida.h"
 #include <iostream>
-#include "clasificacion.h"
+//#include "clasificacion.h"
 #include "freeglut.h"
 
 partida::partida(const std::string& tipo)
@@ -83,7 +83,7 @@ bool partida::jugarTurno(int x1, int y1, int x2, int y2) {
         if (juegoTerminado) {
             glutPostRedisplay();  // fuerza el dibujo final
             glutTimerFunc(200, [](int) {
-                pedirNombreJugador();  // lambda intermedia para diferir ejecución
+                //pedirNombreJugador();  // lambda intermedia para diferir ejecución
                 }, 0);
         }
     }
@@ -112,16 +112,16 @@ bool partida::haFinalizado() const {
     return juegoTerminado;
 }
 
-void pedirNombreJugador() {
-    std::string nombre;
-    std::cout << "Introduce tu nombre para la clasificación: ";
-    std::getline(std::cin >> std::ws, nombre);
-
-    Clasificacion clasif;
-    clasif.cargar("ranking.txt");
-    clasif.agregar(nombre, 100);  // puntuación fija
-    clasif.guardar("ranking.txt");
-    clasif.mostrar();
-}
+//void pedirNombreJugador() {
+//    std::string nombre;
+//    std::cout << "Introduce tu nombre para la clasificación: ";
+//    std::getline(std::cin >> std::ws, nombre);
+//
+//    Clasificacion clasif;
+//    clasif.cargar("ranking.txt");
+//    clasif.agregar(nombre, 100);  // puntuación fija
+//    clasif.guardar("ranking.txt");
+//    clasif.mostrar();
+//}
 
 
