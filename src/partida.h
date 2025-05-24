@@ -40,7 +40,9 @@ public:
         contraBot = true;
     }
     Bot* getBot() const { return bot; }
-    bool esContraBot() const { return contraBot; }    
+    bool esContraBot() const { return contraBot; }   
+    //controldr de final de partida para clasificacion
+    bool haFinalizado() const;
 
 private:
     void inicializarTablero();     // crea el tablero según la variante
@@ -49,4 +51,6 @@ private:
     void colocarDemi();
     void colocarClasico();
 };
+//función global "libre"
+void pedirNombreJugador();
 

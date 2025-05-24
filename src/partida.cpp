@@ -1,5 +1,7 @@
 #include "partida.h"
 #include <iostream>
+#include "clasificacion.h"
+#include "freeglut.h"
 
 partida::partida(const std::string& tipo)
     : jugadorBlanco(color::BLANCO),
@@ -58,19 +60,31 @@ bool partida::jugarTurno(int x1, int y1, int x2, int y2) {
     bool exito = t->mueve_pieza(x1, y1, x2, y2, colorJugador);
 
     if (exito) {
-        // Comprobar si termin? la partida
+        std::cout << "[DEBUG] Movimiento realizado: (" << x1 << "," << y1 << ") -> (" << x2 << "," << y2 << ")\n";
+        std::cout << "[DEBUG] Tablero tras mover:\n";
+        t->print(std::cout); // saber que tablero tiene esta función implementada
+
+        // Verificar si la partida terminó después del movimiento
         color siguienteColor = (colorJugador == color::BLANCO) ? color::NEGRO : color::BLANCO;
         if (t->esJaqueMate(siguienteColor)) {
-            std::cout << "?Jaque mate! " << (colorJugador == color::BLANCO ? "Blancas" : "Negras") << " ganan.\n";
+            std::cout << "¡Jaque mate! " << (colorJugador == color::BLANCO ? "Blancas" : "Negras") << " ganan.\n";
             juegoTerminado = true;
         }
         else if (t->esTablas(siguienteColor)) {
-            std::cout << "?Tablas!\n";
+            std::cout << "¡Tablas!\n";
             juegoTerminado = true;
         }
         else {
             cambiarTurno();
             turno++;
+        }
+
+        // Si se acaba de declarar el juego terminado, pedimos nombre y guardamos
+        if (juegoTerminado) {
+            glutPostRedisplay();  // fuerza el dibujo final
+            glutTimerFunc(200, [](int) {
+                pedirNombreJugador();  // lambda intermedia para diferir ejecución
+                }, 0);
         }
     }
 
@@ -85,6 +99,7 @@ void partida::mostrarTablero() const {
     t->print(std::cout);
 }
 
+
 jugador* partida::getJugadorActual() const {
     return jugadorActual;
 }
@@ -92,4 +107,21 @@ jugador* partida::getJugadorActual() const {
 bool partida::estaEnJaque() const {
     return t->estaEnJaque(jugadorActual->getColor());
 }
+//finalizar partida para cuadrar la clasificacion
+bool partida::haFinalizado() const {
+    return juegoTerminado;
+}
+
+void pedirNombreJugador() {
+    std::string nombre;
+    std::cout << "Introduce tu nombre para la clasificación: ";
+    std::getline(std::cin >> std::ws, nombre);
+
+    Clasificacion clasif;
+    clasif.cargar("ranking.txt");
+    clasif.agregar(nombre, 100);  // puntuación fija
+    clasif.guardar("ranking.txt");
+    clasif.mostrar();
+}
+
 

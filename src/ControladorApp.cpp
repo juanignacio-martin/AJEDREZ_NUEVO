@@ -1,40 +1,103 @@
 #include "ControladorApp.h"
 #include "BotFacil.h"
-#include "BotMedio.h"
 #include <iostream>
 
 ControladorApp::ControladorApp() {
-    estado = EstadoApp::MENU;
+    estado = EstadoApp::MENU_PRINCIPAL;
+    mostrarMenuPrincipal();
+
+
+    std::vector<std::string> opciones = {
+        "Variante",
+        "Tematica",
+        "Seleccionar Oponente",
+        "Empezar",
+        "Salir"
+    };
+
+    std::vector<std::function<void()>> acciones = {
+    [this]() { mostrarMenuVariante(); },
+    [this]() { mostrarMenuTematica(); },
+    [this]() { mostrarSeleccionOponente(); },
+    [this]() { iniciarJuego(varianteSeleccionada, tematicaSeleccionada,1); }
+
+    };
+
+
+}
+void ControladorApp::mostrarMenuVariante() {
+    estado = EstadoApp::MENU_VARIANTE;
 
     std::vector<std::string> opciones = {
         "Jugar Clasico",
         "Jugar Silverman",
         "Jugar Demi",
-        "Salir"
+        "Volver"
     };
 
     std::vector<std::function<void()>> acciones = {
-    [this]() { varianteSeleccionada = "clasico"; cambiarEstado(EstadoApp::SELECCION_OPONENTE); mostrarSeleccionOponente(); },
-    [this]() { varianteSeleccionada = "silverman"; cambiarEstado(EstadoApp::SELECCION_OPONENTE); mostrarSeleccionOponente(); },
-    [this]() { varianteSeleccionada = "demi"; cambiarEstado(EstadoApp::SELECCION_OPONENTE); mostrarSeleccionOponente(); },
-    []() { exit(0); }
+        [this]() { varianteSeleccionada = "clasico"; mostrarMenuPrincipal(); },
+        [this]() { varianteSeleccionada = "silverman"; mostrarMenuPrincipal(); },
+        [this]() { varianteSeleccionada = "demi"; mostrarMenuPrincipal(); },
+        [this]() { mostrarMenuPrincipal(); }
+    };
+    int seleccionado = 0;
+    if (varianteSeleccionada == "silverman") seleccionado = 1;
+    else if (varianteSeleccionada == "demi") seleccionado = 2;
+
+    menu.setIndiceSeleccionado(seleccionado);
+    menu.setOpciones(opciones, acciones);
+}
+
+void ControladorApp::mostrarMenuTematica() {
+    estado = EstadoApp::MENU_TEMATICA;
+
+    std::vector<std::string> opciones = {
+        "CLASICO",
+        "ELECTRONICA",
+        "Volver"
+    };
+
+    std::vector<std::function<void()>> acciones = {
+        [this]() { tematicaSeleccionada = "CLASICO"; mostrarMenuPrincipal(); },
+        [this]() { tematicaSeleccionada = "ELECTRONICA"; mostrarMenuPrincipal(); },
+        [this]() { mostrarMenuPrincipal(); }
     };
 
     menu.setOpciones(opciones, acciones);
 }
+void ControladorApp::mostrarMenuPrincipal() {
+    estado = EstadoApp::MENU_PRINCIPAL;
 
-void ControladorApp::mostrarSeleccionOponente() {
     std::vector<std::string> opciones = {
-        "Jugar contra Humano",
-        "Jugar contra Bot Facil",
-        "Jugar contra Bot Medio"
+        "VARIANTE",
+        "TEMATICA",
+        "OPONENTE",
+        "Empezar"
     };
 
     std::vector<std::function<void()>> acciones = {
-        [this]() { iniciarJuego(varianteSeleccionada, nullptr); },
-        [this]() { iniciarJuego(varianteSeleccionada, new BotFacil()); },
-        [this]() { iniciarJuego(varianteSeleccionada, new BotMedio()); }
+        [this]() { mostrarMenuVariante(); },
+        [this]() { mostrarMenuTematica(); },
+        [this]() { mostrarSeleccionOponente(); },
+        [this]() { iniciarJuego(varianteSeleccionada,tematicaSeleccionada,0); }
+    };
 
+    menu.setOpciones(opciones, acciones);
+}
+void ControladorApp::mostrarSeleccionOponente() {
+    std::vector<std::string> opciones = {
+        "VS HUMANO",
+        "VS BOT",
+        "VOLVER"
+    };
+
+    std::vector<std::function<void()>> acciones = {
+         [this]() { contraBotSeleccionado = false; mostrarMenuPrincipal(); },
+        [this]() { contraBotSeleccionado = true; mostrarMenuPrincipal(); },
+        [this]() { mostrarMenuPrincipal(); }
+        /*[this]() { iniciarJuego(varianteSeleccionada,tematicaSeleccionada, false); },
+        [this]() { iniciarJuego(varianteSeleccionada, tematicaSeleccionada, true); }*/
     };
 
     menu.setOpciones(opciones, acciones);
@@ -42,7 +105,9 @@ void ControladorApp::mostrarSeleccionOponente() {
 
 void ControladorApp::dibujar() {
     switch (estado) {
-    case EstadoApp::MENU:
+    case EstadoApp::MENU_PRINCIPAL:
+    case EstadoApp::MENU_TEMATICA:
+    case EstadoApp::MENU_VARIANTE:
     case EstadoApp::SELECCION_OPONENTE:
         menu.dibujar(); break;
     case EstadoApp::JUEGO:
@@ -56,7 +121,9 @@ void ControladorApp::manejarClick(int boton, int estadoClick, int x, int y) {
     if (estadoClick != GLUT_DOWN) return;
 
     switch (estado) {
-    case EstadoApp::MENU:
+    case EstadoApp::MENU_PRINCIPAL:
+    case EstadoApp::MENU_TEMATICA:
+    case EstadoApp::MENU_VARIANTE:
     case EstadoApp::SELECCION_OPONENTE:
         menu.manejarClick(x, y);
         break;
@@ -73,6 +140,7 @@ void ControladorApp::manejarClick(int boton, int estadoClick, int x, int y) {
 }
 
 void ControladorApp::manejarTecla(unsigned char key, int x, int y) {
+
     if (estado == EstadoApp::JUEGO && juego)
         juego->manejarTecla(key, x, y);
 }
@@ -81,14 +149,14 @@ void ControladorApp::cambiarEstado(EstadoApp nuevo) {
     estado = nuevo;
 }
 
-void ControladorApp::iniciarJuego(std::string variante,Bot* bot) {
+void ControladorApp::iniciarJuego(std::string variante, std::string tema, bool contraBot) {
     if (juego) delete juego;
 
     partida* nuevaPartida = new partida(variante);
-    if (bot) {
-        nuevaPartida->setBot(bot);
+    if (contraBot) {
+        nuevaPartida->setBot(new BotFacil());
     }
-    juego = new ControladorJuego(nuevaPartida, this);
+    juego = new ControladorJuego(nuevaPartida, this, tematicaSeleccionada);
 
     int ancho = nuevaPartida->getColumnas() * 100;
     int alto = nuevaPartida->getFilas() * 100;
