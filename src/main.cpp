@@ -16,15 +16,16 @@ void keyboardCallback(unsigned char key, int x, int y) {
     app->manejarTecla(key, x, y);
 }
 
+
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
-    glutInitWindowSize(800, 800); // se puede ajustar dinámicamente luego
+    glutInitWindowSize(1500, 1000); // se puede ajustar dinámicamente luego
     glutCreateWindow("Ajedrez POO");
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluOrtho2D(0, 800, 800, 0); // origen arriba izquierda
+    gluOrtho2D(0, 1500, 1000, 0); // origen arriba izquierda
 
     app = new ControladorApp();
 

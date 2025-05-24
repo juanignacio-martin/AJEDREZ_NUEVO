@@ -5,14 +5,10 @@
 #include "ControladorApp.h"
 #include "peon.h"
 
-ControladorJuego::ControladorJuego(partida* p, ControladorApp* app)
+ControladorJuego::ControladorJuego(partida* p, ControladorApp* app, const std::string& tematica)
     : juego(p), app(app) {
-    // Ajustar tamaño de ventana al tablero
-    int ancho = juego->getColumnas() * vista.getCeldaSize();
-    int alto = juego->getFilas() * vista.getCeldaSize();
-    glutReshapeWindow(ancho, alto);
-    glLoadIdentity();
-    gluOrtho2D(0, ancho, alto, 0);
+
+    vista.setTematica(tematica);
 }
 
 void ControladorJuego::dibujar() {

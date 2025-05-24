@@ -15,7 +15,7 @@ class ControladorJuego {
     ControladorApp* app; // referencia para mostrar menú promoción
 
 public:
-    ControladorJuego(partida* p, ControladorApp* app);
+    ControladorJuego(partida* p, ControladorApp* app, const std::string& tematica);
     void dibujar();
     void manejarClick(int boton, int estado, int x, int y);
     void manejarTecla(unsigned char key, int x, int y);
