@@ -32,4 +32,5 @@ public:
     const std::vector<EntradaClasificacion>& obtenerEntradas() const;
 };
 
+
 #endif

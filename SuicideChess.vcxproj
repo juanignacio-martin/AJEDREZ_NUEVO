@@ -155,6 +155,7 @@
     <ClInclude Include="src\BotFacil.h" />
     <ClInclude Include="src\BotMedio.h" />
     <ClInclude Include="src\caballo.h" />
+    <ClInclude Include="src\Clasificacion.h" />
     <ClInclude Include="src\ControladorApp.h" />
     <ClInclude Include="src\ControladorJuego.h" />
     <ClInclude Include="src\ControladorMenu.h" />
@@ -174,6 +175,7 @@
     <ClCompile Include="src\BotFacil.cpp" />
     <ClCompile Include="src\BotMedio.cpp" />
     <ClCompile Include="src\caballo.cpp" />
+    <ClCompile Include="src\Clasificacion.cpp" />
     <ClCompile Include="src\ControladorApp.cpp" />
     <ClCompile Include="src\ControladorJuego.cpp" />
     <ClCompile Include="src\ControladorMenu.cpp" />
