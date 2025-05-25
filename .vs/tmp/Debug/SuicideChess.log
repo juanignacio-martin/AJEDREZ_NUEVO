@@ -1,2 +1,27 @@
 ﻿  ControladorApp.cpp
-  SuicideChess.vcxproj -> D:\Datos\Universidad\AJEDREZ_NUEVO\bin\SuicideChess.exe
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(257,19): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(258,18): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(271,20): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(280,35): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(280,16): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(281,51): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(281,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(282,51): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(282,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(283,35): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(283,16): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(295,35): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(295,16): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(296,39): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(296,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(302,21): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(325,23): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(325,20): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(326,35): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(326,22): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(327,37): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(327,22): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(328,25): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(328,20): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\src\ControladorApp.cpp(340,24): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  SuicideChess.vcxproj -> C:\Users\horat\source\repos\juanignacio-martin\AJEDREZ_NUEVO\bin\SuicideChess.exe
