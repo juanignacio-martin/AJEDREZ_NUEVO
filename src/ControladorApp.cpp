@@ -1,5 +1,7 @@
 #include "ControladorApp.h"
 #include "BotFacil.h"
+#include "BotMedio.h"
+
 #include <iostream>
 
 ControladorApp::ControladorApp() {
@@ -80,7 +82,7 @@ void ControladorApp::mostrarMenuPrincipal() {
         [this]() { mostrarMenuVariante(); },
         [this]() { mostrarMenuTematica(); },
         [this]() { mostrarSeleccionOponente(); },
-        [this]() { iniciarJuego(varianteSeleccionada,tematicaSeleccionada,0); }
+        [this]() { iniciarJuego(varianteSeleccionada,tematicaSeleccionada,contraBotSeleccionado); }
     };
 
     menu.setOpciones(opciones, acciones);
@@ -88,13 +90,16 @@ void ControladorApp::mostrarMenuPrincipal() {
 void ControladorApp::mostrarSeleccionOponente() {
     std::vector<std::string> opciones = {
         "VS HUMANO",
-        "VS BOT",
+        "VS BOT FACIL",
+        "VS BOT MEDIO",
         "VOLVER"
     };
 
     std::vector<std::function<void()>> acciones = {
          [this]() { contraBotSeleccionado = false; mostrarMenuPrincipal(); },
-        [this]() { contraBotSeleccionado = true; mostrarMenuPrincipal(); },
+        [this]() { contraBotSeleccionado = true; dificultadBot = 1; mostrarMenuPrincipal(); },
+        [this]() { contraBotSeleccionado = true; dificultadBot = 2; mostrarMenuPrincipal(); },
+
         [this]() { mostrarMenuPrincipal(); }
         /*[this]() { iniciarJuego(varianteSeleccionada,tematicaSeleccionada, false); },
         [this]() { iniciarJuego(varianteSeleccionada, tematicaSeleccionada, true); }*/
@@ -154,7 +159,13 @@ void ControladorApp::iniciarJuego(std::string variante, std::string tema, bool c
 
     partida* nuevaPartida = new partida(variante);
     if (contraBot) {
-        nuevaPartida->setBot(new BotFacil());
+		if (dificultadBot == 1) {
+			nuevaPartida->setBot(new BotFacil());
+		}
+		else if (dificultadBot == 2) {
+            nuevaPartida->setBot(new BotMedio());
+		}
+		
     }
     juego = new ControladorJuego(nuevaPartida, this, tematicaSeleccionada);
 

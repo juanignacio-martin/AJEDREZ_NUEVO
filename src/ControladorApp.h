@@ -3,6 +3,8 @@
 #include "ControladorMenu.h"
 #include "ControladorPromocion.h"
 #include "BotFacil.h"
+#include "BotMedio.h"
+
 
 enum class EstadoApp { MENU_PRINCIPAL, MENU_VARIANTE, MENU_TEMATICA, SELECCION_OPONENTE, JUEGO, PROMOCION };
 
@@ -24,6 +26,8 @@ public:
     void realizarPromocion(tipo_pieza nuevaPieza);
     void mostrarSeleccionOponente();
     bool contraBotSeleccionado = false;
+	int dificultadBot = 1;
+
 private:
     EstadoApp estado;
     ControladorMenu menu;
