@@ -30,8 +30,6 @@ public:
     void cargar(const std::string& archivo);
 
     const std::vector<EntradaClasificacion>& obtenerEntradas() const;
-
-    int obtenerPosicion(int puntuacion) const;
 };
 
 #endif

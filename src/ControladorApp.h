@@ -30,9 +30,6 @@ public:
     void dibujarPantallaClasificacion();
     void manejarTeclaEspecial(int key, int x, int y);
 
-    //datos de la puntuacion
-    int puntuacionFinal = 0;
-
 private:
     EstadoApp estado;
     ControladorMenu menu;
@@ -44,7 +41,6 @@ private:
     color colorPromocion;
     //declaramos el scroll
     int scrollOffset = 0;
-    
 
     std::string varianteSeleccionada;
     std::string tematicaSeleccionada;
