@@ -9,7 +9,17 @@ void displayCallback() {
 }
 
 void mouseCallback(int boton, int estado, int x, int y) {
-    app->manejarClick(boton, estado, x, y);
+    // Scroll arriba
+    if (boton == 3 && estado == GLUT_DOWN) {
+        app->manejarTeclaEspecial(GLUT_KEY_UP, x, y);
+    }
+    // Scroll abajo
+    else if (boton == 4 && estado == GLUT_DOWN) {
+        app->manejarTeclaEspecial(GLUT_KEY_DOWN, x, y);
+    }
+    else {
+        app->manejarClick(boton, estado, x, y);
+    }
 }
 
 void keyboardCallback(unsigned char key, int x, int y) {
@@ -32,6 +42,9 @@ int main(int argc, char** argv) {
     glutDisplayFunc(displayCallback);
     glutMouseFunc(mouseCallback);
     glutKeyboardFunc(keyboardCallback);
+    glutSpecialFunc([](int key, int x, int y) {
+        app->manejarTeclaEspecial(key, x, y);
+        });
 
     glutMainLoop();
 

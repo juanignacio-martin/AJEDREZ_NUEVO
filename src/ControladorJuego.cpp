@@ -13,6 +13,15 @@ ControladorJuego::ControladorJuego(partida* p, ControladorApp* app, const std::s
 
 void ControladorJuego::dibujar() {
     vista.dibujar(*juego);
+
+    // Si se ha terminado la partida, cambiamos de estado DESPUÉS de dibujar
+    if (juego->haFinalizado()) {
+        static bool transicionHecha = false;
+        if (!transicionHecha) {
+            transicionHecha = true;
+            app->cambiarEstado(EstadoApp::CLASIFICACION);
+        }
+    }
 }
 
 void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
@@ -40,11 +49,6 @@ void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
                 app->mostrarMenuPromocion(fila, columna, p->getColor());
                 return;
             }
-        }
-
-        if (juego->haFinalizado()) {
-            std::cout << "Fin de la partida.\n";
-            return;
         }
 
         if (juego->esContraBot() && juego->getJugadorActual()->getColor() == color::NEGRO) {

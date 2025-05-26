@@ -4,9 +4,9 @@
 #include "ControladorPromocion.h"
 #include "BotFacil.h"
 #include "BotMedio.h"
+#include "Clasificacion.h"
 
-
-enum class EstadoApp { MENU_PRINCIPAL, MENU_VARIANTE, MENU_TEMATICA, SELECCION_OPONENTE, JUEGO, PROMOCION };
+enum class EstadoApp { MENU_PRINCIPAL, MENU_VARIANTE, MENU_TEMATICA, SELECCION_OPONENTE, JUEGO, PROMOCION, CLASIFICACION };
 
 class ControladorApp {
 public:
@@ -27,6 +27,8 @@ public:
     void mostrarSeleccionOponente();
     bool contraBotSeleccionado = false;
 	int dificultadBot = 1;
+    void dibujarPantallaClasificacion();
+    void manejarTeclaEspecial(int key, int x, int y);
 
 private:
     EstadoApp estado;
@@ -37,8 +39,14 @@ private:
     // datos de la promoción
     int promFila = -1, promColumna = -1;
     color colorPromocion;
+    //declaramos el scroll
+    int scrollOffset = 0;
 
     std::string varianteSeleccionada;
     std::string tematicaSeleccionada;
+
+    std::string nombreJugadorActual = "";
+    Clasificacion clasificacion;
+
 
 };
