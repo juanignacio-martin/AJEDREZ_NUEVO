@@ -54,35 +54,65 @@ bool partida::jugarTurno(int x1, int y1, int x2, int y2) {
 
     if (t->estaEnJaque(colorJugador)) {
         std::cout << "Tu rey est? en jaque.\n";
+        recibioJaque = true;
+    }
+
+    //INICIO WORKAROUND PARA LA PUNTUACION DE CAPTURA
+    color colorOponente = (colorJugador == color::BLANCO) ? color::NEGRO : color::BLANCO;
+    int piezasAntes = 0;
+
+    for (int i = 0; i < t->getFilas(); i++) {
+        for (int j = 0; j < t->getColumnas(); j++) {
+            Pieza* p = t->getTablero()[i][j];
+            if (p != nullptr && p->getColor() == colorOponente)
+                piezasAntes++;
+        }
     }
 
     bool exito = t->mueve_pieza(x1, y1, x2, y2, colorJugador);
 
     if (exito) {
-        std::cout << "[DEBUG] Movimiento realizado: (" << x1 << "," << y1 << ") -> (" << x2 << "," << y2 << ")\n";
-        std::cout << "[DEBUG] Tablero tras mover:\n";
-        t->print(std::cout); // saber que tablero tiene esta función implementada
+        movimientosRealizados++;
 
-        // Verificar si la partida terminó después del movimiento
-        color siguienteColor = (colorJugador == color::BLANCO) ? color::NEGRO : color::BLANCO;
-        if (t->esJaqueMate(siguienteColor)) {
-            std::cout << "¡Jaque mate! " << (colorJugador == color::BLANCO ? "Blancas" : "Negras") << " ganan.\n";
-            juegoTerminado = true;
-        }
-        else if (t->esTablas(siguienteColor)) {
-            std::cout << "¡Tablas!\n";
-            juegoTerminado = true;
-        }
-        else {
-            cambiarTurno();
-            turno++;
+        int piezasDespues = 0;
+        for (int i = 0; i < t->getFilas(); i++) {
+            for (int j = 0; j < t->getColumnas(); j++) {
+                Pieza* p = t->getTablero()[i][j];
+                if (p != nullptr && p->getColor() == colorOponente)
+                    piezasDespues++;
+            }
         }
 
+        if (piezasDespues < piezasAntes) {
+            piezasCapturadasJugador++;
+        }
+        //FIN WORKAROUND PARA LA PUNTUACION DE CAPTURA
+
+        if (exito) {
+            std::cout << "[DEBUG] Movimiento realizado: (" << x1 << "," << y1 << ") -> (" << x2 << "," << y2 << ")\n";
+            std::cout << "[DEBUG] Tablero tras mover:\n";
+            t->print(std::cout); // saber que tablero tiene esta función implementada
+
+            // Verificar si la partida terminó después del movimiento
+            color siguienteColor = (colorJugador == color::BLANCO) ? color::NEGRO : color::BLANCO;
+            if (t->esJaqueMate(siguienteColor)) {
+                std::cout << "¡Jaque mate! " << (colorJugador == color::BLANCO ? "Blancas" : "Negras") << " ganan.\n";
+                juegoTerminado = true;
+            }
+            else if (t->esTablas(siguienteColor)) {
+                std::cout << "¡Tablas!\n";
+                juegoTerminado = true;
+            }
+            else {
+                cambiarTurno();
+                turno++;
+            }
+
+        }
+
+        return exito;
     }
-
-    return exito;
 }
-
 void partida::cambiarTurno() {
     jugadorActual = (jugadorActual == &jugadorBlanco) ? &jugadorNegro : &jugadorBlanco;
 }
@@ -98,6 +128,19 @@ jugador* partida::getJugadorActual() const {
 
 bool partida::estaEnJaque() const {
     return t->estaEnJaque(jugadorActual->getColor());
+}
+
+//gestionamos puntuacion
+int partida::getNumeroMovimientos() const {
+return movimientosRealizados;
+}
+
+int partida::getPiezasCapturadasJugador() const {
+    return piezasCapturadasJugador;
+}
+
+bool partida::ganoSinRecibirJaque() const {
+    return !recibioJaque;
 }
 //finalizar partida para cuadrar la clasificacion
 bool partida::haFinalizado() const {
