@@ -44,12 +44,22 @@ public:
     //controldr de final de partida para clasificacion
     bool haFinalizado() const;
 
+    //declaramos varialbes para el cálculo de la puntuación
+    int getNumeroMovimientos() const;
+    int getPiezasCapturadasJugador() const;
+    bool ganoSinRecibirJaque() const;
+
 private:
     void inicializarTablero();     // crea el tablero según la variante
     void cambiarTurno();
     void colocarSilverman();
     void colocarDemi();
     void colocarClasico();
+
+	//variables para el cálculo de la puntuación
+    int movimientosRealizados = 0;
+    int piezasCapturadasJugador = 0;
+    bool recibioJaque = false;
 };
 //función global "libre"
 void pedirNombreJugador();

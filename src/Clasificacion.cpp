@@ -6,16 +6,16 @@
 // Constructor vacío, inicializaciones futuras
 Clasificacion::Clasificacion() {}
 
-// Agrega una nueva entrada al ranking
+// Agrega  entrada al ranking
 void Clasificacion::agregar(const std::string& nombre, int puntos) {
     entradas.push_back(EntradaClasificacion(nombre, puntos));
 
-    // Ordenar de mayor a menor puntuación
+    // de mayor a menor puntuación
     std::sort(entradas.begin(), entradas.end(), [](const auto& a, const auto& b) {
         return a.puntuacion > b.puntuacion;
         });
 
-    // Recortar a las 10 primeras
+    // limitar a 10 primeras
     if (entradas.size() > MAX_ENTRADAS) {
         entradas.resize(MAX_ENTRADAS);
     }
@@ -69,7 +69,23 @@ void Clasificacion::cargar(const std::string& archivo) {
     }
 }
 
-// Devuelve las entradas (útil para mostrar en una GUI, por ejemplo)
+int Clasificacion::obtenerPosicion(int puntuacion) const {
+    auto ordenado = entradas;
+    std::sort(ordenado.begin(), ordenado.end(),
+        [](const EntradaClasificacion& a, const EntradaClasificacion& b) {
+            return b.puntuacion < a.puntuacion;
+        });
+
+    for (size_t i = 0; i < ordenado.size(); ++i) {
+        if (puntuacion >= ordenado[i].puntuacion) {
+            return static_cast<int>(i + 1); 
+        }
+    }
+
+    return static_cast<int>(ordenado.size() + 1); 
+}
+
+// Devuelve las entradas
 const std::vector<EntradaClasificacion>& Clasificacion::obtenerEntradas() const {
     return entradas;
 }

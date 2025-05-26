@@ -153,7 +153,7 @@ void ControladorApp::manejarTecla(unsigned char key, int x, int y) {
     else if (estado == EstadoApp::CLASIFICACION) {
         if (key == 13) {  // ENTER
             if (!nombreJugadorActual.empty()) {
-                clasificacion.agregar(nombreJugadorActual, 100);         // puntuación fija
+                clasificacion.agregar(nombreJugadorActual, puntuacionFinal); 
                 clasificacion.guardar("ranking.txt");                    // guardamos en archivo
                 // Restablecer ventana
                 glutReshapeWindow(1500, 1000);
@@ -222,7 +222,7 @@ void ControladorApp::mostrarMenuPromocion(int fila, int columna, color c) {
 }
 
 void ControladorApp::realizarPromocion(tipo_pieza nuevaPieza) {
-    // esta función queda reservada por si quieres forzar promociones desde fuera
+    
 }
 
 void ControladorApp::manejarTeclaEspecial(int key, int x, int y) {
@@ -247,8 +247,8 @@ void ControladorApp::dibujarPantallaClasificacion() {
     glClear(GL_COLOR_BUFFER_BIT);
 
     // Puntuación y posición del jugador actual
-    int puntuacionActual = 100; // Por ahora fija
-    int posicionActual = 1;     // Por ahora fija
+    int puntuacionActual = puntuacionFinal; // Por ahora fija
+    int posicionActual = clasificacion.obtenerPosicion(puntuacionFinal);
 
     std::string puntuacionStr = "Tu puntuacion es: " + std::to_string(puntuacionActual);
     std::string posicionStr = "Tu posicion en el ranking es: " + std::to_string(posicionActual);
