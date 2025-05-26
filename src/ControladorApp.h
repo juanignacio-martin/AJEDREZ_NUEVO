@@ -29,6 +29,8 @@ public:
 	int dificultadBot = 1;
     void dibujarPantallaClasificacion();
     void manejarTeclaEspecial(int key, int x, int y);
+    //contabilizamos la puntuacion
+    int puntuacionFinal = 0;
 
 private:
     EstadoApp estado;

@@ -3,7 +3,7 @@
 #include <fstream>
 #include <algorithm>
 
-// Constructor vacío, inicializaciones futuras
+// Constructor vacío, inicializaciones futuras 
 Clasificacion::Clasificacion() {}
 
 // Agrega una nueva entrada al ranking
@@ -70,6 +70,22 @@ void Clasificacion::cargar(const std::string& archivo) {
 }
 
 // Devuelve las entradas (útil para mostrar en una GUI, por ejemplo)
+int Clasificacion::obtenerPosicion(int puntuacion) const {
+    auto ordenado = entradas;
+    std::sort(ordenado.begin(), ordenado.end(),
+        [](const EntradaClasificacion& a, const EntradaClasificacion& b) {
+            return b.puntuacion < a.puntuacion;
+        });
+
+    for (size_t i = 0; i < ordenado.size(); ++i) {
+        if (puntuacion >= ordenado[i].puntuacion) {
+            return static_cast<int>(i + 1);
+        }
+    }
+
+    return static_cast<int>(ordenado.size() + 1);
+}
 const std::vector<EntradaClasificacion>& Clasificacion::obtenerEntradas() const {
     return entradas;
 }
+

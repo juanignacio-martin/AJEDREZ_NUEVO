@@ -4,6 +4,7 @@
 #include "Partida.h"
 #include "ControladorApp.h"
 #include "peon.h"
+#include "Puntuacion.h"
 
 ControladorJuego::ControladorJuego(partida* p, ControladorApp* app, const std::string& tematica)
     : juego(p), app(app) {
@@ -14,11 +15,12 @@ ControladorJuego::ControladorJuego(partida* p, ControladorApp* app, const std::s
 void ControladorJuego::dibujar() {
     vista.dibujar(*juego);
 
-    // Si se ha terminado la partida, cambiamos de estado DESPUÉS de dibujar
+    // Si se ha terminado la partida, cambiamos de estado DESPUÉS de dibujar 
     if (juego->haFinalizado()) {
         static bool transicionHecha = false;
         if (!transicionHecha) {
             transicionHecha = true;
+            app->puntuacionFinal = Puntuacion::calcular(*juego);
             app->cambiarEstado(EstadoApp::CLASIFICACION);
         }
     }
