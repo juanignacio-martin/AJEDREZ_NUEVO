@@ -167,6 +167,7 @@
     <ClInclude Include="src\partida.h" />
     <ClInclude Include="src\peon.h" />
     <ClInclude Include="src\pieza.h" />
+    <ClInclude Include="src\Puntuacion.h" />
     <ClInclude Include="src\rey.h" />
     <ClInclude Include="src\tablero.h" />
     <ClInclude Include="src\torre.h" />
@@ -188,6 +189,7 @@
     <ClCompile Include="src\partida.cpp" />
     <ClCompile Include="src\peon.cpp" />
     <ClCompile Include="src\pieza.cpp" />
+    <ClCompile Include="src\Puntuacion.cpp" />
     <ClCompile Include="src\rey.cpp" />
     <ClCompile Include="src\tablero.cpp" />
     <ClCompile Include="src\torre.cpp" />
