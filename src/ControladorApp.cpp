@@ -140,8 +140,10 @@ void ControladorApp::manejarClick(int boton, int estadoClick, int x, int y) {
         break;
 
     case EstadoApp::PROMOCION:
-        if (juego) promo.manejarClick(x, y, juego->getTablero(), promFila, promColumna);
+        promo.manejarClick(x, y, juego->getTablero(), promFila, promColumna, juego->getPartida());
         cambiarEstado(EstadoApp::JUEGO);
+        juego->getPartida()->cambiarTurno(); 
+
         break;
     }
 }

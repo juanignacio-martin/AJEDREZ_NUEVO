@@ -49,6 +49,8 @@ void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
             if ((p->getColor() == color::BLANCO && fila == 0) ||
                 (p->getColor() == color::NEGRO && fila == juego->getFilas() - 1)) {
                 app->mostrarMenuPromocion(fila, columna, p->getColor());
+
+//                app->cambiarEstado(EstadoApp::JUEGO);
                 return;
             }
         }

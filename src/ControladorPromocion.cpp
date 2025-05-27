@@ -39,7 +39,7 @@ void ControladorPromocion::dibujar(color c) {
     glutSwapBuffers();
 }
 
-void ControladorPromocion::manejarClick(int x, int y, Pieza*** tablero, int fila, int columna) {
+void ControladorPromocion::manejarClick(int x, int y, Pieza*** tablero, int fila, int columna,partida* pa) {
     for (size_t i = 0; i < opciones.size(); ++i) {
         int x1 = xInicio;
         int y1 = yInicio + i * (altoBoton + separacion);
@@ -50,7 +50,9 @@ void ControladorPromocion::manejarClick(int x, int y, Pieza*** tablero, int fila
             // reutiliza la funcion del peon
             Pieza* actual = tablero[fila][columna];
             if (peon* p = dynamic_cast<peon*>(actual)) {
+                
                 p->promocionar(tablero, fila, columna, opciones[i]);
+      
             }
             return;
         }

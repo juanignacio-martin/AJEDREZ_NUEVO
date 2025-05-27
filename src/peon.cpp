@@ -3,6 +3,7 @@
 #include "torre.h"
 #include "alfil.h"
 #include "caballo.h"
+#include "partida.h"
 
 int peon::modo_juego = 0; // Inicialmente en modo clásico/demichess
 
@@ -114,5 +115,6 @@ void peon::promocionar(Pieza*** tablero, int fila, int columna, tipo_pieza nueva
         tablero[fila][columna] = new dama(c);
         break;
     }
+
 }
 

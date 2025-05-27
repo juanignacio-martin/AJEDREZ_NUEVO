@@ -54,9 +54,10 @@ public:
     int getPiezasCapturadasJugador() const;
     bool ganoSinRecibirJaque() const;
 
-private:
-    void inicializarTablero();     // crea el tablero según la variante
     void cambiarTurno();
+private:
+
+    void inicializarTablero();     // crea el tablero según la variante
     void colocarSilverman();
     void colocarDemi();
     void colocarClasico();
