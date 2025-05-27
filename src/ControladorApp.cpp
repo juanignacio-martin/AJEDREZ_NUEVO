@@ -141,11 +141,14 @@ void ControladorApp::manejarClick(int boton, int estadoClick, int x, int y) {
 
     case EstadoApp::PROMOCION:
         promo.manejarClick(x, y, juego->getTablero(), promFila, promColumna, juego->getPartida());
-        cambiarEstado(EstadoApp::JUEGO);
-        juego->getPartida()->cambiarTurno(); 
-//        juego->flag = true;
-//        juego->getPartida()->cambiarTurno();
+      
+        if(juego->getTablero()[promFila][promColumna]->getTipo()!= tipo_pieza::PEON){
+            juego->getPartida()->cambiarTurno();
+            cambiarEstado(EstadoApp::JUEGO);
+        }
+
         break;
+
     }
 }
 

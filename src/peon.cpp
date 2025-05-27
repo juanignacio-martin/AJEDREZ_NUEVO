@@ -111,9 +111,7 @@ void peon::promocionar(Pieza*** tablero, int fila, int columna, tipo_pieza nueva
     case tipo_pieza::CABALLO:
         tablero[fila][columna] = new caballo(c);
         break;
-    default:
-        tablero[fila][columna] = new dama(c);
-        break;
+
     }
 
 }

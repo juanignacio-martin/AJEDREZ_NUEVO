@@ -10,7 +10,7 @@ public:
     ControladorPromocion();
 
     void dibujar(color c);
-    void manejarClick(int x, int y, std::function<void(tipo_pieza)> seleccionar);
+//    void manejarClick(int x, int y, std::function<void(tipo_pieza)> seleccionar);
     void manejarClick(int x, int y, Pieza*** tablero, int fila, int columna,partida* p);
 
 
