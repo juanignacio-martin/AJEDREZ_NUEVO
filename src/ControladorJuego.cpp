@@ -4,6 +4,7 @@
 #include "Partida.h"
 #include "ControladorApp.h"
 #include "peon.h"
+#include "Puntuacion.h"
 
 ControladorJuego::ControladorJuego(partida* p, ControladorApp* app, const std::string& tematica)
     : juego(p), app(app) {
@@ -13,10 +14,22 @@ ControladorJuego::ControladorJuego(partida* p, ControladorApp* app, const std::s
 
 void ControladorJuego::dibujar() {
     vista.dibujar(*juego);
+
+    // Si se ha terminado la partida, cambiamos de estado DESPUÉS de dibujar 
+    if (juego->haFinalizado()) {
+        static bool transicionHecha = false;
+        if (!transicionHecha) {
+            transicionHecha = true;
+            app->puntuacionFinal = Puntuacion::calcular(*juego);
+            app->cambiarEstado(EstadoApp::CLASIFICACION);
+        }
+    }
 }
 
 void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
     if (estado != GLUT_DOWN) return;
+
+
 
     int fila = y / vista.getCeldaSize();
     int columna = x / vista.getCeldaSize();
@@ -38,18 +51,14 @@ void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
             if ((p->getColor() == color::BLANCO && fila == 0) ||
                 (p->getColor() == color::NEGRO && fila == juego->getFilas() - 1)) {
                 app->mostrarMenuPromocion(fila, columna, p->getColor());
+
+ //               app->cambiarEstado(EstadoApp::JUEGO);
                 return;
             }
         }
 
-        if (juego->haFinalizado()) {
-            std::cout << "Fin de la partida.\n";
-            return;
-        }
-
-        if (juego->esContraBot() && juego->getJugadorActual()->getColor() == color::NEGRO) {
+        if ((juego->esContraBot() && juego->getJugadorActual()->getColor() == color::NEGRO) ) {
             juego->getBot()->jugarTurnoBot(juego);
-
             if (juego->haFinalizado()) {
                 std::cout << "Fin de la partida.\n";
                 return;

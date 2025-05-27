@@ -10,6 +10,9 @@ void ControladorMenu::setOpciones(const std::vector<std::string>& opciones, cons
 }
 
 void ControladorMenu::dibujar() {
+
+    glutReshapeWindow(1536, 1024);
+
     glClear(GL_COLOR_BUFFER_BIT);
     dibujaFondo();
     for (size_t i = 0; i < textos.size(); ++i) {
@@ -62,17 +65,19 @@ void ControladorMenu::dibujar() {
 }
 
 void ControladorMenu::manejarClick(int x, int y) {
+
+
     for (size_t i = 0; i < textos.size(); ++i) {
-        int x1 = xInicio;
+        int x1 = xInicio+26;
         int y1;
         int altoReal = altoBoton;
 
         if (i == textos.size() - 1) {
-            y1 = yInicio + i * (altoBoton + separacion-20) + separacionExtra;
+            y1 = yInicio + i * (altoBoton + separacion) + separacionExtra;
             altoReal = altoBotonGrande;
         }
         else {
-            y1 = yInicio + i * (altoBoton + separacion-20);
+            y1 = yInicio + i * (altoBoton + separacion);
         }
 
         int x2 = x1 + anchoBoton;

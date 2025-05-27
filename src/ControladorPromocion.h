@@ -3,14 +3,15 @@
 #include <functional>
 #include <freeglut.h>
 #include "Pieza.h"
+#include "partida.h"
 
 class ControladorPromocion {
 public:
     ControladorPromocion();
 
     void dibujar(color c);
-    void manejarClick(int x, int y, std::function<void(tipo_pieza)> seleccionar);
-    void manejarClick(int x, int y, Pieza*** tablero, int fila, int columna);
+//    void manejarClick(int x, int y, std::function<void(tipo_pieza)> seleccionar);
+    void manejarClick(int x, int y, Pieza*** tablero, int fila, int columna,partida* p);
 
 
 private:

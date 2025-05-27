@@ -17,6 +17,11 @@ private:
     Bot* bot = nullptr;
     bool contraBot = false;
 
+    //control de puntuacion
+    int movimientosRealizados = 0;
+    int piezasCapturadasJugador = 0;
+    bool recibioJaque = false;
+
 public:
     partida(const std::string& tipo = "clasico");
     ~partida();
@@ -35,18 +40,31 @@ public:
     }
     int getFilas() const { return t->getFilas(); }
     int getColumnas() const { return t->getColumnas(); }
+
+
+
+
     void setBot(Bot* b) {
         bot = b;
         contraBot = true;
     }
     Bot* getBot() const { return bot; }
     bool esContraBot() const { return contraBot; }   
+
+
+
+
     //controldr de final de partida para clasificacion
     bool haFinalizado() const;
+    //métodos de puntuación
+    int getNumeroMovimientos() const;
+    int getPiezasCapturadasJugador() const;
+    bool ganoSinRecibirJaque() const;
 
-private:
-    void inicializarTablero();     // crea el tablero según la variante
     void cambiarTurno();
+private:
+
+    void inicializarTablero();     // crea el tablero según la variante
     void colocarSilverman();
     void colocarDemi();
     void colocarClasico();

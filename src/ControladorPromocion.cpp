@@ -7,8 +7,19 @@ ControladorPromocion::ControladorPromocion() {
 }
 
 void ControladorPromocion::dibujar(color c) {
-    glClear(GL_COLOR_BUFFER_BIT);
+    // Forzar tamaño fijo de ventana del menú de promoción
+    const int ANCHO_FIJO = 800;
+    const int ALTO_FIJO = 600;
+    glutReshapeWindow(ANCHO_FIJO, ALTO_FIJO);
 
+    glViewport(0, 0, ANCHO_FIJO, ALTO_FIJO);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluOrtho2D(0, ANCHO_FIJO, ALTO_FIJO, 0);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    glClear(GL_COLOR_BUFFER_BIT);
     for (size_t i = 0; i < opciones.size(); ++i) {
         int x = xInicio;
         int y = yInicio + i * (altoBoton + separacion);
@@ -28,7 +39,8 @@ void ControladorPromocion::dibujar(color c) {
         case tipo_pieza::TORRE: texto = "Torre"; break;
         case tipo_pieza::ALFIL: texto = "Alfil"; break;
         case tipo_pieza::CABALLO: texto = "Caballo"; break;
-        default: texto = "?"; break;
+        default: 
+            break;
         }
         glRasterPos2f(x + 20, y + altoBoton / 2);
         for (char c : texto) {
@@ -39,7 +51,9 @@ void ControladorPromocion::dibujar(color c) {
     glutSwapBuffers();
 }
 
-void ControladorPromocion::manejarClick(int x, int y, Pieza*** tablero, int fila, int columna) {
+
+
+void ControladorPromocion::manejarClick(int x, int y, Pieza*** tablero, int fila, int columna,partida* pa) {
     for (size_t i = 0; i < opciones.size(); ++i) {
         int x1 = xInicio;
         int y1 = yInicio + i * (altoBoton + separacion);
@@ -49,10 +63,10 @@ void ControladorPromocion::manejarClick(int x, int y, Pieza*** tablero, int fila
         if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
             // reutiliza la funcion del peon
             Pieza* actual = tablero[fila][columna];
-            if (peon* p = dynamic_cast<peon*>(actual)) {
+            if (peon* p = dynamic_cast<peon*>(actual)) {               
                 p->promocionar(tablero, fila, columna, opciones[i]);
             }
-            return;
         }
+
     }
 }
