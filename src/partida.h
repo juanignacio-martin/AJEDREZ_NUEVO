@@ -40,15 +40,22 @@ public:
     }
     int getFilas() const { return t->getFilas(); }
     int getColumnas() const { return t->getColumnas(); }
+
+
+
+
     void setBot(Bot* b) {
         bot = b;
         contraBot = true;
     }
     Bot* getBot() const { return bot; }
     bool esContraBot() const { return contraBot; }   
+
+
+
+
     //controldr de final de partida para clasificacion
     bool haFinalizado() const;
-
     //métodos de puntuación
     int getNumeroMovimientos() const;
     int getPiezasCapturadasJugador() const;

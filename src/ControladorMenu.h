@@ -27,7 +27,7 @@ private:
     int xInicio = 850;
     int yInicio = 100;
     int altoBotonGrande = 80;
-    int separacionExtra = 50;
+    int separacionExtra = 70;
     int indiceSel = -1;
     std::string tematicaSeleccionada = "CLASICO";
 };

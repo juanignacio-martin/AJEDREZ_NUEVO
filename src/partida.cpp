@@ -144,7 +144,7 @@ bool partida::ganoSinRecibirJaque() const {
 }
 //finalizar partida para cuadrar la clasificacion
 bool partida::haFinalizado() const {
-	std::cout<<"[LOG] entra a bool partida:haFinalizao 112\n ";
+	//std::cout<<"[LOG] entra a bool partida:haFinalizao 112\n ";
     return juegoTerminado;
 }
 

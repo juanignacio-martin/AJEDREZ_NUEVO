@@ -29,6 +29,8 @@ void ControladorJuego::dibujar() {
 void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
     if (estado != GLUT_DOWN) return;
 
+
+
     int fila = y / vista.getCeldaSize();
     int columna = x / vista.getCeldaSize();
 
@@ -50,14 +52,13 @@ void ControladorJuego::manejarClick(int boton, int estado, int x, int y) {
                 (p->getColor() == color::NEGRO && fila == juego->getFilas() - 1)) {
                 app->mostrarMenuPromocion(fila, columna, p->getColor());
 
-//                app->cambiarEstado(EstadoApp::JUEGO);
+ //               app->cambiarEstado(EstadoApp::JUEGO);
                 return;
             }
         }
 
-        if (juego->esContraBot() && juego->getJugadorActual()->getColor() == color::NEGRO) {
+        if ((juego->esContraBot() && juego->getJugadorActual()->getColor() == color::NEGRO) ) {
             juego->getBot()->jugarTurnoBot(juego);
-
             if (juego->haFinalizado()) {
                 std::cout << "Fin de la partida.\n";
                 return;

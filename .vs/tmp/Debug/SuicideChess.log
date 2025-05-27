@@ -1,27 +1,30 @@
-﻿  ControladorApp.cpp
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(259,19): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(260,18): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(273,20): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(282,35): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(282,16): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(283,51): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(283,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(284,51): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(284,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(285,35): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(285,16): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(297,35): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(297,16): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(298,39): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(298,18): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(304,21): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(327,23): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(327,20): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(328,35): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(328,22): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(329,37): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(329,22): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(330,25): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(330,20): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
-C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorApp.cpp(342,24): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+﻿  ControladorMenu.cpp
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(21,56): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(26,27): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(26,24): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(27,40): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(27,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(28,42): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(28,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(29,29): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(29,24): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(33,37): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(33,29): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(40,25): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(48,27): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(48,24): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(49,40): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(49,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(50,42): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(50,26): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(51,29): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(51,24): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(55,37): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(55,29): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(73,57): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(77,26): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(102,43): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(103,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(104,49): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\src\ControladorMenu.cpp(105,46): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
   SuicideChess.vcxproj -> C:\Users\Victo\Desktop\GitAjedrez\AJEDREZ_NUEVO\bin\SuicideChess.exe

@@ -21,6 +21,8 @@ public:
     void manejarClick(int boton, int estado, int x, int y);
     void manejarTecla(unsigned char key, int x, int y);
 
+    bool flag = false;
+
     const VistaTablero& getVista() const { return vista; }
     Pieza*** getTablero() const { return juego->getTablero(); }
 

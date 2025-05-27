@@ -143,7 +143,8 @@ void ControladorApp::manejarClick(int boton, int estadoClick, int x, int y) {
         promo.manejarClick(x, y, juego->getTablero(), promFila, promColumna, juego->getPartida());
         cambiarEstado(EstadoApp::JUEGO);
         juego->getPartida()->cambiarTurno(); 
-
+//        juego->flag = true;
+//        juego->getPartida()->cambiarTurno();
         break;
     }
 }
