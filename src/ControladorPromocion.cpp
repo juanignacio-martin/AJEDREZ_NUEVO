@@ -6,32 +6,66 @@ ControladorPromocion::ControladorPromocion() {
     opciones = { tipo_pieza::DAMA, tipo_pieza::TORRE, tipo_pieza::ALFIL, tipo_pieza::CABALLO };
 }
 
+
+
+
 void ControladorPromocion::dibujar(color c) {
-    // Forzar tamaño fijo de ventana del menú de promoción
-    const int ANCHO_FIJO = 800;
-    const int ALTO_FIJO = 600;
+    int ANCHO_FIJO = 500;
+    int ALTO_FIJO = 500;
     glutReshapeWindow(ANCHO_FIJO, ALTO_FIJO);
 
+
+    // Configuración de viewport y proyección
     glViewport(0, 0, ANCHO_FIJO, ALTO_FIJO);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluOrtho2D(0, ANCHO_FIJO, ALTO_FIJO, 0);
+    gluOrtho2D(0, ANCHO_FIJO, ALTO_FIJO, 0);  // origen en esquina superior izquierda
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
+    // Dibujar fondo
+    glEnable(GL_TEXTURE_2D);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+    glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("resources/images/MenuPromocion.png").id);
+
+    // Limpiar fondo blanco
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
+
+    glColor3f(1.0f, 1.0f, 1.0f); // no alterar color de textura
+    glBegin(GL_QUADS);
+    glTexCoord2f(0, 0); glVertex2f(0, 0);
+    glTexCoord2f(1, 0); glVertex2f(ANCHO_FIJO, 0);
+    glTexCoord2f(1, 1); glVertex2f(ANCHO_FIJO, ALTO_FIJO);
+    glTexCoord2f(0, 1); glVertex2f(0, ALTO_FIJO);
+    glEnd();
+
+
+    glDisable(GL_TEXTURE_2D);
+    glDisable(GL_BLEND);
+
+
+
+    // Dibujar botones
     for (size_t i = 0; i < opciones.size(); ++i) {
         int x = xInicio;
         int y = yInicio + i * (altoBoton + separacion);
 
-        glColor3f(0.8f, 0.8f, 0.8f);
+        // Rectángulo translúcido
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        glColor4f(0.8f, 0.8f, 0.8f, 0.5f); // gris semi-transparente
         glBegin(GL_QUADS);
         glVertex2f(x, y);
         glVertex2f(x + anchoBoton, y);
         glVertex2f(x + anchoBoton, y + altoBoton);
         glVertex2f(x, y + altoBoton);
         glEnd();
+        glDisable(GL_BLEND);
 
+        // Texto del botón
         glColor3f(0.0f, 0.0f, 0.0f);
         std::string texto;
         switch (opciones[i]) {
@@ -39,10 +73,9 @@ void ControladorPromocion::dibujar(color c) {
         case tipo_pieza::TORRE: texto = "Torre"; break;
         case tipo_pieza::ALFIL: texto = "Alfil"; break;
         case tipo_pieza::CABALLO: texto = "Caballo"; break;
-        default: 
-            break;
+        default: continue;
         }
-        glRasterPos2f(x + 20, y + altoBoton / 2);
+        glRasterPos2f(x + 20, y + altoBoton * 0.65f);  // mejor centrado vertical
         for (char c : texto) {
             glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
         }
@@ -50,6 +83,7 @@ void ControladorPromocion::dibujar(color c) {
 
     glutSwapBuffers();
 }
+
 
 
 
