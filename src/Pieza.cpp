@@ -38,7 +38,7 @@
         case tipo_pieza::ALFIL: return "Alfil";
         case tipo_pieza::DAMA: return "Dama";
         case tipo_pieza::REY: return "Rey";
-        case tipo_pieza::PEON: return "Peón";
+        case tipo_pieza::PEON: return "Peon";
         case tipo_pieza::VACIO: return "Vacío";
         default: return "Desconocido";
         }

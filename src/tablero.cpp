@@ -31,6 +31,7 @@ void tablero::reserva_inicializacionClasico() {
 	}
 
 	tab = new Pieza * *[_N];
+	std::cout << "Empezando la partida. Turno de blancas" << std::endl;
 	for (int i = 0; i < _N; i++) {
 		tab[i] = new Pieza * [_M];
 		for (int j = 0; j < _M; j++) {
@@ -77,18 +78,16 @@ void tablero::reserva_inicializacionDemi() {
 
 	// Reservar memoria para la matriz de punteros a punteros
 	tab = new Pieza * *[_N];
-	std::cout << "Memoria para tab reservada correctamente." << std::endl;
+	std::cout << "Empezando la partida. Turno de blancas" << std::endl;
 
 	for (int i = 0; i < _N; i++) {
 		tab[i] = new Pieza * [_M]; // Reservar cada fila
-		std::cout << "Fila " << i << " reservada correctamente." << std::endl;
+		;
 
 		for (int j = 0; j < _M; j++) {
 			tab[i][j] = nullptr; // Inicializar con nullptr
 		}
 	}
-
-	std::cout << "Tablero inicializado correctamente." << std::endl;
 
 	tab[0][3] = new torre(color::NEGRO);
 	tab[0][1] = new caballo(color::NEGRO);
@@ -123,18 +122,15 @@ void tablero::reserva_inicializacionSilver() {
 
 	// Reservar memoria para la matriz de punteros a punteros
 	tab = new Pieza * *[_N];
-	std::cout << "Memoria para tab reservada correctamente." << std::endl;
+	std::cout << "Empezando la partida. Turno de blancas" << std::endl;
 
 	for (int i = 0; i < _N; i++) {
 		tab[i] = new Pieza * [_M]; // Reservar cada fila
-		std::cout << "Fila " << i << " reservada correctamente." << std::endl;
 
 		for (int j = 0; j < _M; j++) {
 			tab[i][j] = nullptr; // Inicializar con nullptr
 		}
 	}
-
-	std::cout << "Tablero inicializado correctamente." << std::endl;
 
 	tab[0][3] = new torre(color::NEGRO);
 	tab[0][0] = new torre(color::NEGRO);
@@ -177,7 +173,7 @@ void tablero::liberacion() {
 
 
 ostream& tablero::print(std::ostream& o) {
-	for (int i = 0; i < _N; i++) {
+/*	for (int i = 0; i < _N; i++) {
 		for (int j = 0; j < _M; j++) {
 			if (tab[i][j] != nullptr) {
 				o << *tab[i][j] << " ";
@@ -187,7 +183,7 @@ ostream& tablero::print(std::ostream& o) {
 			}
 		}
 		o << std::endl;
-	}
+	}*/
 	return o;
 }
 
@@ -221,7 +217,7 @@ bool tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_desti
 
 	// Verificar si el movimiento es válido
 	if (!tab[x_origen][y_origen]->movimiento_valido(x_origen, y_origen, x_destino, y_destino, tab, jugadorColor)) {
-		std::cout << "Movimiento inválido.\n";
+		//std::cout << "Movimiento inválido.\n";
 		return false;
 	}
 
@@ -252,10 +248,10 @@ bool tablero::mueve_pieza(int x_origen, int y_origen, int x_destino, int y_desti
 	color oponente = (jugadorColor == color::BLANCO) ? color::NEGRO : color::BLANCO;
 
 	if (esJaqueMate(oponente)) {
-		std::cout << "¡Jaque mate! " << (jugadorColor == color::BLANCO ? "Blancas" : "Negras") << " ganan." << std::endl;
+		//std::cout << "¡Jaque mate! " << (jugadorColor == color::BLANCO ? "Blancas" : "Negras") << " ganan." << std::endl;
 	}
 	else if (esTablas(oponente)) {
-		std::cout << "¡Tablas!" << std::endl;
+		//std::cout << "¡Tablas!" << std::endl;
 	}
 
 	std::cout << "Moviendo pieza...\n";
