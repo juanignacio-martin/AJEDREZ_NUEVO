@@ -104,3 +104,21 @@ void ControladorPromocion::manejarClick(int x, int y, Pieza*** tablero, int fila
 
     }
 }
+void ControladorPromocion::configurarOpciones(const std::string& variante) {
+    opciones.clear();
+    if (variante == "silverman") {
+        opciones.push_back(tipo_pieza::DAMA);
+        opciones.push_back(tipo_pieza::TORRE);
+    }
+    else if (variante == "demi") {
+        opciones.push_back(tipo_pieza::ALFIL);
+        opciones.push_back(tipo_pieza::CABALLO);
+        opciones.push_back(tipo_pieza::TORRE);
+    }
+    else {  // clásico
+        opciones.push_back(tipo_pieza::DAMA);
+        opciones.push_back(tipo_pieza::TORRE);
+        opciones.push_back(tipo_pieza::ALFIL);
+        opciones.push_back(tipo_pieza::CABALLO);
+    }
+}

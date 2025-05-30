@@ -40,6 +40,7 @@ public:
     }
     int getFilas() const { return t->getFilas(); }
     int getColumnas() const { return t->getColumnas(); }
+    std::string getVariante() const { return variante; }
 
 
 

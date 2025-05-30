@@ -224,6 +224,8 @@ void ControladorApp::mostrarMenuPromocion(int fila, int columna, color c) {
     promFila = fila;
     promColumna = columna;
     colorPromocion = c;
+
+    promo.configurarOpciones(juego->juego->getVariante());  // devuelve "clasico", "silverman" o "demi"
     estado = EstadoApp::PROMOCION;
 }
 
